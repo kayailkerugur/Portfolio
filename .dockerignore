@@ -1,0 +1,20 @@
+# Bağımlılıklar (container içinde yeniden yüklenir)
+node_modules/
+
+# Build çıktısı
+dist/
+
+# Git & CI
+.git/
+.gitignore
+.github/
+
+# Geliştirme ortamı
+.angular/
+.claude/
+*.md
+.editorconfig
+.prettierrc*
+
+# Test
+coverage/
