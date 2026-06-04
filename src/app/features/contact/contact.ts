@@ -1,23 +1,37 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-
-interface ContactForm {
-  name: string;
-  email: string;
-  message: string;
-}
 
 @Component({
   selector: 'app-contact',
-  imports: [FormsModule],
   templateUrl: './contact.html',
   styleUrl: './contact.scss',
 })
 export class Contact {
-  form: ContactForm = { name: '', email: '', message: '' };
-  submitted = false;
+  readonly email = 'kayailkercontact@gmail.com';
 
-  onSubmit(): void {
-    this.submitted = true;
-  }
+  readonly socials = [
+    {
+      label: 'E-posta',
+      handle: 'kayailkercontact@gmail.com',
+      href: 'mailto:kayailkercontact@gmail.com',
+      icon: 'email',
+    },
+    {
+      label: 'GitHub',
+      handle: 'kayailkerugur',
+      href: 'https://github.com/kayailkerugur',
+      icon: 'github',
+    },
+    {
+      label: 'LinkedIn',
+      handle: 'ilker-ugur-kaya',
+      href: 'https://www.linkedin.com/in/ilker-ugur-kaya/',
+      icon: 'linkedin',
+    },
+    {
+      label: 'Instagram',
+      handle: 'kaya.dev_',
+      href: 'https://instagram.com/kaya.dev_',
+      icon: 'instagram',
+    },
+  ];
 }

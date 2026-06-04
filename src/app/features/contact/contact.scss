@@ -1,75 +1,88 @@
 @use '../../../styles/variables' as *;
 
 .contact {
-  &__success {
-    background: $color-accent-muted;
-    border: 1px solid $color-accent;
-    border-radius: $radius-md;
-    padding: $spacing-xl;
-    color: $color-accent;
-    text-align: center;
+  &__intro {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: $color-text-muted;
+    margin-bottom: $spacing-2xl;
+    max-width: 55ch;
   }
 
-  &__form {
+  &__cards {
     display: flex;
     flex-direction: column;
-    gap: $spacing-lg;
+    gap: $spacing-md;
   }
 }
 
-.form-field {
+.contact-card {
   display: flex;
-  flex-direction: column;
-  gap: $spacing-sm;
+  align-items: center;
+  gap: $spacing-lg;
+  padding: $spacing-lg $spacing-xl;
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-lg;
+  text-decoration: none;
+  transition: border-color $transition-base, transform $transition-base, background $transition-base;
 
-  label {
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: $color-text;
+  &:hover {
+    border-color: $color-accent;
+    background: rgba($color-accent, 0.04);
+    transform: translateX(4px);
+
+    .contact-card__arrow {
+      opacity: 1;
+      transform: translate(2px, -2px);
+      color: $color-accent;
+    }
   }
 
-  input,
-  textarea {
-    background: $color-surface;
-    border: 1px solid $color-border;
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
     border-radius: $radius-md;
-    padding: 0.75rem $spacing-md;
-    color: $color-text;
-    font-family: inherit;
-    font-size: 0.95rem;
-    outline: none;
-    transition: border-color $transition-base;
-    resize: vertical;
-
-    &::placeholder { color: $color-text-muted; }
-
-    &:focus {
-      border-color: $color-accent;
-    }
+    background: $color-bg;
+    border: 1px solid $color-border;
+    color: $color-text-muted;
+    flex-shrink: 0;
+    transition: color $transition-base, border-color $transition-base;
   }
-}
 
-.btn {
-  display: inline-block;
-  padding: 0.75rem 1.75rem;
-  border-radius: $radius-md;
-  font-size: 0.95rem;
-  font-weight: 500;
-  transition: all $transition-base;
-  cursor: pointer;
-  align-self: flex-start;
+  &:hover &__icon {
+    color: $color-accent;
+    border-color: rgba($color-accent, 0.3);
+  }
 
-  &--primary {
-    background: $color-accent;
-    color: #fff;
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex: 1;
+  }
 
-    &:hover:not(:disabled) {
-      background: $color-accent-hover;
-    }
+  &__label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: $color-accent;
+  }
 
-    &:disabled {
-      opacity: 0.4;
-      cursor: not-allowed;
-    }
+  &__handle {
+    font-size: 0.95rem;
+    color: $color-text;
+    font-weight: 400;
+  }
+
+  &__arrow {
+    color: $color-text-muted;
+    opacity: 0.4;
+    transition: opacity $transition-base, transform $transition-base, color $transition-base;
+    flex-shrink: 0;
   }
 }
