@@ -4,12 +4,24 @@
     <div class="skills__grid">
       @for (group of groups; track group.category) {
         <div class="skill-group">
-          <h3 class="skill-group__category">{{ group.category }}</h3>
-          <ul class="skill-group__items">
-            @for (item of group.items; track item) {
-              <li class="tag">{{ item }}</li>
+          <div class="skill-group__header">
+            <span class="skill-group__emoji">{{ group.emoji }}</span>
+            <h3 class="skill-group__category">{{ group.category }}</h3>
+          </div>
+          <div class="skill-group__items">
+            @for (skill of group.skills; track skill.name) {
+              <div class="skill-chip" [class.skill-chip--primary]="skill.level === 'primary'">
+                <span class="skill-chip__icon">
+                  @if (skill.icon) {
+                    <i [class]="skill.icon + ' colored'"></i>
+                  } @else {
+                    <span class="skill-chip__emoji">{{ skill.customIcon }}</span>
+                  }
+                </span>
+                <span class="skill-chip__name">{{ skill.name }}</span>
+              </div>
             }
-          </ul>
+          </div>
         </div>
       }
     </div>
