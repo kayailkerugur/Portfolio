@@ -1,0 +1,40 @@
+@use '../../../styles/variables' as *;
+
+.footer {
+  border-top: 1px solid $color-border;
+  padding: $spacing-xl;
+
+  &__container {
+    max-width: $container-max;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $spacing-md;
+
+    @media (max-width: $bp-sm) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__copy {
+    font-size: 0.875rem;
+    color: $color-text-muted;
+  }
+
+  &__links {
+    display: flex;
+    gap: $spacing-lg;
+
+    a {
+      font-size: 0.875rem;
+      color: $color-text-muted;
+      transition: color $transition-base;
+
+      &:hover {
+        color: $color-accent;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@use 'variables' as *;
+
+.container {
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: 0 $spacing-xl;
+
+  &--narrow {
+    max-width: 640px;
+  }
+}
+
+.page-section {
+  padding: calc($nav-height + $spacing-3xl) $spacing-xl $spacing-3xl;
+
+  .container {
+    padding: 0;
+  }
+}
+
+.section-title {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: $color-text;
+  margin-bottom: $spacing-2xl;
+
+  &::after {
+    content: '.';
+    color: $color-accent;
+  }
+}

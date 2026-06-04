@@ -1,0 +1,50 @@
+<section class="page-section">
+  <div class="container container--narrow">
+    <h1 class="section-title">İletişim</h1>
+
+    @if (submitted) {
+      <div class="contact__success">
+        <p>Mesajın alındı, en kısa sürede geri döneceğim!</p>
+      </div>
+    } @else {
+      <form class="contact__form" (ngSubmit)="onSubmit()" #contactForm="ngForm">
+        <div class="form-field">
+          <label for="name">Ad Soyad</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            [(ngModel)]="form.name"
+            required
+            placeholder="Adınız"
+          />
+        </div>
+        <div class="form-field">
+          <label for="email">E-posta</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            [(ngModel)]="form.email"
+            required
+            placeholder="ornek@mail.com"
+          />
+        </div>
+        <div class="form-field">
+          <label for="message">Mesaj</label>
+          <textarea
+            id="message"
+            name="message"
+            [(ngModel)]="form.message"
+            required
+            rows="5"
+            placeholder="Mesajınız..."
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary" [disabled]="contactForm.invalid">
+          Gönder
+        </button>
+      </form>
+    }
+  </div>
+</section>

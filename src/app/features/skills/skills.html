@@ -1,0 +1,17 @@
+<section class="page-section">
+  <div class="container">
+    <h1 class="section-title">Beceriler</h1>
+    <div class="skills__grid">
+      @for (group of groups; track group.category) {
+        <div class="skill-group">
+          <h3 class="skill-group__category">{{ group.category }}</h3>
+          <ul class="skill-group__items">
+            @for (item of group.items; track item) {
+              <li class="tag">{{ item }}</li>
+            }
+          </ul>
+        </div>
+      }
+    </div>
+  </div>
+</section>

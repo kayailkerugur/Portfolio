@@ -1,0 +1,82 @@
+@use '../../../styles/variables' as *;
+
+.hero {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+
+  &__container {
+    max-width: $container-max;
+    margin: 0 auto;
+    padding: 0 $spacing-xl;
+    padding-top: $nav-height;
+  }
+
+  &__greeting {
+    font-size: 1rem;
+    color: $color-accent;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    margin-bottom: $spacing-sm;
+  }
+
+  &__name {
+    font-size: clamp(3rem, 8vw, 5.5rem);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: $color-text;
+    line-height: 1.05;
+    margin-bottom: $spacing-sm;
+  }
+
+  &__role {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 400;
+    color: $color-text-muted;
+    margin-bottom: $spacing-xl;
+  }
+
+  &__bio {
+    font-size: 1.1rem;
+    color: $color-text-muted;
+    max-width: 52ch;
+    margin-bottom: $spacing-2xl;
+    line-height: 1.7;
+  }
+
+  &__actions {
+    display: flex;
+    gap: $spacing-md;
+    flex-wrap: wrap;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  border-radius: $radius-md;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all $transition-base;
+  cursor: pointer;
+
+  &--primary {
+    background: $color-accent;
+    color: #fff;
+
+    &:hover {
+      background: $color-accent-hover;
+      transform: translateY(-1px);
+    }
+  }
+
+  &--outline {
+    border: 1px solid $color-border;
+    color: $color-text-muted;
+
+    &:hover {
+      border-color: $color-accent;
+      color: $color-accent;
+    }
+  }
+}

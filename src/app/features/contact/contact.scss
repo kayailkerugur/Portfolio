@@ -1,0 +1,75 @@
+@use '../../../styles/variables' as *;
+
+.contact {
+  &__success {
+    background: $color-accent-muted;
+    border: 1px solid $color-accent;
+    border-radius: $radius-md;
+    padding: $spacing-xl;
+    color: $color-accent;
+    text-align: center;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-lg;
+  }
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-sm;
+
+  label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: $color-text;
+  }
+
+  input,
+  textarea {
+    background: $color-surface;
+    border: 1px solid $color-border;
+    border-radius: $radius-md;
+    padding: 0.75rem $spacing-md;
+    color: $color-text;
+    font-family: inherit;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color $transition-base;
+    resize: vertical;
+
+    &::placeholder { color: $color-text-muted; }
+
+    &:focus {
+      border-color: $color-accent;
+    }
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  border-radius: $radius-md;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all $transition-base;
+  cursor: pointer;
+  align-self: flex-start;
+
+  &--primary {
+    background: $color-accent;
+    color: #fff;
+
+    &:hover:not(:disabled) {
+      background: $color-accent-hover;
+    }
+
+    &:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+  }
+}

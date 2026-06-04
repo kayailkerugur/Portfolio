@@ -1,0 +1,29 @@
+<header class="navbar">
+  <div class="navbar__container">
+    <a routerLink="/" class="navbar__logo">ilker<span>.</span>kaya</a>
+
+    <nav class="navbar__nav" [class.navbar__nav--open]="menuOpen">
+      @for (link of links; track link.path) {
+        <a
+          [routerLink]="link.path"
+          routerLinkActive="navbar__link--active"
+          class="navbar__link"
+          (click)="menuOpen = false"
+        >
+          {{ link.label }}
+        </a>
+      }
+    </nav>
+
+    <button
+      class="navbar__burger"
+      [class.navbar__burger--open]="menuOpen"
+      (click)="toggleMenu()"
+      aria-label="Menüyü aç/kapat"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>

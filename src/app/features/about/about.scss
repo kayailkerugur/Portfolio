@@ -1,0 +1,118 @@
+@use '../../../styles/variables' as *;
+
+.about {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-3xl;
+  }
+
+  &__text p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: $color-text-muted;
+    max-width: 70ch;
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xl;
+  }
+
+  &__section-title {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $color-accent;
+  }
+
+  &__languages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-sm;
+  }
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-2xl;
+}
+
+.experience-item {
+  border-left: 2px solid $color-border;
+  padding-left: $spacing-xl;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: $color-accent;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: $spacing-md;
+    margin-bottom: $spacing-md;
+    flex-wrap: wrap;
+  }
+
+  &__role {
+    font-size: 1rem;
+    font-weight: 600;
+    color: $color-text;
+  }
+
+  &__company {
+    display: block;
+    font-size: 0.875rem;
+    color: $color-text-muted;
+    margin-top: 2px;
+  }
+
+  &__date {
+    font-size: 0.8rem;
+    color: $color-text-muted;
+    white-space: nowrap;
+    padding-top: 3px;
+  }
+
+  &__bullets {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+
+    li {
+      font-size: 0.9rem;
+      color: $color-text-muted;
+      line-height: 1.6;
+      padding-left: $spacing-md;
+      position: relative;
+
+      &::before {
+        content: '–';
+        position: absolute;
+        left: 0;
+        color: $color-accent;
+      }
+    }
+  }
+}
+
+.tag {
+  font-size: 0.8rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: $radius-full;
+  background: $color-surface;
+  border: 1px solid $color-border;
+  color: $color-text-muted;
+}
