@@ -40,12 +40,16 @@
     @media (max-width: $bp-md) {
       display: none;
       position: fixed;
-      inset: $nav-height 0 0 0;
+      top: $nav-height;
+      left: 0;
+      width: 100vw;
+      height: calc(100dvh - #{$nav-height});
       z-index: 99;
       flex-direction: column;
       justify-content: center;
       gap: $spacing-2xl;
       background: $color-bg;
+      overflow: hidden;
 
       &--open {
         display: flex;
