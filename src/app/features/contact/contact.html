@@ -1,11 +1,8 @@
 <section class="page-section">
   <div class="container container--narrow">
-    <h1 class="section-title">İletişim</h1>
+    <h1 class="section-title">{{ 'contact.title' | translate }}</h1>
 
-    <p class="contact__intro">
-      Herhangi bir proje, iş birliği veya soru için aşağıdaki kanallardan bana ulaşabilirsin.
-      En hızlı yanıt için e-posta tercih edilir.
-    </p>
+    <p class="contact__intro">{{ 'contact.intro' | translate }}</p>
 
     <div class="contact__cards">
       @for (social of socials; track social.label) {

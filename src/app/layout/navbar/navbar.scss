@@ -76,11 +76,18 @@
     }
   }
 
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: $spacing-md;
+  }
+
   &__burger {
     display: none;
     flex-direction: column;
     gap: 5px;
     padding: $spacing-sm;
+    flex-shrink: 0;
 
     span {
       display: block;
@@ -101,4 +108,31 @@
       display: flex;
     }
   }
+}
+
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.lang-btn {
+  color: $color-text-muted;
+  transition: color $transition-fast;
+  padding: 2px 4px;
+
+  &:hover { color: $color-text; }
+
+  &--active {
+    color: $color-accent;
+  }
+}
+
+.lang-divider {
+  color: $color-border;
+  font-weight: 300;
+  user-select: none;
 }

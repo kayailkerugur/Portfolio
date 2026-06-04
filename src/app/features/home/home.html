@@ -1,5 +1,4 @@
 <section class="hero">
-  <!-- Animated background -->
   <div class="hero__bg" aria-hidden="true">
     <div class="hero__orb hero__orb--1"></div>
     <div class="hero__orb hero__orb--2"></div>
@@ -8,21 +7,13 @@
   </div>
 
   <div class="hero__container">
-    <p class="hero__greeting">Merhaba, ben</p>
+    <p class="hero__greeting">{{ 'home.greeting' | translate }}</p>
     <h1 class="hero__name">İlker Kaya</h1>
-    <h2 class="hero__role">Mobile & Backend Engineer · DevOps Enthusiast</h2>
-    <p class="hero__bio">
-      iOS ve backend geliştirme konusunda uzmanlaşmış bir yazılım mühendisiyim.
-      SwiftUI ile kullanıcı deneyimini ön planda tutan mobil uygulamalar,
-      Spring Boot ve Node.js ile ölçeklenebilir, güvenli backend servisleri geliştiriyorum.
-      JWT kimlik doğrulama, uçtan uca şifreleme ve gerçek zamanlı iletişim gibi
-      ileri güvenlik konularında da aktif olarak çalışıyorum.
-      Docker ve containerization dahil DevOps süreçlerine hâkimim;
-      temiz mimari ve sürdürülebilir kod yazmanın her projenin temel taşı olduğuna inanıyorum.
-    </p>
+    <h2 class="hero__role">{{ 'home.role' | translate }}</h2>
+    <p class="hero__bio">{{ 'home.bio' | translate }}</p>
     <div class="hero__actions">
-      <a routerLink="/projects" class="btn btn--primary">Projelerimi Gör</a>
-      <a routerLink="/contact" class="btn btn--outline">İletişime Geç</a>
+      <a routerLink="/projects" class="btn btn--primary">{{ 'home.cta_projects' | translate }}</a>
+      <a routerLink="/contact" class="btn btn--outline">{{ 'home.cta_contact' | translate }}</a>
     </div>
   </div>
 </section>

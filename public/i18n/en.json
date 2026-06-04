@@ -1,0 +1,168 @@
+{
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "home": {
+    "greeting": "Hi, I'm",
+    "role": "Mobile & Backend Engineer · DevOps Enthusiast",
+    "bio": "I'm a software engineer specializing in iOS and backend development. I build user-focused mobile apps with SwiftUI and scalable, secure backend services with Spring Boot and Node.js. I actively work on advanced security topics like JWT authentication, end-to-end encryption, and real-time communication. I'm proficient in DevOps workflows including Docker and containerization — I believe clean architecture and maintainable code are the foundation of every great project.",
+    "cta_projects": "View My Projects",
+    "cta_contact": "Get In Touch"
+  },
+  "about": {
+    "title": "About Me",
+    "bio": "I'm a software engineer specializing in iOS and backend development. I design and build production-ready, scalable applications using SwiftUI, Spring Boot, and Node.js. I have hands-on experience with DevOps workflows including containerization and deployment. I focus on clean architecture, system design, and building secure, maintainable software systems.",
+    "experience_title": "Work Experience",
+    "education_title": "Education",
+    "languages_title": "Languages",
+    "present": "Present",
+    "jobs": {
+      "aselsan": {
+        "role": "FullStack Developer Intern",
+        "company": "Aselsan — Sivas, TR",
+        "date": "Feb 2026 – May 2026",
+        "bullets": [
+          "Developed a full-stack application using Angular (frontend) and Node.js (backend)",
+          "Implemented WebSocket (Socket.IO) based real-time communication",
+          "Designed a document search system using Elasticsearch with full-text search over PDF files",
+          "Implemented end-to-end encryption (E2EE) using AES-GCM and ECDH key exchange",
+          "Containerized services using Docker and configured development environments"
+        ]
+      },
+      "enqura": {
+        "role": "iOS Developer Intern",
+        "company": "Enqura — Istanbul, TR",
+        "date": "Jan 2025 – Feb 2025",
+        "bullets": [
+          "Conducted practical implementations in network security and secure communication protocols",
+          "Implemented SSL control mechanisms to ensure secure communications"
+        ]
+      },
+      "detaysoft": {
+        "role": "iOS Developer",
+        "company": "Detaysoft — Sivas, TR",
+        "date": "Dec 2022 – Jun 2024",
+        "bullets": [
+          "Developed high-performance, scalable mobile applications using Swift",
+          "Designed user-friendly interfaces using SwiftUI and UIKit",
+          "Built applications following MVVM and MVC architectural patterns",
+          "Implemented data management and performance optimizations using CoreData and Realm",
+          "Participated in the full lifecycle of App Store deployment and release processes"
+        ]
+      }
+    },
+    "education": {
+      "cs": {
+        "degree": "B.S. in Computer Engineering",
+        "school": "Sivas Cumhuriyet University",
+        "date": "Sep 2022 – Jul 2026"
+      },
+      "ee": {
+        "degree": "Double Major in Electrical & Electronics Engineering",
+        "school": "Sivas Cumhuriyet University",
+        "date": "Sep 2023 – Jul 2027"
+      }
+    },
+    "lang_items": ["Turkish — Native", "English — B2/C1", "Russian — A1"]
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "projects": {
+    "title": "Projects",
+    "live": "Live",
+    "dev": "Built",
+    "source": "Source Code",
+    "demo": "Live Demo",
+    "items": {
+      "notiva": {
+        "subtitle": "iOS · Backend · DevOps",
+        "description": "A comprehensive mobile application that consolidates note-taking, task management, planning, and personal organization in one place. Personal data is securely protected with end-to-end encrypted storage and a cloud synchronization infrastructure.",
+        "features": [
+          "Create and edit notes",
+          "To-Do lists and task management",
+          "Daily planning and reminders",
+          "Authentication system integration",
+          "Cloud synchronization infrastructure",
+          "End-to-end encrypted data storage"
+        ]
+      },
+      "tripmate": {
+        "subtitle": "iOS · Backend · DevOps",
+        "description": "A travel planning application designed for users to create travel plans and organize their trips. It simplifies the travel experience with day-based itinerary planning, city and route creation, place recommendations, and location-based planning.",
+        "features": [
+          "Day-based itinerary planning",
+          "City and route creation",
+          "Place recommendations",
+          "Travel calendar management",
+          "Location-based planning"
+        ]
+      },
+      "eczanem": {
+        "subtitle": "iOS",
+        "description": "A mobile application that allows users to view on-duty pharmacies in real time based on their location. Provides map visualization, location-based filtering, and quick access to pharmacy contact information.",
+        "features": [
+          "On-duty pharmacy listing",
+          "Location-based filtering",
+          "Map visualization",
+          "Phone and address information access"
+        ]
+      },
+      "chat": {
+        "subtitle": "Backend · Security",
+        "description": "A system designed to develop real-time messaging and secure communication infrastructure. Provides end-to-end encryption (E2EE) with AES-GCM, ECDH, and ECDSA cryptographic protocols; supports instant messaging, DM system, and multi-device usage.",
+        "features": [
+          "Instant messaging and DM system",
+          "Online user tracking",
+          "Message read receipts and typing indicators",
+          "Multi-device support",
+          "End-to-end encryption (E2EE)",
+          "AES-GCM, ECDH, ECDSA, HKDF cryptographic chain"
+        ]
+      },
+      "restlocations": {
+        "subtitle": "iOS · Backend",
+        "description": "A mobile platform for travelers to discover hotels, campsites, and caravan accommodation spots. Offers a comprehensive accommodation solution with map integration, location-based search, and travel route creation.",
+        "features": [
+          "Hotels, campsites and caravan spots listing",
+          "Location-based search and filtering",
+          "Map visualization",
+          "Travel route creation"
+        ]
+      },
+      "auth": {
+        "subtitle": "Backend · DevOps",
+        "description": "A centralized user management and authentication service usable by multiple applications. Provides a production-ready authentication infrastructure with email verification, JWT/refresh token management, Redis-based token blacklist, and Thymeleaf HTML email templates.",
+        "features": [
+          "User registration and email verification",
+          "JWT-based authorization and refresh tokens",
+          "Password reset flow",
+          "Redis-based token blacklist system",
+          "Account deletion (30-day retention policy)",
+          "Thymeleaf HTML email templates"
+        ]
+      },
+      "kroki": {
+        "subtitle": "Frontend · FullStack",
+        "description": "A web-based system that enables location and area data to be managed on a schematic map. Offers an enterprise-ready platform with dynamic data visualization, area and point management, location marking, and admin panel integration.",
+        "features": [
+          "Schematic map viewing and management",
+          "Area and point marking",
+          "Dynamic data visualization",
+          "Admin panel integration",
+          "REST API integration"
+        ]
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Feel free to reach out for any project, collaboration, or question through the channels below. Email is preferred for the fastest response."
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

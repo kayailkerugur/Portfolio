@@ -1,0 +1,168 @@
+{
+  "nav": {
+    "about": "Hakkımda",
+    "projects": "Projeler",
+    "skills": "Beceriler",
+    "contact": "İletişim"
+  },
+  "home": {
+    "greeting": "Merhaba, ben",
+    "role": "Mobile & Backend Engineer · DevOps Enthusiast",
+    "bio": "iOS ve backend geliştirme konusunda uzmanlaşmış bir yazılım mühendisiyim. SwiftUI ile kullanıcı deneyimini ön planda tutan mobil uygulamalar, Spring Boot ve Node.js ile ölçeklenebilir, güvenli backend servisleri geliştiriyorum. JWT kimlik doğrulama, uçtan uca şifreleme ve gerçek zamanlı iletişim gibi ileri güvenlik konularında da aktif olarak çalışıyorum. Docker ve containerization dahil DevOps süreçlerine hâkimim; temiz mimari ve sürdürülebilir kod yazmanın her projenin temel taşı olduğuna inanıyorum.",
+    "cta_projects": "Projelerimi Gör",
+    "cta_contact": "İletişime Geç"
+  },
+  "about": {
+    "title": "Hakkımda",
+    "bio": "iOS ve backend geliştirme konusunda uzmanlaşmış yazılım mühendisiyim. SwiftUI, Spring Boot ve Node.js ile üretim ortamına hazır, ölçeklenebilir uygulamalar tasarlıyor ve geliştiriyorum. Containerization ve deployment dahil DevOps iş akışlarında pratik bilgiye sahibim. Temiz mimari, sistem tasarımı ve güvenli, sürdürülebilir yazılım sistemleri oluşturmaya odaklanıyorum.",
+    "experience_title": "İş Deneyimi",
+    "education_title": "Eğitim",
+    "languages_title": "Diller",
+    "present": "Devam ediyor",
+    "jobs": {
+      "aselsan": {
+        "role": "FullStack Developer Intern",
+        "company": "Aselsan — Sivas, TR",
+        "date": "Şub 2026 – May 2026",
+        "bullets": [
+          "Angular (frontend) ve Node.js (backend) ile full-stack uygulama geliştirdi",
+          "WebSocket (Socket.IO) tabanlı gerçek zamanlı iletişim implementasyonu",
+          "Elasticsearch ile PDF dosyaları üzerinde full-text arama sistemi tasarladı",
+          "AES-GCM ve ECDH key exchange ile uçtan uca şifreleme (E2EE) uyguladı",
+          "Docker ile servisleri containerize etti, geliştirme ortamlarını yapılandırdı"
+        ]
+      },
+      "enqura": {
+        "role": "iOS Developer Intern",
+        "company": "Enqura — İstanbul, TR",
+        "date": "Oca 2025 – Şub 2025",
+        "bullets": [
+          "Ağ güvenliği ve güvenli iletişim protokollerinde pratik uygulamalar gerçekleştirdi",
+          "Güvenli iletişimi sağlamak için SSL kontrol mekanizmaları uyguladı"
+        ]
+      },
+      "detaysoft": {
+        "role": "iOS Developer",
+        "company": "Detaysoft — Sivas, TR",
+        "date": "Ara 2022 – Haz 2024",
+        "bullets": [
+          "Swift ile yüksek performanslı, ölçeklenebilir mobil uygulamalar geliştirdi",
+          "SwiftUI ve UIKit ile kullanıcı dostu arayüzler tasarladı",
+          "MVVM ve MVC mimari desenleriyle uygulamalar inşa etti",
+          "CoreData ve Realm ile veri yönetimi ve performans optimizasyonları uyguladı",
+          "App Store dağıtım ve yayın süreçlerinin tüm yaşam döngüsüne katıldı"
+        ]
+      }
+    },
+    "education": {
+      "cs": {
+        "degree": "Bilgisayar Mühendisliği — Lisans",
+        "school": "Sivas Cumhuriyet Üniversitesi",
+        "date": "Sep 2022 – Tem 2026"
+      },
+      "ee": {
+        "degree": "Elektrik-Elektronik Mühendisliği — Çift Anadal",
+        "school": "Sivas Cumhuriyet Üniversitesi",
+        "date": "Sep 2023 – Tem 2027"
+      }
+    },
+    "lang_items": ["Türkçe — Ana Dil", "İngilizce — B2/C1", "Rusça — A1"]
+  },
+  "skills": {
+    "title": "Beceriler"
+  },
+  "projects": {
+    "title": "Projeler",
+    "live": "Canlı",
+    "dev": "Geliştirildi",
+    "source": "Kaynak Kod",
+    "demo": "Canlı Demo",
+    "items": {
+      "notiva": {
+        "subtitle": "iOS · Backend · DevOps",
+        "description": "Not alma, görev yönetimi, planlama ve kişisel organizasyon süreçlerini tek uygulama altında toplayan kapsamlı bir mobil uygulamadır. Uçtan uca şifrelenmiş veri saklama ve bulut senkronizasyon altyapısıyla kişisel veriler güvenle korunur.",
+        "features": [
+          "Not oluşturma ve düzenleme",
+          "To-Do listeleri ve görev yönetimi",
+          "Günlük planlama ve hatırlatıcılar",
+          "Kimlik doğrulama sistemi entegrasyonu",
+          "Bulut senkronizasyon altyapısı",
+          "Uçtan uca şifrelenmiş veri saklama"
+        ]
+      },
+      "tripmate": {
+        "subtitle": "iOS · Backend · DevOps",
+        "description": "Kullanıcıların seyahat planlarını oluşturabilmesi ve gezilerini organize edebilmesi için geliştirilmiş seyahat planlama uygulamasıdır. Gün bazlı gezi planlama, şehir ve rota oluşturma, gezilecek yer önerileri ve lokasyon tabanlı planlama özellikleriyle seyahat deneyimini kolaylaştırır.",
+        "features": [
+          "Gün bazlı gezi planlama",
+          "Şehir ve rota oluşturma",
+          "Gezilecek yer önerileri",
+          "Seyahat takvimi yönetimi",
+          "Lokasyon tabanlı planlama"
+        ]
+      },
+      "eczanem": {
+        "subtitle": "iOS",
+        "description": "Kullanıcıların bulundukları konuma göre nöbetçi eczaneleri gerçek zamanlı olarak görüntüleyebilmesini sağlayan mobil uygulamadır. Harita üzerinden görselleştirme, konuma göre filtreleme ve eczane iletişim bilgilerine hızlı erişim sunar.",
+        "features": [
+          "Nöbetçi eczane listeleme",
+          "Konuma göre filtreleme",
+          "Harita üzerinden görüntüleme",
+          "Telefon ve adres bilgilerine erişim"
+        ]
+      },
+      "chat": {
+        "subtitle": "Backend · Güvenlik",
+        "description": "Gerçek zamanlı mesajlaşma ve güvenli iletişim altyapısının geliştirilmesi amacıyla tasarlanmış sistemdir. AES-GCM, ECDH ve ECDSA kriptografi protokolleriyle uçtan uca şifreleme (E2EE) sağlar; anlık mesajlaşma, DM sistemi ve çoklu cihaz desteği sunar.",
+        "features": [
+          "Anlık mesajlaşma ve DM sistemi",
+          "Online kullanıcı takibi",
+          "Mesaj okundu bilgisi ve yazıyor göstergesi",
+          "Çoklu cihaz desteği",
+          "Uçtan uca şifreleme (E2EE)",
+          "AES-GCM, ECDH, ECDSA, HKDF kriptografi zinciri"
+        ]
+      },
+      "restlocations": {
+        "subtitle": "iOS · Backend",
+        "description": "Seyahat eden kullanıcıların otel, kamp alanı ve karavan konaklama noktalarını keşfetmesini sağlayan mobil platformdur. Harita entegrasyonu, konum bazlı arama ve seyahat rotası oluşturma özellikleriyle kapsamlı bir konaklama çözümü sunar.",
+        "features": [
+          "Otel, kamp alanı ve karavan noktaları listeleme",
+          "Konum bazlı arama ve filtreleme",
+          "Harita üzerinde görselleştirme",
+          "Seyahat rotası oluşturma"
+        ]
+      },
+      "auth": {
+        "subtitle": "Backend · DevOps",
+        "description": "Birden fazla uygulama tarafından kullanılabilecek merkezi kullanıcı yönetimi ve kimlik doğrulama servisidir. E-posta doğrulama, JWT/refresh token yönetimi, Redis tabanlı token blacklist ve Thymeleaf HTML e-posta şablonları içeren üretime hazır bir kimlik doğrulama altyapısı sunar.",
+        "features": [
+          "Kullanıcı kayıt ve e-posta doğrulama",
+          "JWT tabanlı yetkilendirme ve refresh token",
+          "Şifre sıfırlama akışı",
+          "Redis tabanlı token blacklist sistemi",
+          "Hesap silme (30 gün bekletme politikası)",
+          "Thymeleaf HTML e-posta şablonları"
+        ]
+      },
+      "kroki": {
+        "subtitle": "Frontend · FullStack",
+        "description": "Konum ve alan bilgilerinin kroki üzerinde yönetilebilmesini sağlayan web tabanlı sistemdir. Dinamik veri gösterimi, alan ve nokta yönetimi, konum işaretleme ve yönetim paneli entegrasyonu ile kurumsal kullanıma uygun bir platform sunar.",
+        "features": [
+          "Kroki görüntüleme ve yönetimi",
+          "Alan ve nokta işaretleme",
+          "Dinamik veri gösterimi",
+          "Yönetim paneli entegrasyonu",
+          "REST API entegrasyonu"
+        ]
+      }
+    }
+  },
+  "contact": {
+    "title": "İletişim",
+    "intro": "Herhangi bir proje, iş birliği veya soru için aşağıdaki kanallardan bana ulaşabilirsin. En hızlı yanıt için e-posta tercih edilir."
+  },
+  "footer": {
+    "rights": "Tüm hakları saklıdır."
+  }
+}

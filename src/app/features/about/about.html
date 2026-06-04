@@ -1,101 +1,57 @@
 <section class="page-section">
   <div class="container">
-    <h1 class="section-title">Hakkımda</h1>
+    <h1 class="section-title">{{ 'about.title' | translate }}</h1>
     <div class="about__content">
 
       <div class="about__text">
-        <p>
-          iOS ve backend geliştirme konusunda uzmanlaşmış yazılım mühendisiyim. SwiftUI, Spring Boot ve
-          Node.js ile üretim ortamına hazır, ölçeklenebilir uygulamalar tasarlıyor ve geliştiriyorum.
-          Containerization ve deployment dahil DevOps iş akışlarında pratik bilgiye sahibim. Temiz
-          mimari, sistem tasarımı ve güvenli, sürdürülebilir yazılım sistemleri oluşturmaya odaklanıyorum.
-        </p>
+        <p>{{ 'about.bio' | translate }}</p>
       </div>
 
       <div class="about__section">
-        <h2 class="about__section-title">İş Deneyimi</h2>
-
+        <h2 class="about__section-title">{{ 'about.experience_title' | translate }}</h2>
         <div class="experience-list">
-          <div class="experience-item">
-            <div class="experience-item__header">
-              <div>
-                <h3 class="experience-item__role">FullStack Developer Intern</h3>
-                <span class="experience-item__company">Aselsan — Sivas, TR</span>
+          @for (job of jobs; track job) {
+            <div class="experience-item">
+              <div class="experience-item__header">
+                <div>
+                  <h3 class="experience-item__role">{{ 'about.jobs.' + job + '.role' | translate }}</h3>
+                  <span class="experience-item__company">{{ 'about.jobs.' + job + '.company' | translate }}</span>
+                </div>
+                <span class="experience-item__date">{{ 'about.jobs.' + job + '.date' | translate }}</span>
               </div>
-              <span class="experience-item__date">Şub 2026 – May 2026</span>
+              <ul class="experience-item__bullets">
+                @for (bullet of ('about.jobs.' + job + '.bullets' | translate); track $index) {
+                  <li>{{ bullet }}</li>
+                }
+              </ul>
             </div>
-            <ul class="experience-item__bullets">
-              <li>Angular (frontend) ve Node.js (backend) ile full-stack uygulama geliştirdi</li>
-              <li>WebSocket (Socket.IO) tabanlı gerçek zamanlı iletişim implementasyonu</li>
-              <li>Elasticsearch ile PDF dosyaları üzerinde full-text arama sistemi tasarladı</li>
-              <li>AES-GCM ve ECDH key exchange ile uçtan uca şifreleme (E2EE) uyguladı</li>
-              <li>Docker ile servisleri containerize etti, geliştirme ortamlarını yapılandırdı</li>
-            </ul>
-          </div>
-
-          <div class="experience-item">
-            <div class="experience-item__header">
-              <div>
-                <h3 class="experience-item__role">iOS Developer Intern</h3>
-                <span class="experience-item__company">Enqura — İstanbul, TR</span>
-              </div>
-              <span class="experience-item__date">Oca 2025 – Şub 2025</span>
-            </div>
-            <ul class="experience-item__bullets">
-              <li>Ağ güvenliği ve güvenli iletişim protokollerinde pratik uygulamalar gerçekleştirdi</li>
-              <li>Güvenli iletişimi sağlamak için SSL kontrol mekanizmaları uyguladı</li>
-            </ul>
-          </div>
-
-          <div class="experience-item">
-            <div class="experience-item__header">
-              <div>
-                <h3 class="experience-item__role">iOS Developer</h3>
-                <span class="experience-item__company">Detaysoft — Sivas, TR</span>
-              </div>
-              <span class="experience-item__date">Ara 2022 – Haz 2024</span>
-            </div>
-            <ul class="experience-item__bullets">
-              <li>Swift ile yüksek performanslı, ölçeklenebilir mobil uygulamalar geliştirdi</li>
-              <li>SwiftUI ve UIKit ile kullanıcı dostu arayüzler tasarladı</li>
-              <li>MVVM ve MVC mimari desenleriyle uygulamalar inşa etti</li>
-              <li>CoreData ve Realm ile veri yönetimi ve performans optimizasyonları uyguladı</li>
-              <li>App Store dağıtım ve yayın süreçlerinin tüm yaşam döngüsüne katıldı</li>
-            </ul>
-          </div>
+          }
         </div>
       </div>
 
       <div class="about__section">
-        <h2 class="about__section-title">Eğitim</h2>
+        <h2 class="about__section-title">{{ 'about.education_title' | translate }}</h2>
         <div class="experience-list">
-          <div class="experience-item">
-            <div class="experience-item__header">
-              <div>
-                <h3 class="experience-item__role">Bilgisayar Mühendisliği — Lisans</h3>
-                <span class="experience-item__company">Sivas Cumhuriyet Üniversitesi</span>
+          @for (edu of eduKeys; track edu) {
+            <div class="experience-item">
+              <div class="experience-item__header">
+                <div>
+                  <h3 class="experience-item__role">{{ 'about.education.' + edu + '.degree' | translate }}</h3>
+                  <span class="experience-item__company">{{ 'about.education.' + edu + '.school' | translate }}</span>
+                </div>
+                <span class="experience-item__date">{{ 'about.education.' + edu + '.date' | translate }}</span>
               </div>
-              <span class="experience-item__date">Sep 2022 – Tem 2026</span>
             </div>
-          </div>
-          <div class="experience-item">
-            <div class="experience-item__header">
-              <div>
-                <h3 class="experience-item__role">Elektrik-Elektronik Mühendisliği — Çift Anadal</h3>
-                <span class="experience-item__company">Sivas Cumhuriyet Üniversitesi</span>
-              </div>
-              <span class="experience-item__date">Sep 2023 – Tem 2027</span>
-            </div>
-          </div>
+          }
         </div>
       </div>
 
       <div class="about__section">
-        <h2 class="about__section-title">Diller</h2>
+        <h2 class="about__section-title">{{ 'about.languages_title' | translate }}</h2>
         <div class="about__languages">
-          <span class="tag">Türkçe — Ana Dil</span>
-          <span class="tag">İngilizce — B2/C1</span>
-          <span class="tag">Rusça — A1</span>
+          @for (lang of ('about.lang_items' | translate); track $index) {
+            <span class="tag">{{ lang }}</span>
+          }
         </div>
       </div>
 

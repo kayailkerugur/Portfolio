@@ -1,22 +1,22 @@
 <section class="page-section">
   <div class="container">
-    <h1 class="section-title">Projeler</h1>
+    <h1 class="section-title">{{ 'projects.title' | translate }}</h1>
     <div class="projects__grid">
       @for (project of projects; track project.title) {
         <article class="project-card" [class.project-card--live]="project.status === 'live'">
           <div class="project-card__header">
             <span class="project-card__emoji">{{ project.emoji }}</span>
             <span class="project-card__badge" [class.project-card__badge--live]="project.status === 'live'">
-              {{ project.status === 'live' ? 'Canlı' : 'Geliştirildi' }}
+              {{ (project.status === 'live' ? 'projects.live' : 'projects.dev') | translate }}
             </span>
           </div>
           <div class="project-card__top">
             <h3 class="project-card__title">{{ project.title }}</h3>
-            <span class="project-card__subtitle">{{ project.subtitle }}</span>
+            <span class="project-card__subtitle">{{ 'projects.items.' + project.key + '.subtitle' | translate }}</span>
           </div>
-          <p class="project-card__description">{{ project.description }}</p>
+          <p class="project-card__description">{{ 'projects.items.' + project.key + '.description' | translate }}</p>
           <ul class="project-card__features">
-            @for (feature of project.features; track feature) {
+            @for (feature of ('projects.items.' + project.key + '.features' | translate); track $index) {
               <li>{{ feature }}</li>
             }
           </ul>
@@ -29,10 +29,10 @@
             @if (project.repoUrl || project.liveUrl) {
               <div class="project-card__links">
                 @if (project.repoUrl) {
-                  <a [href]="project.repoUrl" target="_blank" rel="noopener" class="link">Kaynak Kod</a>
+                  <a [href]="project.repoUrl" target="_blank" rel="noopener" class="link">{{ 'projects.source' | translate }}</a>
                 }
                 @if (project.liveUrl) {
-                  <a [href]="project.liveUrl" target="_blank" rel="noopener" class="link link--accent">Canlı Demo</a>
+                  <a [href]="project.liveUrl" target="_blank" rel="noopener" class="link link--accent">{{ 'projects.demo' | translate }}</a>
                 }
               </div>
             }

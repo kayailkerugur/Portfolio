@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 import { Navbar } from './layout/navbar/navbar';
 import { Footer } from './layout/footer/footer';
 
@@ -14,9 +15,16 @@ import { Footer } from './layout/footer/footer';
     <app-footer />
   `,
   styles: [`
-    main {
-      min-height: 100dvh;
-    }
+    main { min-height: 100dvh; }
   `],
 })
-export class App {}
+export class App implements OnInit {
+  private translate = inject(TranslateService);
+
+  ngOnInit(): void {
+    this.translate.addLangs(['tr', 'en']);
+    this.translate.setDefaultLang('tr');
+    const saved = localStorage.getItem('lang');
+    this.translate.use(saved ?? 'tr');
+  }
+}

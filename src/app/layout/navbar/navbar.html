@@ -10,20 +10,37 @@
           class="navbar__link"
           (click)="menuOpen = false"
         >
-          {{ link.label }}
+          {{ link.key | translate }}
         </a>
       }
     </nav>
 
-    <button
-      class="navbar__burger"
-      [class.navbar__burger--open]="menuOpen"
-      (click)="toggleMenu()"
-      aria-label="Menüyü aç/kapat"
-    >
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+    <div class="navbar__right">
+      <!-- Language switcher -->
+      <div class="lang-switcher">
+        <button
+          class="lang-btn"
+          [class.lang-btn--active]="currentLang === 'tr'"
+          (click)="switchLang('tr')"
+        >TR</button>
+        <span class="lang-divider">|</span>
+        <button
+          class="lang-btn"
+          [class.lang-btn--active]="currentLang === 'en'"
+          (click)="switchLang('en')"
+        >EN</button>
+      </div>
+
+      <button
+        class="navbar__burger"
+        [class.navbar__burger--open]="menuOpen"
+        (click)="toggleMenu()"
+        aria-label="Menüyü aç/kapat"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </div>
 </header>
