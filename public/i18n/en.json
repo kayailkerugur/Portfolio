@@ -169,7 +169,17 @@
   },
   "contact": {
     "title": "Contact",
-    "intro": "Feel free to reach out for any project, collaboration, or question through the channels below. Email is preferred for the fastest response."
+    "intro": "Feel free to reach out for any project, collaboration, or question through the channels below. Email is preferred for the fastest response.",
+    "or": "or",
+    "form": {
+      "name": "Full Name",
+      "name_placeholder": "Your name",
+      "email": "Email",
+      "email_placeholder": "example@email.com",
+      "message": "Message",
+      "message_placeholder": "Hi, I'd like to get in touch...",
+      "send": "Send"
+    }
   },
   "footer": {
     "rights": "All rights reserved."

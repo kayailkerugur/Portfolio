@@ -1,6 +1,32 @@
 @use '../../../styles/variables' as *;
 
 .contact {
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-lg;
+    margin-bottom: $spacing-2xl;
+  }
+
+  &__divider {
+    display: flex;
+    align-items: center;
+    gap: $spacing-md;
+    margin-bottom: $spacing-xl;
+    color: $color-text-muted;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    &::before,
+    &::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: $color-border;
+    }
+  }
+
   &__intro {
     font-size: 1rem;
     line-height: 1.8;
@@ -13,6 +39,77 @@
     display: flex;
     flex-direction: column;
     gap: $spacing-md;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xs;
+}
+
+.form-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $color-text-muted;
+}
+
+.form-input {
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  padding: 0.65rem 0.9rem;
+  color: $color-text;
+  font-family: $font-sans;
+  font-size: 0.9rem;
+  transition: border-color $transition-fast, box-shadow $transition-fast;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: $color-text-muted;
+    opacity: 0.5;
+  }
+
+  &:focus {
+    border-color: rgba($color-accent, 0.5);
+    box-shadow: 0 0 0 3px rgba($color-accent, 0.1);
+  }
+
+  &--textarea {
+    resize: vertical;
+    min-height: 120px;
+    line-height: 1.6;
+  }
+}
+
+.form-submit {
+  display: inline-flex;
+  align-items: center;
+  gap: $spacing-sm;
+  align-self: flex-start;
+  padding: 0.65rem 1.4rem;
+  background: $color-accent;
+  color: #fff;
+  border: none;
+  border-radius: $radius-md;
+  font-family: $font-sans;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background $transition-fast, transform $transition-fast, opacity $transition-fast;
+
+  &:hover:not(:disabled) {
+    background: $color-accent-hover;
+    transform: translateY(-1px);
+  }
+
+  &:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
   }
 }
 

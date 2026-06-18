@@ -4,6 +4,61 @@
 
     <p class="contact__intro">{{ 'contact.intro' | translate }}</p>
 
+    <form class="contact__form" (ngSubmit)="sendMail()" #contactForm="ngForm">
+      <div class="form-group">
+        <label class="form-label" for="name">{{ 'contact.form.name' | translate }}</label>
+        <input
+          id="name"
+          class="form-input"
+          type="text"
+          name="name"
+          [(ngModel)]="name"
+          required
+          autocomplete="name"
+          [placeholder]="'contact.form.name_placeholder' | translate"
+        />
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="email">{{ 'contact.form.email' | translate }}</label>
+        <input
+          id="email"
+          class="form-input"
+          type="email"
+          name="email"
+          [(ngModel)]="email"
+          required
+          autocomplete="email"
+          [placeholder]="'contact.form.email_placeholder' | translate"
+        />
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="message">{{ 'contact.form.message' | translate }}</label>
+        <textarea
+          id="message"
+          class="form-input form-input--textarea"
+          name="message"
+          [(ngModel)]="message"
+          required
+          rows="5"
+          [placeholder]="'contact.form.message_placeholder' | translate"
+        ></textarea>
+      </div>
+      <button
+        class="form-submit"
+        type="submit"
+        [disabled]="contactForm.invalid"
+      >
+        {{ 'contact.form.send' | translate }}
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 2 11 13M22 2 15 22l-4-9-9-4 20-7z"/>
+        </svg>
+      </button>
+    </form>
+
+    <div class="contact__divider">
+      <span>{{ 'contact.or' | translate }}</span>
+    </div>
+
     <div class="contact__cards">
       @for (social of socials; track social.label) {
         <a

@@ -169,7 +169,17 @@
   },
   "contact": {
     "title": "İletişim",
-    "intro": "Herhangi bir proje, iş birliği veya soru için aşağıdaki kanallardan bana ulaşabilirsin. En hızlı yanıt için e-posta tercih edilir."
+    "intro": "Herhangi bir proje, iş birliği veya soru için aşağıdaki kanallardan bana ulaşabilirsin. En hızlı yanıt için e-posta tercih edilir.",
+    "or": "veya",
+    "form": {
+      "name": "Ad Soyad",
+      "name_placeholder": "Adın ve soyadın",
+      "email": "E-posta",
+      "email_placeholder": "ornek@email.com",
+      "message": "Mesaj",
+      "message_placeholder": "Merhaba, seninle iletişime geçmek istedim...",
+      "send": "Gönder"
+    }
   },
   "footer": {
     "rights": "Tüm hakları saklıdır."
