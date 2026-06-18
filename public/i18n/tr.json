@@ -66,10 +66,19 @@
         "date": "Sep 2023 – Tem 2027"
       }
     },
-    "lang_items": ["Türkçe — Ana Dil", "İngilizce — B2/C1", "Rusça — A1"]
+    "lang_items": ["Türkçe — Ana Dil", "İngilizce — B2/C1", "Rusça — A1", "Almanca — A1"]
   },
   "skills": {
-    "title": "Beceriler"
+    "title": "Beceriler",
+    "categories": {
+      "languages": "Diller",
+      "mobile": "Mobil",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database_devops": "Veritabanı & DevOps",
+      "security": "Güvenlik",
+      "tools": "Araçlar"
+    }
   },
   "projects": {
     "title": "Projeler",

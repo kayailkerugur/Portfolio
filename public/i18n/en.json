@@ -66,10 +66,19 @@
         "date": "Sep 2023 – Jul 2027"
       }
     },
-    "lang_items": ["Turkish — Native", "English — B2/C1", "Russian — A1"]
+    "lang_items": ["Turkish — Native", "English — B2/C1", "Russian — A1", "German — A1"]
   },
   "skills": {
-    "title": "Skills"
+    "title": "Skills",
+    "categories": {
+      "languages": "Languages",
+      "mobile": "Mobile",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database_devops": "Database & DevOps",
+      "security": "Security",
+      "tools": "Tools"
+    }
   },
   "projects": {
     "title": "Projects",

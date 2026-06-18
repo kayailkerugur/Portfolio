@@ -6,7 +6,7 @@
         <div class="skill-group">
           <div class="skill-group__header">
             <span class="skill-group__emoji">{{ group.emoji }}</span>
-            <h3 class="skill-group__category">{{ group.category }}</h3>
+            <h3 class="skill-group__category">{{ group.category | translate }}</h3>
           </div>
           <div class="skill-group__items">
             @for (skill of group.skills; track skill.name) {

@@ -23,7 +23,7 @@ export interface SkillGroup {
 export class Skills {
   readonly groups: SkillGroup[] = [
     {
-      category: 'Diller',
+      category: 'skills.categories.languages',
       emoji: '💻',
       skills: [
         { name: 'Swift',      icon: 'devicon-swift-plain',            level: 'primary' },
@@ -34,7 +34,7 @@ export class Skills {
       ],
     },
     {
-      category: 'Mobil',
+      category: 'skills.categories.mobile',
       emoji: '📱',
       skills: [
         { name: 'SwiftUI',    icon: 'devicon-swift-plain',    level: 'primary' },
@@ -46,7 +46,7 @@ export class Skills {
       ],
     },
     {
-      category: 'Frontend',
+      category: 'skills.categories.frontend',
       emoji: '🎨',
       skills: [
         { name: 'Angular', icon: 'devicon-angular-plain', level: 'primary' },
@@ -56,7 +56,7 @@ export class Skills {
       ],
     },
     {
-      category: 'Backend',
+      category: 'skills.categories.backend',
       emoji: '⚙️',
       skills: [
         { name: 'Spring Boot', icon: 'devicon-spring-plain',      level: 'primary' },
@@ -67,7 +67,7 @@ export class Skills {
       ],
     },
     {
-      category: 'Veritabanı & DevOps',
+      category: 'skills.categories.database_devops',
       emoji: '🗄️',
       skills: [
         { name: 'PostgreSQL',    icon: 'devicon-postgresql-plain',    level: 'primary' },
@@ -78,7 +78,7 @@ export class Skills {
       ],
     },
     {
-      category: 'Güvenlik',
+      category: 'skills.categories.security',
       emoji: '🔐',
       skills: [
         { name: 'JWT',             customIcon: '🛡️', level: 'primary' },
@@ -89,7 +89,7 @@ export class Skills {
       ],
     },
     {
-      category: 'Araçlar',
+      category: 'skills.categories.tools',
       emoji: '🛠️',
       skills: [
         { name: 'Git',       icon: 'devicon-git-plain',    level: 'primary' },

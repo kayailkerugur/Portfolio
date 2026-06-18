@@ -61,19 +61,18 @@
   padding: 0.35rem 0.75rem;
   border-radius: $radius-full;
   border: 1px solid $color-border;
-  background: $color-bg;
+  background: $color-bg-secondary;
   transition: all $transition-fast;
   cursor: default;
 
   &:hover {
     border-color: rgba($color-accent, 0.4);
-    background: rgba($color-accent, 0.06);
+    background: rgba($color-accent, 0.1);
     transform: translateY(-1px);
   }
 
   &--primary {
     border-color: rgba($color-accent, 0.2);
-    background: rgba($color-accent, 0.05);
 
     .skill-chip__name {
       color: $color-text;
@@ -90,6 +89,13 @@
 
     i {
       font-size: 1rem;
+    }
+
+    // naturally dark/monochrome icons need inversion on dark backgrounds
+    i.devicon-apple-original,
+    i.devicon-express-original,
+    i.devicon-socketio-original {
+      filter: invert(1) brightness(0.85);
     }
   }
 
