@@ -3,9 +3,33 @@
 @use 'styles/typography';
 @use 'styles/layout';
 
+// ── CSS Custom Properties (theming) ──────────────────────────
+:root {
+  --color-bg:           #0f0f0f;
+  --color-bg-secondary: #1a1a1a;
+  --color-surface:      #242424;
+  --color-border:       #2e2e2e;
+  --color-text:         #e8e8e8;
+  --color-text-muted:   #888;
+  --color-text-inverse: #0f0f0f;
+  --color-nav-bg:       rgba(15, 15, 15, 0.85);
+}
+
+[data-theme="light"] {
+  --color-bg:           #f5f5f5;
+  --color-bg-secondary: #ebebeb;
+  --color-surface:      #ffffff;
+  --color-border:       #ddd;
+  --color-text:         #1a1a1a;
+  --color-text-muted:   #666;
+  --color-text-inverse: #ffffff;
+  --color-nav-bg:       rgba(245, 245, 245, 0.85);
+}
+
 body {
-  background-color: $color-bg;
-  color: $color-text;
+  background-color: var(--color-bg);
+  color: var(--color-text);
   font-family: $font-sans;
   line-height: 1.6;
+  transition: background-color 250ms ease, color 250ms ease;
 }

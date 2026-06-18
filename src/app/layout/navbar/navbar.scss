@@ -7,9 +7,10 @@
   right: 0;
   z-index: 100;
   height: $nav-height;
-  background: rgba($color-bg, 0.85);
+  background: var(--color-nav-bg);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid $color-border;
+  border-bottom: 1px solid var(--color-border);
+  transition: background $transition-base, border-color $transition-base;
 
   &__container {
     max-width: $container-max;
@@ -25,7 +26,7 @@
     font-size: 1.25rem;
     font-weight: 700;
     letter-spacing: -0.03em;
-    color: $color-text;
+    color: var(--color-text);
 
     span {
       color: $color-accent;
@@ -48,7 +49,7 @@
       flex-direction: column;
       justify-content: center;
       gap: $spacing-2xl;
-      background: $color-bg;
+      background: var(--color-bg);
       overflow: hidden;
 
       &--open {
@@ -59,12 +60,12 @@
 
   &__link {
     font-size: 0.9rem;
-    color: $color-text-muted;
+    color: var(--color-text-muted);
     transition: color $transition-base;
 
     &:hover,
     &--active {
-      color: $color-text;
+      color: var(--color-text);
     }
 
     &--active {
@@ -93,7 +94,7 @@
       display: block;
       width: 22px;
       height: 2px;
-      background: $color-text;
+      background: var(--color-text);
       border-radius: $radius-full;
       transition: transform $transition-base, opacity $transition-base;
     }
@@ -120,11 +121,11 @@
 }
 
 .lang-btn {
-  color: $color-text-muted;
+  color: var(--color-text-muted);
   transition: color $transition-fast;
   padding: 2px 4px;
 
-  &:hover { color: $color-text; }
+  &:hover { color: var(--color-text); }
 
   &--active {
     color: $color-accent;
@@ -132,7 +133,28 @@
 }
 
 .lang-divider {
-  color: $color-border;
+  color: var(--color-border);
   font-weight: 300;
   user-select: none;
+}
+
+.theme-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: $radius-full;
+  color: var(--color-text-muted);
+  transition: color $transition-fast, background $transition-fast;
+
+  &:hover {
+    color: var(--color-text);
+    background: var(--color-surface);
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
 }

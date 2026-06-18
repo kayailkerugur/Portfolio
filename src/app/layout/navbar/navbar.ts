@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { ThemeService } from '../../shared/services/theme.service';
 
 @Component({
   selector: 'app-navbar',
@@ -10,6 +11,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 })
 export class Navbar {
   private translate = inject(TranslateService);
+  readonly themeService = inject(ThemeService);
 
   readonly links = [
     { key: 'nav.about',    path: '/about' },

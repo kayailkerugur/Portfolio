@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { FadeInDirective } from '../../shared/directives/fade-in.directive';
 
 export interface Skill {
   name: string;
@@ -16,7 +17,7 @@ export interface SkillGroup {
 
 @Component({
   selector: 'app-skills',
-  imports: [TranslateModule],
+  imports: [TranslateModule, FadeInDirective],
   templateUrl: './skills.html',
   styleUrl: './skills.scss',
 })

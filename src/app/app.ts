@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { Navbar } from './layout/navbar/navbar';
 import { Footer } from './layout/footer/footer';
+import { ThemeService } from './shared/services/theme.service';
 
 @Component({
   selector: 'app-root',
@@ -20,11 +21,13 @@ import { Footer } from './layout/footer/footer';
 })
 export class App implements OnInit {
   private translate = inject(TranslateService);
+  private theme = inject(ThemeService);
 
   ngOnInit(): void {
     this.translate.addLangs(['tr', 'en']);
     this.translate.setDefaultLang('tr');
     const saved = localStorage.getItem('lang');
     this.translate.use(saved ?? 'tr');
+    this.theme.init();
   }
 }

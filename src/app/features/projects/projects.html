@@ -1,9 +1,9 @@
 <section class="page-section">
   <div class="container">
-    <h1 class="section-title">{{ 'projects.title' | translate }}</h1>
+    <h1 appFadeIn class="section-title">{{ 'projects.title' | translate }}</h1>
     <div class="projects__grid">
-      @for (project of projects; track project.title) {
-        <article class="project-card" [class.project-card--live]="project.status === 'live'">
+      @for (project of projects; track project.title; let i = $index) {
+        <article appFadeIn [appFadeIn]="i * 80 + 'ms'" class="project-card" [class.project-card--live]="project.status === 'live'">
           <div class="project-card__header">
             <span class="project-card__emoji">{{ project.emoji }}</span>
             <span class="project-card__badge" [class.project-card__badge--live]="project.status === 'live'">

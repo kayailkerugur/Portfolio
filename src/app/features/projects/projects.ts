@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { FadeInDirective } from '../../shared/directives/fade-in.directive';
 
 export interface Project {
   key: string;
@@ -13,7 +14,7 @@ export interface Project {
 
 @Component({
   selector: 'app-projects',
-  imports: [TranslateModule],
+  imports: [TranslateModule, FadeInDirective],
   templateUrl: './projects.html',
   styleUrl: './projects.scss',
 })

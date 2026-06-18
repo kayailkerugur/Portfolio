@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
+import { FadeInDirective } from '../../shared/directives/fade-in.directive';
 
 @Component({
   selector: 'app-contact',
-  imports: [TranslateModule, FormsModule],
+  imports: [TranslateModule, FormsModule, FadeInDirective],
   templateUrl: './contact.html',
   styleUrl: './contact.scss',
 })

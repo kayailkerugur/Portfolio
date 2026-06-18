@@ -1,10 +1,10 @@
 <section class="page-section">
   <div class="container container--narrow">
-    <h1 class="section-title">{{ 'contact.title' | translate }}</h1>
+    <h1 appFadeIn class="section-title">{{ 'contact.title' | translate }}</h1>
 
-    <p class="contact__intro">{{ 'contact.intro' | translate }}</p>
+    <p appFadeIn="100ms" class="contact__intro">{{ 'contact.intro' | translate }}</p>
 
-    <form class="contact__form" (ngSubmit)="sendMail()" #contactForm="ngForm">
+    <form appFadeIn="150ms" class="contact__form" (ngSubmit)="sendMail()" #contactForm="ngForm">
       <div class="form-group">
         <label class="form-label" for="name">{{ 'contact.form.name' | translate }}</label>
         <input

@@ -13,8 +13,8 @@
 }
 
 .project-card {
-  background: $color-surface;
-  border: 1px solid $color-border;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
   border-radius: $radius-lg;
   padding: $spacing-xl;
   display: flex;
@@ -71,7 +71,7 @@
   &__title {
     font-size: 1.125rem;
     font-weight: 600;
-    color: $color-text;
+    color: var(--color-text);
   }
 
   &__subtitle {
@@ -84,7 +84,7 @@
   &__description {
     font-size: 0.875rem;
     line-height: 1.7;
-    color: $color-text-muted;
+    color: var(--color-text-muted);
   }
 
   &__features {
@@ -95,7 +95,7 @@
 
     li {
       font-size: 0.825rem;
-      color: $color-text-muted;
+      color: var(--color-text-muted);
       padding-left: $spacing-md;
       position: relative;
       line-height: 1.5;
@@ -113,7 +113,7 @@
   &__footer {
     margin-top: auto;
     padding-top: $spacing-md;
-    border-top: 1px solid $color-border;
+    border-top: 1px solid var(--color-border);
     display: flex;
     flex-direction: column;
     gap: $spacing-md;
@@ -135,17 +135,17 @@
   font-size: 0.725rem;
   padding: 0.2rem 0.6rem;
   border-radius: $radius-full;
-  background: $color-bg;
-  border: 1px solid $color-border;
-  color: $color-text-muted;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
   white-space: nowrap;
 }
 
 .link {
   font-size: 0.875rem;
-  color: $color-text-muted;
+  color: var(--color-text-muted);
   transition: color $transition-base;
 
-  &:hover { color: $color-text; }
+  &:hover { color: var(--color-text); }
   &--accent { color: $color-accent; &:hover { color: $color-accent-hover; } }
 }

@@ -1,13 +1,13 @@
 <section class="page-section">
   <div class="container">
-    <h1 class="section-title">{{ 'about.title' | translate }}</h1>
+    <h1 appFadeIn class="section-title">{{ 'about.title' | translate }}</h1>
     <div class="about__content">
 
-      <div class="about__text">
+      <div appFadeIn="100ms" class="about__text">
         <p>{{ 'about.bio' | translate }}</p>
       </div>
 
-      <div class="about__section">
+      <div appFadeIn="200ms" class="about__section">
         <h2 class="about__section-title">{{ 'about.experience_title' | translate }}</h2>
         <div class="experience-list">
           @for (job of jobs; track job) {

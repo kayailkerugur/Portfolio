@@ -1,7 +1,7 @@
 @use '../../../styles/variables' as *;
 
 .footer {
-  border-top: 1px solid $color-border;
+  border-top: 1px solid var(--color-border);
   padding: $spacing-xl;
 
   &__container {
@@ -20,7 +20,7 @@
 
   &__copy {
     font-size: 0.875rem;
-    color: $color-text-muted;
+    color: var(--color-text-muted);
   }
 
   &__links {
@@ -29,7 +29,7 @@
 
     a {
       font-size: 0.875rem;
-      color: $color-text-muted;
+      color: var(--color-text-muted);
       transition: color $transition-base;
 
       &:hover {

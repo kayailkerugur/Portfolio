@@ -1,9 +1,9 @@
 <section class="page-section">
   <div class="container">
-    <h1 class="section-title">{{ 'skills.title' | translate }}</h1>
+    <h1 appFadeIn class="section-title">{{ 'skills.title' | translate }}</h1>
     <div class="skills__grid">
-      @for (group of groups; track group.category) {
-        <div class="skill-group">
+      @for (group of groups; track group.category; let i = $index) {
+        <div appFadeIn [appFadeIn]="i * 60 + 'ms'" class="skill-group">
           <div class="skill-group__header">
             <span class="skill-group__emoji">{{ group.emoji }}</span>
             <h3 class="skill-group__category">{{ group.category | translate }}</h3>
