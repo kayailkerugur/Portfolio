@@ -10,7 +10,8 @@
     "role": "Mobile & Backend Engineer · DevOps Enthusiast",
     "bio": "I'm a software engineer specializing in iOS and backend development. I build user-focused mobile apps with SwiftUI and scalable, secure backend services with Spring Boot and Node.js. I actively work on advanced security topics like JWT authentication, end-to-end encryption, and real-time communication. I'm proficient in DevOps workflows including Docker and containerization — I believe clean architecture and maintainable code are the foundation of every great project.",
     "cta_projects": "View My Projects",
-    "cta_contact": "Get In Touch"
+    "cta_contact": "Get In Touch",
+    "cta_cv": "Download CV"
   },
   "about": {
     "title": "About Me",
@@ -66,7 +67,8 @@
         "date": "Sep 2023 – Jul 2027"
       }
     },
-    "lang_items": ["Turkish — Native", "English — B2/C1", "Russian — A1", "German — A1"]
+    "lang_items": ["Turkish — Native", "English — B2/C1", "Russian — A1", "German — A1"],
+    "download_cv": "Download CV"
   },
   "skills": {
     "title": "Skills",

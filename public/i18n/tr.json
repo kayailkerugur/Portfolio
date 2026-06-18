@@ -10,7 +10,8 @@
     "role": "Mobile & Backend Engineer · DevOps Enthusiast",
     "bio": "iOS ve backend geliştirme konusunda uzmanlaşmış bir yazılım mühendisiyim. SwiftUI ile kullanıcı deneyimini ön planda tutan mobil uygulamalar, Spring Boot ve Node.js ile ölçeklenebilir, güvenli backend servisleri geliştiriyorum. JWT kimlik doğrulama, uçtan uca şifreleme ve gerçek zamanlı iletişim gibi ileri güvenlik konularında da aktif olarak çalışıyorum. Docker ve containerization dahil DevOps süreçlerine hâkimim; temiz mimari ve sürdürülebilir kod yazmanın her projenin temel taşı olduğuna inanıyorum.",
     "cta_projects": "Projelerimi Gör",
-    "cta_contact": "İletişime Geç"
+    "cta_contact": "İletişime Geç",
+    "cta_cv": "CV İndir"
   },
   "about": {
     "title": "Hakkımda",
@@ -66,7 +67,8 @@
         "date": "Sep 2023 – Tem 2027"
       }
     },
-    "lang_items": ["Türkçe — Ana Dil", "İngilizce — B2/C1", "Rusça — A1", "Almanca — A1"]
+    "lang_items": ["Türkçe — Ana Dil", "İngilizce — B2/C1", "Rusça — A1", "Almanca — A1"],
+    "download_cv": "CV İndir"
   },
   "skills": {
     "title": "Beceriler",

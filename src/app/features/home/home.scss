@@ -154,4 +154,10 @@
       color: $color-accent;
     }
   }
+
+  &--icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
 }
