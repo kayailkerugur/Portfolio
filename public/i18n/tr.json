@@ -183,6 +183,11 @@
       "send": "Gönder"
     }
   },
+  "not_found": {
+    "title": "Sayfa Bulunamadı",
+    "desc": "Aradığın sayfa mevcut değil ya da taşınmış olabilir.",
+    "cta": "Ana Sayfaya Dön"
+  },
   "footer": {
     "rights": "Tüm hakları saklıdır."
   }

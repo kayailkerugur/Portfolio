@@ -1,0 +1,61 @@
+@use '../../../styles/variables' as *;
+
+.not-found {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-xl;
+
+  &__container {
+    text-align: center;
+    max-width: 480px;
+  }
+
+  &__code {
+    font-size: clamp(6rem, 20vw, 10rem);
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    color: transparent;
+    background: linear-gradient(135deg, $color-accent 0%, $color-accent-hover 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin-bottom: $spacing-md;
+  }
+
+  &__title {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: $spacing-md;
+  }
+
+  &__desc {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    margin-bottom: $spacing-2xl;
+    max-width: 40ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: $spacing-sm;
+    padding: 0.75rem 1.75rem;
+    background: $color-accent;
+    color: #fff;
+    border-radius: $radius-md;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: background $transition-base, transform $transition-base;
+
+    &:hover {
+      background: $color-accent-hover;
+      transform: translateY(-2px);
+    }
+  }
+}

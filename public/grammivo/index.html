@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Grammivo Privacy Policy and Grammivo Gizlilik Politikası">
+  <meta name="color-scheme" content="light dark">
+  <title>Grammivo Privacy Policy</title>
+  <style>
+    :root {
+      --background: #f5f5fa;
+      --surface: #ffffff;
+      --text: #17171c;
+      --secondary: #62626d;
+      --accent: #5856d6;
+      --border: #e5e5ec;
+      --shadow: 0 16px 48px rgba(28, 28, 38, 0.08);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #0c0c0f;
+        --surface: #1b1b20;
+        --text: #f5f5f7;
+        --secondary: #aaaab4;
+        --accent: #8b89ff;
+        --border: #303038;
+        --shadow: none;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background: var(--background);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.68;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 16px;
+      background: color-mix(in srgb, var(--background) 86%, transparent);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    nav a {
+      padding: 8px 15px;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 650;
+      background: color-mix(in srgb, var(--accent) 10%, transparent);
+      border-radius: 999px;
+    }
+
+    main {
+      width: min(100% - 32px, 820px);
+      margin: 36px auto 72px;
+    }
+
+    section {
+      padding: clamp(24px, 5vw, 52px);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    section + section {
+      margin-top: 32px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 6vw, 3rem);
+      line-height: 1.12;
+      letter-spacing: -0.04em;
+    }
+
+    h2 {
+      margin: 38px 0 12px;
+      font-size: 1.4rem;
+      line-height: 1.3;
+      letter-spacing: -0.015em;
+    }
+
+    h3 {
+      margin: 26px 0 8px;
+      font-size: 1.08rem;
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    h1 + p,
+    h1 + p + p {
+      color: var(--secondary);
+    }
+
+    ul {
+      margin: 8px 0 20px;
+      padding-left: 24px;
+    }
+
+    li {
+      margin: 7px 0;
+      padding-left: 4px;
+    }
+
+    a {
+      color: var(--accent);
+      text-underline-offset: 3px;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+
+    footer {
+      padding: 0 20px 36px;
+      color: var(--secondary);
+      text-align: center;
+      font-size: 13px;
+    }
+
+    @media (max-width: 560px) {
+      main {
+        width: min(100% - 20px, 820px);
+        margin-top: 20px;
+      }
+
+      section {
+        border-radius: 22px;
+      }
+    }
+
+    @media print {
+      nav {
+        display: none;
+      }
+
+      body {
+        background: #fff;
+      }
+
+      main {
+        width: 100%;
+        margin: 0;
+      }
+
+      section {
+        border: 0;
+        box-shadow: none;
+        page-break-after: always;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav aria-label="Language selection">
+    <a href="#english">English</a>
+    <a href="#turkish">Türkçe</a>
+  </nav>
+  <main>
+    <section id="english" lang="en">
+<h1>Grammivo Privacy Policy</h1>
+<p><strong>Effective date:</strong> July 16, 2026</p>
+<p><strong>Developer:</strong> İlker Uğur Kaya</p>
+<p><strong>Contact:</strong> kayailkercontact@gmail.com </p>
+<p>Grammivo is a language-learning application that helps users analyze text, learn vocabulary, practice translations, and review saved words. This Privacy Policy explains what information is processed when you use the application.</p>
+<h2>1. Information processed by the app</h2>
+<h3>Information stored on your device</h3>
+<p>Grammivo may store the following information locally on your device:</p>
+<ul>
+<li>The name or nickname you enter during setup.</li>
+<li>Your selected interface, learning, and translation languages.</li>
+<li>Texts you add or extract from images.</li>
+<li>Analyzed words, translations, grammatical information, notes, learning status, and review history.</li>
+<li>Translation attempts, scores, daily goals, notification settings, and local usage counters.</li>
+<li>Your selected Gemini model preferences.</li>
+</ul>
+<p>This information is stored using Apple technologies such as SwiftData, UserDefaults, and Keychain. The developer does not operate a server that receives or stores this local information.</p>
+<h3>Gemini API key</h3>
+<p>The Gemini API key you enter is stored in the Apple Keychain on your device. It is not included in application backups created by Grammivo and is not sent to the developer.</p>
+<p>The key is transmitted directly to Google only when required to authenticate Gemini API requests.</p>
+<h3>Text and translation content sent to Google</h3>
+<p>When you use AI-powered analysis or translation evaluation, the following content may be transmitted directly from your device to the Google Gemini API:</p>
+<ul>
+<li>Text you entered, pasted, or extracted from an image.</li>
+<li>Words selected for linguistic analysis.</li>
+<li>Your translation attempts.</li>
+<li>Language and formatting instructions necessary to produce the requested result.</li>
+</ul>
+<p>Google processes this information to provide the requested analysis or translation response. Google’s retention and use of submitted content may differ depending on whether the Gemini API project uses paid or unpaid services.</p>
+<p>You should not submit confidential, highly sensitive, or personally identifying information for analysis.</p>
+<p>For more information, review:</p>
+<ul>
+<li><a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener noreferrer">Gemini API Additional Terms of Service</a></li>
+<li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+</ul>
+<h2>2. Camera and photo library</h2>
+<p>Grammivo may request access to your camera or photo library when you choose to extract text from an image.</p>
+<p>Image text recognition is performed on the device using Apple Vision. Grammivo does not permanently store or upload the original image. However, text extracted from the image may be transmitted to the Gemini API if you choose to analyze it.</p>
+<p>The app accesses only the image you select or capture.</p>
+<h2>3. Notifications</h2>
+<p>If you enable reminders, Grammivo uses Apple’s local notification system to notify you when words are ready for review. Notification scheduling is performed on your device. Notification information is not sent to the developer.</p>
+<h2>4. Backups and exports</h2>
+<p>Grammivo allows you to manually export:</p>
+<ul>
+<li>A JSON backup containing your studies, saved words, translations, and review history.</li>
+<li>A CSV file containing your saved vocabulary.</li>
+</ul>
+<p>Exported files are created only when you request them. You are responsible for where you save or share these files and for protecting their contents.</p>
+<h2>5. How information is used</h2>
+<p>Information processed by Grammivo is used only to:</p>
+<ul>
+<li>Analyze text and provide linguistic information.</li>
+<li>Generate translations and evaluate translation attempts.</li>
+<li>Save vocabulary and learning progress.</li>
+<li>Calculate spaced-repetition review dates.</li>
+<li>Provide reminders and statistics.</li>
+<li>Restore backups requested by the user.</li>
+<li>Diagnose request failures and display local Gemini usage information.</li>
+</ul>
+<h2>6. Data sharing, advertising, and tracking</h2>
+<p>Grammivo:</p>
+<ul>
+<li>Does not sell personal information.</li>
+<li>Does not contain advertising SDKs.</li>
+<li>Does not track users across applications or websites.</li>
+<li>Does not use third-party analytics or crash-reporting SDKs.</li>
+<li>Does not send information to a developer-operated server.</li>
+</ul>
+<p>Content is shared with Google only when necessary to perform Gemini-powered features initiated by you.</p>
+<h2>7. Data retention and deletion</h2>
+<p>Locally stored information remains on your device until you delete it, remove it using the data-management controls, or uninstall the application.</p>
+<p>You can delete analyses, vocabulary, review records, Gemini cache data, and your Gemini API key from the app’s settings. Files you previously exported must be deleted separately from the location where you saved them.</p>
+<p>Information processed by Google is retained according to the Gemini API terms and the settings of the Google project associated with your API key. The developer cannot access or delete information retained by Google on your behalf.</p>
+<h2>8. Security</h2>
+<p>Grammivo uses Apple’s Keychain to protect your Gemini API key and HTTPS connections when communicating with Google. Nevertheless, no storage or transmission method can be guaranteed to be completely secure.</p>
+<p>You are responsible for keeping your Gemini API key confidential. If you believe it has been exposed, revoke it from Google AI Studio and create a new key.</p>
+<h2>9. Children’s privacy</h2>
+<p>Grammivo is not specifically directed to children under 13. The developer does not knowingly collect personal information from children. Parents or guardians who believe a child has provided personal information through Gemini-powered features may contact the developer and should also review the Google account and API project used with the app.</p>
+<h2>10. International data processing</h2>
+<p>Google may process information in countries other than your country of residence. Such processing is governed by Google’s applicable terms and privacy policies.</p>
+<h2>11. Your choices</h2>
+<p>You may:</p>
+<ul>
+<li>Use camera and photo features only when you choose.</li>
+<li>Disable notifications in Grammivo or iOS Settings.</li>
+<li>Delete locally stored learning information.</li>
+<li>Remove your Gemini API key from the app.</li>
+<li>Export a copy of your learning information.</li>
+<li>Stop further AI processing by not using Gemini-powered features.</li>
+</ul>
+<h2>12. Changes to this policy</h2>
+<p>This Privacy Policy may be updated when the application’s features, data practices, or legal requirements change. The effective date at the top of the policy will be updated when changes are made.</p>
+<h2>13. Contact</h2>
+<p>For privacy questions or requests, contact:</p>
+<p><strong>kayailkercontact@gmail.com</strong></p>
+</section>
+    <section id="turkish" lang="tr">
+<h1>Grammivo Gizlilik Politikası</h1>
+<p><strong>Yürürlük tarihi:</strong> 16 Temmuz 2026</p>
+<p><strong>Geliştirici:</strong> İlker Uğur Kaya</p>
+<p><strong>İletişim:</strong> kayailkercontact@gmail.com </p>
+<p>Grammivo; metin analizi, kelime öğrenme, çeviri çalışması ve kayıtlı kelimeleri tekrar etme özellikleri sunan bir dil öğrenme uygulamasıdır. Bu Gizlilik Politikası, uygulamayı kullandığınızda hangi bilgilerin işlendiğini açıklar.</p>
+<h2>1. Uygulama tarafından işlenen bilgiler</h2>
+<h3>Cihazınızda saklanan bilgiler</h3>
+<p>Grammivo aşağıdaki bilgileri cihazınızda yerel olarak saklayabilir:</p>
+<ul>
+<li>Kurulum sırasında girdiğiniz ad veya takma ad.</li>
+<li>Seçtiğiniz arayüz, öğrenme ve çeviri dilleri.</li>
+<li>Eklediğiniz veya görsellerden çıkardığınız metinler.</li>
+<li>Analiz edilen kelimeler, çeviriler, dilbilgisi bilgileri, notlar, öğrenme durumları ve tekrar geçmişi.</li>
+<li>Çeviri denemeleri, puanlar, günlük hedefler, bildirim ayarları ve yerel kullanım sayaçları.</li>
+<li>Seçtiğiniz Gemini model tercihleri.</li>
+</ul>
+<p>Bu bilgiler SwiftData, UserDefaults ve Keychain gibi Apple teknolojileri kullanılarak cihazınızda saklanır. Geliştirici, bu yerel bilgileri alan veya saklayan bir sunucu işletmez.</p>
+<h3>Gemini API anahtarı</h3>
+<p>Girdiğiniz Gemini API anahtarı cihazınızdaki Apple Keychain alanında saklanır. Anahtar, Grammivo tarafından oluşturulan yedeklere eklenmez ve geliştiriciye gönderilmez.</p>
+<p>API anahtarı yalnızca Gemini API isteklerinin doğrulanması gerektiğinde doğrudan Google’a iletilir.</p>
+<h3>Google’a gönderilen metin ve çeviri içerikleri</h3>
+<p>Yapay zekâ destekli analiz veya çeviri değerlendirme özelliklerini kullandığınızda aşağıdaki içerikler cihazınızdan doğrudan Google Gemini API’ye gönderilebilir:</p>
+<ul>
+<li>Yazdığınız, yapıştırdığınız veya bir görselden çıkardığınız metin.</li>
+<li>Dilbilimsel analiz için seçilen kelimeler.</li>
+<li>Çeviri denemeleriniz.</li>
+<li>İstenen sonucu üretmek için gerekli dil ve biçimlendirme talimatları.</li>
+</ul>
+<p>Google bu bilgileri istenen analiz veya çeviri sonucunu sunmak için işler. Gönderilen içeriklerin Google tarafından saklanması ve kullanılması, Gemini API projesinin ücretli veya ücretsiz hizmet kullanmasına göre değişebilir.</p>
+<p>Analiz için gizli, yüksek derecede hassas veya kimliğinizi belirleyen bilgiler göndermemeniz önerilir.</p>
+<p>Daha fazla bilgi için:</p>
+<ul>
+<li><a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener noreferrer">Gemini API Ek Hizmet Şartları</a></li>
+<li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Gizlilik Politikası</a></li>
+</ul>
+<h2>2. Kamera ve fotoğraf arşivi</h2>
+<p>Grammivo, bir görselden metin çıkarmayı seçtiğinizde kamera veya fotoğraf arşivi erişimi isteyebilir.</p>
+<p>Görseldeki metin Apple Vision kullanılarak cihaz üzerinde tanınır. Grammivo orijinal görseli kalıcı olarak saklamaz veya yüklemez. Ancak görselden çıkarılan metin, analiz etmeyi seçmeniz durumunda Gemini API’ye gönderilebilir.</p>
+<p>Uygulama yalnızca seçtiğiniz veya çektiğiniz görsele erişir.</p>
+<h2>3. Bildirimler</h2>
+<p>Hatırlatıcıları etkinleştirirseniz Grammivo, kelimelerin tekrar zamanı geldiğinde bildirim göndermek için Apple’ın yerel bildirim sistemini kullanır. Bildirim planlaması cihazınızda yapılır ve bildirim bilgileri geliştiriciye gönderilmez.</p>
+<h2>4. Yedekleme ve dışa aktarma</h2>
+<p>Grammivo aşağıdaki verileri isteğiniz üzerine dışa aktarmanıza olanak tanır:</p>
+<ul>
+<li>Çalışmalarınızı, kayıtlı kelimelerinizi, çevirilerinizi ve tekrar geçmişinizi içeren JSON yedeği.</li>
+<li>Kayıtlı kelimelerinizi içeren CSV dosyası.</li>
+</ul>
+<p>Bu dosyalar yalnızca siz talep ettiğinizde oluşturulur. Dosyaları kaydettiğiniz veya paylaştığınız konumdan ve içeriklerini korumaktan siz sorumlusunuz.</p>
+<h2>5. Bilgilerin kullanım amaçları</h2>
+<p>Grammivo tarafından işlenen bilgiler yalnızca:</p>
+<ul>
+<li>Metinleri analiz etmek ve dilbilimsel bilgiler sunmak,</li>
+<li>Çeviri oluşturmak ve çeviri denemelerini değerlendirmek,</li>
+<li>Kelimeleri ve öğrenme ilerlemesini kaydetmek,</li>
+<li>Aralıklı tekrar tarihlerini hesaplamak,</li>
+<li>Hatırlatıcılar ve istatistikler sunmak,</li>
+<li>Kullanıcının talep ettiği yedekleri geri yüklemek,</li>
+<li>İstek hatalarını belirlemek ve yerel Gemini kullanım bilgilerini göstermek</li>
+</ul>
+<p>amaçlarıyla kullanılır.</p>
+<h2>6. Veri paylaşımı, reklam ve takip</h2>
+<p>Grammivo:</p>
+<ul>
+<li>Kişisel bilgileri satmaz.</li>
+<li>Reklam SDK’sı içermez.</li>
+<li>Kullanıcıları uygulamalar veya internet siteleri arasında takip etmez.</li>
+<li>Üçüncü taraf analiz veya çökme raporlama SDK’sı kullanmaz.</li>
+<li>Geliştirici tarafından işletilen bir sunucuya bilgi göndermez.</li>
+</ul>
+<p>İçerikler yalnızca sizin başlattığınız Gemini destekli özelliklerin çalışması için gerekli olduğunda Google ile paylaşılır.</p>
+<h2>7. Saklama ve silme</h2>
+<p>Yerel bilgiler siz silene, uygulamadaki veri yönetimi seçeneklerini kullanarak kaldırana veya uygulamayı cihazdan kaldırana kadar cihazınızda kalır.</p>
+<p>Uygulamanın ayarlar bölümünden analizleri, kelimeleri, tekrar kayıtlarını, Gemini önbelleğini ve Gemini API anahtarını silebilirsiniz. Daha önce dışa aktardığınız dosyaları, kaydettiğiniz konumdan ayrıca silmeniz gerekir.</p>
+<p>Google tarafından işlenen bilgiler Gemini API koşullarına ve API anahtarınızın bağlı olduğu Google projesinin ayarlarına göre saklanır. Geliştirici, Google tarafından saklanan bilgilere sizin adınıza erişemez veya bunları silemez.</p>
+<h2>8. Güvenlik</h2>
+<p>Grammivo, Gemini API anahtarınızı korumak için Apple Keychain’i ve Google ile iletişim sırasında HTTPS bağlantılarını kullanır. Bununla birlikte hiçbir saklama veya aktarım yöntemi tamamen güvenli olarak garanti edilemez.</p>
+<p>Gemini API anahtarınızı gizli tutmak sizin sorumluluğunuzdadır. Anahtarın açığa çıktığını düşünüyorsanız Google AI Studio üzerinden iptal edip yeni bir anahtar oluşturun.</p>
+<h2>9. Çocukların gizliliği</h2>
+<p>Grammivo özellikle 13 yaşın altındaki çocuklara yönelik değildir. Geliştirici çocuklardan bilerek kişisel bilgi toplamaz. Bir çocuğun Gemini destekli özellikler aracılığıyla kişisel bilgi gönderdiğini düşünen ebeveyn veya vasiler geliştiriciyle iletişime geçmeli ve uygulamayla kullanılan Google hesabı ile API projesini de kontrol etmelidir.</p>
+<h2>10. Uluslararası veri işleme</h2>
+<p>Google, bilgileri ikamet ettiğiniz ülke dışındaki ülkelerde işleyebilir. Bu işlemler Google’ın geçerli koşullarına ve gizlilik politikalarına tabidir.</p>
+<h2>11. Tercihleriniz</h2>
+<p>Şunları yapabilirsiniz:</p>
+<ul>
+<li>Kamera ve fotoğraf özelliklerini yalnızca istediğinizde kullanmak,</li>
+<li>Grammivo veya iOS Ayarları üzerinden bildirimleri kapatmak,</li>
+<li>Cihazda kayıtlı öğrenme bilgilerini silmek,</li>
+<li>Gemini API anahtarını uygulamadan kaldırmak,</li>
+<li>Öğrenme bilgilerinizin bir kopyasını dışa aktarmak,</li>
+<li>Gemini destekli özellikleri kullanmayarak yeni yapay zekâ işlemlerini durdurmak.</li>
+</ul>
+<h2>12. Politikadaki değişiklikler</h2>
+<p>Uygulamanın özellikleri, veri uygulamaları veya yasal gereklilikler değiştiğinde bu Gizlilik Politikası güncellenebilir. Değişiklik yapıldığında politikanın başındaki yürürlük tarihi güncellenir.</p>
+<h2>13. İletişim</h2>
+<p>Gizlilikle ilgili soru ve talepleriniz için:</p>
+<p><strong>kayailkercontact@gmail.com</strong></p>
+</section>
+  </main>
+  <footer>© 2026 Grammivo</footer>
+</body>
+</html>
