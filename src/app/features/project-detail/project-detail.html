@@ -1,5 +1,5 @@
 <article class="detail">
-  <header class="detail__hero"><div class="container">
+  <header class="detail__hero"><div class="detail__container">
     <a routerLink="/projects" class="detail__back">← {{ 'project_detail.back' | translate }}</a>
     <div appFadeIn class="detail__heading">
       <span class="detail__eyebrow">{{ 'project_detail.eyebrow' | translate }}</span>
@@ -10,7 +10,7 @@
       <div class="detail__tags">@for (tag of tags; track tag) { <span class="tag">{{ tag }}</span> }</div>
     </div>
   </div></header>
-  <div class="container detail__body">
+  <div class="detail__container detail__body">
     <section appFadeIn class="detail__section detail__overview">
       <div><span class="detail__label">{{ 'project_detail.overview_label' | translate }}</span><h2>{{ 'project_detail.overview_title' | translate }}</h2></div>
       <p>{{ 'project_detail.overview' | translate }}</p>
