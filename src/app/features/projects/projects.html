@@ -3,11 +3,11 @@
     <h1 appFadeIn class="section-title">{{ 'projects.title' | translate }}</h1>
     <div class="projects__grid">
       @for (project of projects; track project.title; let i = $index) {
-        <article appFadeIn [appFadeIn]="i * 80 + 'ms'" class="project-card" [class.project-card--live]="project.status === 'live'">
+        <article appFadeIn [appFadeIn]="i * 80 + 'ms'" class="project-card" [class.project-card--live]="project.status === 'live'" [class.project-card--featured]="project.featured">
           <div class="project-card__header">
             <span class="project-card__emoji">{{ project.emoji }}</span>
             <span class="project-card__badge" [class.project-card__badge--live]="project.status === 'live'">
-              {{ (project.status === 'live' ? 'projects.live' : 'projects.dev') | translate }}
+              {{ (project.featured ? 'projects.featured' : project.status === 'live' ? 'projects.live' : 'projects.dev') | translate }}
             </span>
           </div>
           <div class="project-card__top">
@@ -35,6 +35,11 @@
                   <a [href]="project.liveUrl" target="_blank" rel="noopener" class="link link--accent">{{ 'projects.demo' | translate }}</a>
                 }
               </div>
+            }
+            @if (project.detailUrl) {
+              <a [routerLink]="project.detailUrl" class="link link--accent project-card__detail">
+                {{ 'projects.details' | translate }} <span aria-hidden="true">→</span>
+              </a>
             }
           </div>
         </article>

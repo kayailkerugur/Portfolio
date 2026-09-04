@@ -5,6 +5,16 @@
     "skills": "Skills",
     "contact": "Contact"
   },
+  "a11y": { "primary_nav": "Primary navigation", "light_theme": "Switch to light theme", "dark_theme": "Switch to dark theme", "open_menu": "Open menu", "close_menu": "Close menu" },
+  "seo": {
+    "home": { "title": "İlker Kaya | Software Engineer", "description": "Portfolio of İlker Kaya, building iOS, backend, AI, and secure software systems." },
+    "about": { "title": "About | İlker Kaya", "description": "İlker Kaya's software engineering experience, education, and areas of expertise." },
+    "projects": { "title": "Projects | İlker Kaya", "description": "Projects across iOS, backend, artificial intelligence, security, and full-stack engineering." },
+    "aichat": { "title": "AIChat | Native macOS AI App", "description": "AIChat offers multiple AI providers, voice, multimodal files, Git Code Mode, and a reusable Swift SDK." },
+    "skills": { "title": "Skills | İlker Kaya", "description": "Swift, SwiftUI, Java, Spring Boot, Angular, security, database, and DevOps skills." },
+    "contact": { "title": "Contact | İlker Kaya", "description": "Contact İlker Kaya for projects, collaborations, and software engineering opportunities." },
+    "not_found": { "title": "Page Not Found | İlker Kaya", "description": "The page you requested could not be found." }
+  },
   "home": {
     "greeting": "Hi, I'm",
     "role": "Mobile & Backend Engineer · DevOps Enthusiast",
@@ -72,9 +82,14 @@
   },
   "skills": {
     "title": "Skills",
+    "eyebrow": "Technology stack",
+    "description": "My technical toolkit spanning native applications, secure backend systems, and artificial intelligence integrations.",
+    "technologies": "technologies and tools",
+    "items": "skills",
     "categories": {
       "languages": "Languages",
       "mobile": "Mobile",
+      "ai_native": "Artificial Intelligence & Native macOS",
       "frontend": "Frontend",
       "backend": "Backend",
       "database_devops": "Database & DevOps",
@@ -84,11 +99,18 @@
   },
   "projects": {
     "title": "Projects",
+    "featured": "Featured Project",
+    "details": "View Project",
     "live": "Live",
     "dev": "Built",
     "source": "Source Code",
     "demo": "Live Demo",
     "items": {
+      "aichat": {
+        "subtitle": "Native macOS · Artificial Intelligence · Swift SDK",
+        "description": "A native macOS app and reusable Swift SDK built with SwiftUI, featuring multiple AI providers, streaming chat, multimodal files, voice conversations, and a Git-based Code Mode.",
+        "features": ["Gemini, OpenAI, Ollama, and LM Studio support", "Real-time streaming and multimodal chat", "Secure Git repository inspection and user-approved edits", "Modular AIChatSDK with 124 passing unit tests"]
+      },
       "notiva": {
         "subtitle": "iOS · Backend · DevOps",
         "description": "A comprehensive mobile application that consolidates note-taking, task management, planning, and personal organization in one place. Personal data is securely protected with end-to-end encrypted storage and a cloud synchronization infrastructure.",
@@ -168,6 +190,31 @@
         ]
       }
     }
+  },
+  "project_detail": {
+    "back": "Back to all projects",
+    "eyebrow": "Native macOS app · Swift SDK",
+    "lead": "A developer-focused AI application that combines a native macOS experience, provider-independent AI chat, and secure Git project analysis in one modular Swift SDK.",
+    "overview_label": "About the project",
+    "overview_title": "Chat, voice, and code in one app",
+    "overview": "AIChat is a native macOS application for real-time communication with OpenAI-compatible AI services. It includes multi-conversation management, persistent history, Markdown and code blocks, file attachments, voice conversations, and local Git repository inspection. Its core capabilities are modularized in AIChatSDK for reuse by other macOS applications.",
+    "features_label": "Capabilities",
+    "features_title": "Six core feature areas",
+    "groups": {
+      "chat": { "title": "Chat", "items": ["Real-time streaming responses over SSE", "Create, search, rename, and delete conversations", "Markdown, code block rendering, and clipboard copy", "Gemini, OpenAI, Ollama, LM Studio, and custom services"] },
+      "multimodal": { "title": "Multimodal", "items": ["Image, PDF, JSON, CSV, and text file support", "Multimodal image messages", "Persistent file storage and in-app previews", "Core Data relationships for chats, projects, and attachments"] },
+      "voice": { "title": "Voice", "items": ["On-device speech-to-text", "Response playback with AVSpeechSynthesizer", "Push-to-talk experience", "Interrupt speech to ask a new question"] },
+      "security": { "title": "Security", "items": ["Google OAuth 2.0 Authorization Code + PKCE", "Tokens and API keys stored in Keychain", "Folder access with security-scoped bookmarks", "Sensitive data masking before AI requests"] },
+      "code": { "title": "Code Mode", "items": ["Inspect branch, staged, unstaged, and untracked changes", "Add selected files and diffs to context", "Repository boundary, binary, and symlink safeguards", "Apply file edits only after user approval"] },
+      "sdk": { "title": "SDK", "items": ["Reusable and customizable AIChatSDK", "Presentation → Domain ← Data / Infrastructure architecture", "MVVM, Repository, DI, and protocol-oriented design", "Testability with mocks and in-memory repositories"] }
+    },
+    "architecture_label": "Architecture",
+    "architecture_title": "Infrastructure-independent by design",
+    "architecture": "A layered architecture with one-way dependencies keeps the UI from directly accessing URLSession, Core Data, Keychain, or Git infrastructure. Provider-independent integrations and protocol-based boundaries keep the SDK extensible and testable.",
+    "metrics": { "tests": "passing unit tests", "providers": "supported provider types", "modes": "chat and code modes" },
+    "role_label": "My role",
+    "role_title": "End-to-end product development",
+    "role": "I developed the requirements, architecture, SwiftUI interface, authentication, AI provider integrations, persistence layer, multimodal file support, voice experience, Git-based Code Mode, SDK modularization, tests, and technical documentation."
   },
   "contact": {
     "title": "Contact",

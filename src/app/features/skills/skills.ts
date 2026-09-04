@@ -6,7 +6,7 @@ export interface Skill {
   name: string;
   icon?: string;
   customIcon?: string;
-  level?: 'primary' | 'secondary';
+  level?: 'primary' | 'secondary'; // Kept for data compatibility; all skills are displayed equally.
 }
 
 export interface SkillGroup {
@@ -41,9 +41,25 @@ export class Skills {
         { name: 'SwiftUI',    icon: 'devicon-swift-plain',    level: 'primary' },
         { name: 'UIKit',      icon: 'devicon-apple-original', level: 'primary' },
         { name: 'CoreData',   icon: 'devicon-apple-original', level: 'secondary' },
+        { name: 'macOS',      icon: 'devicon-apple-original', level: 'primary' },
+        { name: 'AppKit',     icon: 'devicon-apple-original', level: 'secondary' },
         { name: 'Realm',      icon: 'devicon-realm-original', level: 'secondary' },
         { name: 'MapKit',     customIcon: '🗺️',               level: 'secondary' },
         { name: 'MVVM / MVC', customIcon: '🏗️',              level: 'secondary' },
+      ],
+    },
+    {
+      category: 'skills.categories.ai_native',
+      emoji: '🤖',
+      skills: [
+        { name: 'OpenAI-compatible APIs', customIcon: '✨', level: 'primary' },
+        { name: 'Gemini',                  customIcon: '💫', level: 'primary' },
+        { name: 'Ollama',                  customIcon: '🦙', level: 'secondary' },
+        { name: 'Server-Sent Events',      customIcon: '⚡', level: 'primary' },
+        { name: 'Multimodal AI',           customIcon: '🖼️', level: 'primary' },
+        { name: 'Speech Framework',        customIcon: '🎙️', level: 'secondary' },
+        { name: 'AVFoundation',             customIcon: '🔊', level: 'secondary' },
+        { name: 'PDFKit',                   customIcon: '📄', level: 'secondary' },
       ],
     },
     {
@@ -87,6 +103,9 @@ export class Skills {
         { name: 'ECDH',            customIcon: '🔑', level: 'secondary' },
         { name: 'TLS/HTTPS',       customIcon: '🌐', level: 'secondary' },
         { name: 'Spring Security', icon: 'devicon-spring-plain', level: 'secondary' },
+        { name: 'OAuth 2.0 / PKCE', customIcon: '🔐', level: 'primary' },
+        { name: 'Keychain Services', customIcon: '🗝️', level: 'primary' },
+        { name: 'CryptoKit',         customIcon: '🧪', level: 'secondary' },
       ],
     },
     {
@@ -99,7 +118,12 @@ export class Skills {
         { name: 'MapStruct', customIcon: '🗺️',             level: 'secondary' },
         { name: 'Lombok',    customIcon: '☕',             level: 'secondary' },
         { name: 'Thymeleaf', customIcon: '🌿',             level: 'secondary' },
+        { name: 'Swift Package Manager', customIcon: '📦', level: 'primary' },
+        { name: 'XCTest',                customIcon: '✅', level: 'primary' },
+        { name: 'swift-cgit2',           customIcon: '🔀', level: 'secondary' },
       ],
     },
   ];
+
+  readonly totalSkills = this.groups.reduce((total, group) => total + group.skills.length, 0);
 }

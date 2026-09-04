@@ -65,7 +65,6 @@
   font-family: $font-sans;
   font-size: 0.9rem;
   transition: border-color $transition-fast, box-shadow $transition-fast;
-  outline: none;
   width: 100%;
   box-sizing: border-box;
 
@@ -75,6 +74,7 @@
   }
 
   &:focus {
+    outline: none;
     border-color: rgba($color-accent, 0.5);
     box-shadow: 0 0 0 3px rgba($color-accent, 0.1);
   }

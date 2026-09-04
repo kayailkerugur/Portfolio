@@ -1,4 +1,4 @@
-import { Directive, ElementRef, OnInit, OnDestroy, input } from '@angular/core';
+import { Directive, ElementRef, OnInit, OnDestroy, inject, input } from '@angular/core';
 
 @Directive({
   selector: '[appFadeIn]',
@@ -8,10 +8,15 @@ export class FadeInDirective implements OnInit, OnDestroy {
 
   private observer!: IntersectionObserver;
 
-  constructor(private el: ElementRef<HTMLElement>) {}
+  private readonly el = inject<ElementRef<HTMLElement>>(ElementRef);
 
   ngOnInit(): void {
     const el = this.el.nativeElement;
+    const reducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+    if (reducedMotion || !('IntersectionObserver' in window)) {
+      return;
+    }
+
     el.style.opacity = '0';
     el.style.transform = 'translateY(24px)';
     el.style.transition = `opacity 0.55s ease ${this.delay()}, transform 0.55s ease ${this.delay()}`;

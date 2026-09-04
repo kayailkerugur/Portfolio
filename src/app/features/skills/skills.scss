@@ -1,115 +1,46 @@
 @use '../../../styles/variables' as *;
 
-.skills {
-  &__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: $spacing-xl;
+@keyframes ambient-float { 0%, 100% { transform: translate3d(0, 0, 0) scale(1); } 50% { transform: translate3d(20px, -24px, 0) scale(1.08); } }
+@keyframes icon-breathe { 0%, 100% { transform: scale(1) rotate(0); } 50% { transform: scale(1.1) rotate(3deg); } }
+@keyframes chip-arrive { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 
-    @media (max-width: $bp-sm) {
-      grid-template-columns: 1fr;
-    }
+.skills {
+  position: relative; isolation: isolate; min-height: 100dvh; overflow: hidden;
+  &__ambient { position: absolute; inset: 0; z-index: -1; pointer-events: none;
+    span { position: absolute; width: 28rem; aspect-ratio: 1; border-radius: 50%; filter: blur(110px); opacity: .11; background: $color-accent; animation: ambient-float 10s ease-in-out infinite; }
+    span:nth-child(1) { top: 2%; left: -12rem; }
+    span:nth-child(2) { top: 38%; right: -15rem; animation-delay: -4s; animation-direction: reverse; }
+    span:nth-child(3) { bottom: -16rem; left: 38%; width: 22rem; animation-delay: -7s; }
   }
+  &__intro { display: flex; justify-content: space-between; align-items: end; gap: $spacing-2xl; margin-bottom: $spacing-3xl; .section-title { margin: $spacing-xs 0 $spacing-md; } }
+  &__eyebrow { color: $color-accent; font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+  &__description { max-width: 650px; color: var(--color-text-muted); line-height: 1.75; }
+  &__summary { flex: 0 0 auto; display: flex; flex-direction: column; align-items: end; padding-left: $spacing-xl; border-left: 1px solid var(--color-border); strong { color: $color-accent; font-size: 2.75rem; line-height: 1; letter-spacing: -.05em; } span { max-width: 110px; margin-top: $spacing-sm; color: var(--color-text-muted); font-size: .72rem; line-height: 1.4; text-align: right; } }
+  &__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: $spacing-xl; }
 }
 
 .skill-group {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: $radius-lg;
-  padding: $spacing-xl;
-  display: flex;
-  flex-direction: column;
-  gap: $spacing-lg;
-  transition: border-color $transition-base;
-
-  &:hover {
-    border-color: rgba($color-accent, 0.3);
-  }
-
-  &__header {
-    display: flex;
-    align-items: center;
-    gap: $spacing-sm;
-    padding-bottom: $spacing-md;
-    border-bottom: 1px solid var(--color-border);
-  }
-
-  &__emoji {
-    font-size: 1.1rem;
-    line-height: 1;
-  }
-
-  &__category {
-    font-size: 0.8rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: $color-accent;
-  }
-
-  &__items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: $spacing-sm;
-  }
+  position: relative; overflow: hidden; background: color-mix(in srgb, var(--color-surface) 94%, transparent); border: 1px solid var(--color-border); border-radius: $radius-lg; padding: $spacing-xl; display: flex; flex-direction: column; gap: $spacing-lg; box-shadow: 0 12px 35px rgba(0, 0, 0, .08); transition: border-color $transition-base, transform $transition-base, box-shadow $transition-base;
+  &::before { content: ''; position: absolute; inset: 0 auto 0 0; width: 3px; background: linear-gradient(180deg, $color-accent, transparent 80%); transform: scaleY(.25); transform-origin: top; transition: transform 450ms ease; }
+  &::after { content: ''; position: absolute; top: -60%; left: -30%; width: 35%; height: 200%; background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .035), transparent); transform: rotate(15deg) translateX(-220%); transition: transform 700ms ease; pointer-events: none; }
+  &:hover { border-color: rgba($color-accent, .45); transform: translateY(-5px); box-shadow: 0 20px 50px rgba(0, 0, 0, .16); &::before { transform: scaleY(1); } &::after { transform: rotate(15deg) translateX(500%); } .skill-group__emoji { animation: icon-breathe 1.4s ease-in-out infinite; } }
+  &__header { display: flex; align-items: center; gap: $spacing-md; padding-bottom: $spacing-lg; border-bottom: 1px solid var(--color-border); }
+  &__emoji { display: grid; place-items: center; width: 42px; height: 42px; flex: 0 0 42px; border-radius: $radius-md; background: rgba($color-accent, .1); border: 1px solid rgba($color-accent, .18); font-size: 1.2rem; }
+  &__heading { min-width: 0; display: flex; flex-direction: column; gap: 3px; > span { color: var(--color-text-muted); font-size: .68rem; } }
+  &__category { color: var(--color-text); font-size: .82rem; font-weight: 700; letter-spacing: .055em; text-transform: uppercase; }
+  &__items { display: flex; flex-wrap: wrap; gap: $spacing-sm; }
 }
 
 .skill-chip {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 0.35rem 0.75rem;
-  border-radius: $radius-full;
-  border: 1px solid var(--color-border);
-  background: var(--color-bg-secondary);
-  transition: all $transition-fast;
-  cursor: default;
-
-  &:hover {
-    border-color: rgba($color-accent, 0.4);
-    background: rgba($color-accent, 0.1);
-    transform: translateY(-1px);
-  }
-
-  &--primary {
-    border-color: rgba($color-accent, 0.2);
-
-    .skill-chip__name {
-      color: var(--color-text);
-    }
-  }
-
-  &__icon {
-    display: flex;
-    align-items: center;
-    font-size: 1rem;
-    line-height: 1;
-    width: 18px;
-    flex-shrink: 0;
-
-    i {
-      font-size: 1rem;
-    }
-
-    i.devicon-apple-original,
-    i.devicon-express-original,
-    i.devicon-socketio-original {
-      filter: invert(1) brightness(0.85);
-
-      :root[data-theme="light"] & {
-        filter: none;
-      }
-    }
-  }
-
-  &__emoji {
-    font-size: 0.85rem;
-  }
-
-  &__name {
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: var(--color-text-muted);
-    white-space: nowrap;
-  }
+  --chip-delay: 0ms; position: relative; display: flex; align-items: center; gap: 7px; padding: .42rem .78rem; border-radius: $radius-full; border: 1px solid var(--color-border); background: var(--color-bg-secondary); cursor: default; animation: chip-arrive 420ms both var(--chip-delay); transition: color $transition-fast, border-color $transition-fast, background $transition-fast, transform $transition-fast, box-shadow $transition-fast;
+  &:hover { z-index: 1; border-color: rgba($color-accent, .5); background: rgba($color-accent, .12); transform: translateY(-3px) scale(1.025); box-shadow: 0 7px 18px rgba($color-accent, .12); .skill-chip__icon { transform: rotate(-7deg) scale(1.14); } }
+  &--primary { border-color: rgba($color-accent, .24); background: linear-gradient(135deg, rgba($color-accent, .1), var(--color-bg-secondary)); .skill-chip__name { color: var(--color-text); font-weight: 600; } }
+  &__icon { display: flex; align-items: center; justify-content: center; width: 18px; flex-shrink: 0; font-size: 1rem; line-height: 1; transition: transform 220ms ease; i { font-size: 1rem; } i.devicon-apple-original, i.devicon-express-original, i.devicon-socketio-original { filter: invert(1) brightness(.85); :root[data-theme='light'] & { filter: none; } } }
+  &__emoji { font-size: .85rem; }
+  &__name { color: var(--color-text-muted); font-size: .78rem; font-weight: 500; white-space: nowrap; }
+  &__dot { width: 4px; height: 4px; margin-left: 1px; border-radius: 50%; background: $color-accent; box-shadow: 0 0 7px rgba($color-accent, .8); }
 }
+
+@media (max-width: $bp-md) { .skills { &__grid { grid-template-columns: 1fr; } &__intro { align-items: start; } } }
+@media (max-width: $bp-sm) { .skills { &__intro { flex-direction: column; margin-bottom: $spacing-2xl; } &__summary { align-items: start; padding: 0; border: 0; span { max-width: none; text-align: left; } } } .skill-group { padding: $spacing-lg; } }
+@media (prefers-reduced-motion: reduce) { .skills__ambient span, .skill-chip, .skill-group__emoji { animation: none !important; } .skill-group:hover, .skill-chip:hover { transform: none; } }

@@ -1,16 +1,20 @@
-<section class="page-section">
+<section class="page-section skills">
+  <div class="skills__ambient" aria-hidden="true"><span></span><span></span><span></span></div>
   <div class="container">
-    <h1 appFadeIn class="section-title">{{ 'skills.title' | translate }}</h1>
+    <header appFadeIn class="skills__intro">
+      <div><p class="skills__eyebrow">{{ 'skills.eyebrow' | translate }}</p><h1 class="section-title">{{ 'skills.title' | translate }}</h1><p class="skills__description">{{ 'skills.description' | translate }}</p></div>
+      <div class="skills__summary"><strong>{{ totalSkills }}</strong><span>{{ 'skills.technologies' | translate }}</span></div>
+    </header>
     <div class="skills__grid">
       @for (group of groups; track group.category; let i = $index) {
         <div appFadeIn [appFadeIn]="i * 60 + 'ms'" class="skill-group">
           <div class="skill-group__header">
-            <span class="skill-group__emoji">{{ group.emoji }}</span>
-            <h3 class="skill-group__category">{{ group.category | translate }}</h3>
+            <span class="skill-group__emoji" aria-hidden="true">{{ group.emoji }}</span>
+            <div class="skill-group__heading"><h2 class="skill-group__category">{{ group.category | translate }}</h2><span>{{ group.skills.length }} {{ 'skills.items' | translate }}</span></div>
           </div>
           <div class="skill-group__items">
-            @for (skill of group.skills; track skill.name) {
-              <div class="skill-chip" [class.skill-chip--primary]="skill.level === 'primary'">
+            @for (skill of group.skills; track skill.name; let j = $index) {
+              <div class="skill-chip skill-chip--primary" [style.--chip-delay]="j * 35 + 'ms'">
                 <span class="skill-chip__icon">
                   @if (skill.icon) {
                     <i [class]="skill.icon + ' colored'"></i>
@@ -19,6 +23,7 @@
                   }
                 </span>
                 <span class="skill-chip__name">{{ skill.name }}</span>
+                <span class="skill-chip__dot" aria-hidden="true"></span>
               </div>
             }
           </div>

@@ -5,6 +5,16 @@
     "skills": "Beceriler",
     "contact": "İletişim"
   },
+  "a11y": { "primary_nav": "Ana navigasyon", "light_theme": "Açık temaya geç", "dark_theme": "Koyu temaya geç", "open_menu": "Menüyü aç", "close_menu": "Menüyü kapat" },
+  "seo": {
+    "home": { "title": "İlker Kaya | Yazılım Mühendisi", "description": "iOS, backend, yapay zekâ ve güvenli yazılım sistemleri geliştiren İlker Kaya'nın portfolyosu." },
+    "about": { "title": "Hakkımda | İlker Kaya", "description": "İlker Kaya'nın yazılım geliştirme deneyimi, eğitimi ve uzmanlık alanları." },
+    "projects": { "title": "Projeler | İlker Kaya", "description": "iOS, backend, yapay zekâ, güvenlik ve full-stack alanlarında geliştirilen projeler." },
+    "aichat": { "title": "AIChat | Native macOS AI Uygulaması", "description": "Çoklu AI sağlayıcısı, ses, multimodal dosyalar, Git Code Mode ve yeniden kullanılabilir Swift SDK sunan AIChat." },
+    "skills": { "title": "Beceriler | İlker Kaya", "description": "Swift, SwiftUI, Java, Spring Boot, Angular, güvenlik, veritabanı ve DevOps becerileri." },
+    "contact": { "title": "İletişim | İlker Kaya", "description": "Proje, iş birliği ve yazılım geliştirme fırsatları için İlker Kaya ile iletişime geçin." },
+    "not_found": { "title": "Sayfa Bulunamadı | İlker Kaya", "description": "Aradığınız sayfa bulunamadı." }
+  },
   "home": {
     "greeting": "Merhaba, ben",
     "role": "Mobile & Backend Engineer · DevOps Enthusiast",
@@ -72,9 +82,14 @@
   },
   "skills": {
     "title": "Beceriler",
+    "eyebrow": "Teknoloji yığını",
+    "description": "Native uygulamalardan güvenli backend sistemlerine ve yapay zekâ entegrasyonlarına uzanan teknik araç setim.",
+    "technologies": "teknoloji ve araç",
+    "items": "beceri",
     "categories": {
       "languages": "Diller",
       "mobile": "Mobil",
+      "ai_native": "Yapay Zekâ & Native macOS",
       "frontend": "Frontend",
       "backend": "Backend",
       "database_devops": "Veritabanı & DevOps",
@@ -84,11 +99,18 @@
   },
   "projects": {
     "title": "Projeler",
+    "featured": "Öne Çıkan Proje",
+    "details": "Projeyi İncele",
     "live": "Canlı",
     "dev": "Geliştirildi",
     "source": "Kaynak Kod",
     "demo": "Canlı Demo",
     "items": {
+      "aichat": {
+        "subtitle": "Native macOS · Yapay Zekâ · Swift SDK",
+        "description": "SwiftUI ile geliştirilen; çoklu AI sağlayıcısı, streaming sohbet, multimodal dosyalar, sesli görüşme ve Git tabanlı Code Mode sunan native macOS uygulaması ve yeniden kullanılabilir Swift SDK.",
+        "features": ["Gemini, OpenAI, Ollama ve LM Studio desteği", "Gerçek zamanlı streaming ve multimodal sohbet", "Güvenli Git deposu inceleme ve kullanıcı onaylı düzenleme", "Modüler AIChatSDK ve 124 başarılı birim testi"]
+      },
       "notiva": {
         "subtitle": "iOS · Backend · DevOps",
         "description": "Not alma, görev yönetimi, planlama ve kişisel organizasyon süreçlerini tek uygulama altında toplayan kapsamlı bir mobil uygulamadır. Uçtan uca şifrelenmiş veri saklama ve bulut senkronizasyon altyapısıyla kişisel veriler güvenle korunur.",
@@ -168,6 +190,31 @@
         ]
       }
     }
+  },
+  "project_detail": {
+    "back": "Tüm projelere dön",
+    "eyebrow": "Native macOS uygulaması · Swift SDK",
+    "lead": "Native macOS deneyimini, sağlayıcıdan bağımsız yapay zekâ sohbetini ve güvenli Git proje analizini tek bir modüler Swift SDK'da birleştiren geliştirici odaklı AI uygulaması.",
+    "overview_label": "Proje hakkında",
+    "overview_title": "Tek uygulamada sohbet, ses ve kod",
+    "overview": "AIChat, kullanıcıların OpenAI uyumlu yapay zekâ servisleriyle gerçek zamanlı iletişim kurmasını sağlayan native bir macOS uygulamasıdır. Çoklu sohbet yönetimi, kalıcı geçmiş, Markdown ve kod blokları, dosya ekleri, sesli görüşme ve yerel Git deposu inceleme özelliklerini içerir. Temel yeteneklerin tamamı başka macOS uygulamalarında da kullanılabilen AIChatSDK içerisinde modülerleştirilmiştir.",
+    "features_label": "Yetenekler",
+    "features_title": "Altı temel özellik alanı",
+    "groups": {
+      "chat": { "title": "Sohbet", "items": ["SSE ile gerçek zamanlı streaming yanıtlar", "Çoklu konuşma oluşturma, arama, yeniden adlandırma ve silme", "Markdown, kod bloğu gösterimi ve panoya kopyalama", "Gemini, OpenAI, Ollama, LM Studio ve özel servisler"] },
+      "multimodal": { "title": "Multimodal", "items": ["Görsel, PDF, JSON, CSV ve metin dosyaları", "Multimodal görsel mesajları", "Kalıcı dosya saklama ve uygulama içi önizleme", "Core Data ile konuşma, proje ve ek ilişkileri"] },
+      "voice": { "title": "Ses", "items": ["Cihaz üzerinde konuşmayı metne çevirme", "AVSpeechSynthesizer ile yanıt seslendirme", "Bas-konuş deneyimi", "Konuşmayı keserek yeni soru sorma"] },
+      "security": { "title": "Güvenlik", "items": ["Google OAuth 2.0 Authorization Code + PKCE", "Keychain içerisinde token ve API anahtarı saklama", "Security-scoped bookmark ile klasör erişimi", "Hassas verileri AI bağlamından maskeleme"] },
+      "code": { "title": "Code Mode", "items": ["Branch, staged, unstaged ve untracked değişiklik inceleme", "Seçilen dosya ve diff içeriklerini bağlama ekleme", "Depo dışı yol, binary ve sembolik bağlantı kontrolleri", "Yalnızca kullanıcı onayıyla dosya düzenleme"] },
+      "sdk": { "title": "SDK", "items": ["Yeniden kullanılabilir ve özelleştirilebilir AIChatSDK", "Presentation → Domain ← Data / Infrastructure mimarisi", "MVVM, Repository, DI ve protocol-oriented yaklaşım", "Mock servisler ve bellek içi repository'lerle test edilebilirlik"] }
+    },
+    "architecture_label": "Mimari",
+    "architecture_title": "Altyapıdan bağımsız tasarım",
+    "architecture": "Tek yönlü bağımlılığa sahip katmanlı mimari sayesinde kullanıcı arayüzü URLSession, Core Data, Keychain ve Git altyapısına doğrudan erişmez. Sağlayıcıdan bağımsız entegrasyonlar ve protokol tabanlı sınırlar SDK'nın genişletilebilir ve test edilebilir kalmasını sağlar.",
+    "metrics": { "tests": "başarılı birim testi", "providers": "desteklenen sağlayıcı türü", "modes": "sohbet ve kod modu" },
+    "role_label": "Rolüm",
+    "role_title": "Uçtan uca ürün geliştirme",
+    "role": "Gereksinim analizi, mimari tasarım, SwiftUI arayüzü, kimlik doğrulama, AI sağlayıcı entegrasyonları, veri saklama, multimodal dosya desteği, sesli görüşme, Git tabanlı Code Mode, SDK modülerleştirmesi, testler ve teknik dokümantasyon tarafımdan geliştirildi."
   },
   "contact": {
     "title": "İletişim",

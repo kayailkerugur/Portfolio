@@ -35,6 +35,12 @@
     }
   }
 
+  &--featured {
+    grid-column: 1 / -1;
+    border-color: rgba($color-accent, 0.5);
+    background: linear-gradient(135deg, rgba($color-accent, 0.1), var(--color-surface) 45%);
+  }
+
   &__header {
     display: flex;
     align-items: center;
@@ -128,6 +134,11 @@
   &__links {
     display: flex;
     gap: $spacing-md;
+  }
+
+  &__detail {
+    align-self: flex-start;
+    font-weight: 600;
   }
 }
 

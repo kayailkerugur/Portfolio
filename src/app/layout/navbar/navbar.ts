@@ -33,5 +33,6 @@ export class Navbar {
   switchLang(lang: string): void {
     this.translate.use(lang);
     localStorage.setItem('lang', lang);
+    document.documentElement.lang = lang;
   }
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { FadeInDirective } from '../../shared/directives/fade-in.directive';
 
@@ -10,16 +11,28 @@ export interface Project {
   tags: string[];
   repoUrl?: string;
   liveUrl?: string;
+  detailUrl?: string;
+  featured?: boolean;
 }
 
 @Component({
   selector: 'app-projects',
-  imports: [TranslateModule, FadeInDirective],
+  imports: [TranslateModule, FadeInDirective, RouterLink],
   templateUrl: './projects.html',
   styleUrl: './projects.scss',
 })
 export class Projects {
   readonly projects: Project[] = [
+    {
+      key: 'aichat',
+      emoji: '🤖',
+      title: 'AIChat',
+      status: 'dev',
+      featured: true,
+      detailUrl: '/projects/aichat',
+      repoUrl: 'https://github.com/kayailkerugur/AIChat',
+      tags: ['Swift', 'SwiftUI', 'AI', 'SSE', 'Core Data', 'OAuth 2.0', 'Git', 'Swift SDK'],
+    },
     {
       key: 'notiva',
       emoji: '📒',
