@@ -1,49 +1,72 @@
 <section class="page-section">
   <div class="container">
     <h1 appFadeIn class="section-title">{{ 'projects.title' | translate }}</h1>
-    <div class="projects__grid">
-      @for (project of projects; track project.title; let i = $index) {
+    <section class="projects__group" aria-labelledby="featured-projects">
+      <h2 id="featured-projects" class="projects__group-title">{{ 'projects.featured_title' | translate }}</h2>
+      <div class="projects__grid projects__grid--featured">
+      @for (project of featuredProjects; track project.title; let i = $index) {
         <article appFadeIn [appFadeIn]="i * 80 + 'ms'" class="project-card" [class.project-card--live]="project.status === 'live'" [class.project-card--featured]="project.featured">
           <div class="project-card__header">
             <span class="project-card__emoji">{{ project.emoji }}</span>
-            <span class="project-card__badge" [class.project-card__badge--live]="project.status === 'live'">
-              {{ (project.featured ? 'projects.featured' : project.status === 'live' ? 'projects.live' : 'projects.dev') | translate }}
-            </span>
+            <span class="project-card__badges"><span class="project-card__badge">{{ 'projects.featured' | translate }}</span><span class="project-card__badge" [class.project-card__badge--live]="project.status === 'live'">{{ (project.status === 'live' ? 'projects.live' : 'projects.dev') | translate }}</span></span>
           </div>
           <div class="project-card__top">
-            <h3 class="project-card__title">{{ project.title }}</h3>
+            <h3 class="project-card__title">{{ (project.key === 'chat' ? 'projects.items.chat.title' : project.title) | translate }}</h3>
             <span class="project-card__subtitle">{{ 'projects.items.' + project.key + '.subtitle' | translate }}</span>
           </div>
           <p class="project-card__description">{{ 'projects.items.' + project.key + '.description' | translate }}</p>
-          <ul class="project-card__features">
-            @for (feature of ('projects.items.' + project.key + '.features' | translate); track $index) {
-              <li>{{ feature }}</li>
-            }
-          </ul>
+          <p class="project-card__role"><strong>{{ 'projects.role_label' | translate }}:</strong> {{ 'projects.items.' + project.key + '.role' | translate }}</p>
           <div class="project-card__footer">
             <ul class="project-card__tags">
               @for (tag of project.tags; track tag) {
                 <li class="tag">{{ tag }}</li>
               }
             </ul>
-            @if (project.repoUrl || project.liveUrl) {
+            @if (project.repoUrl || project.liveUrl || project.appStoreUrl) {
               <div class="project-card__links">
                 @if (project.repoUrl) {
-                  <a [href]="project.repoUrl" target="_blank" rel="noopener" class="link">{{ 'projects.source' | translate }}</a>
+                  <a [href]="project.repoUrl" target="_blank" rel="noopener noreferrer" class="link">{{ 'projects.source' | translate }}</a>
                 }
                 @if (project.liveUrl) {
-                  <a [href]="project.liveUrl" target="_blank" rel="noopener" class="link link--accent">{{ 'projects.demo' | translate }}</a>
+                  <a [href]="project.liveUrl" target="_blank" rel="noopener noreferrer" class="link link--accent">{{ 'projects.demo' | translate }}</a>
+                }
+                @if (project.appStoreUrl) {
+                  <a [href]="project.appStoreUrl" target="_blank" rel="noopener noreferrer" class="link link--accent" [attr.aria-label]="project.title + ' — ' + ('projects.app_store' | translate)">{{ 'projects.app_store' | translate }}</a>
                 }
               </div>
             }
             @if (project.detailUrl) {
               <a [routerLink]="project.detailUrl" class="link link--accent project-card__detail">
-                {{ 'projects.details' | translate }} <span aria-hidden="true">→</span>
+                {{ 'projects.case_study' | translate }} <span aria-hidden="true">→</span>
               </a>
             }
           </div>
         </article>
       }
-    </div>
+      </div>
+    </section>
+    <section class="projects__group" aria-labelledby="other-projects">
+      <h2 id="other-projects" class="projects__group-title">{{ 'projects.other_title' | translate }}</h2>
+      <div class="projects__grid">
+      @for (project of otherProjects; track project.title; let i = $index) {
+        <article appFadeIn [appFadeIn]="i * 60 + 'ms'" class="project-card" [class.project-card--live]="project.status === 'live'">
+          <div class="project-card__header"><span class="project-card__emoji" aria-hidden="true">{{ project.emoji }}</span><span class="project-card__badge" [class.project-card__badge--live]="project.status === 'live'">{{ (project.status === 'live' ? 'projects.live' : 'projects.dev') | translate }}</span></div>
+          <div class="project-card__top"><h3 class="project-card__title">{{ project.title }}</h3><span class="project-card__subtitle">{{ 'projects.items.' + project.key + '.subtitle' | translate }}</span></div>
+          <p class="project-card__description">{{ 'projects.items.' + project.key + '.description' | translate }}</p>
+          <p class="project-card__role"><strong>{{ 'projects.role_label' | translate }}:</strong> {{ 'projects.items.' + project.key + '.role' | translate }}</p>
+          <div class="project-card__footer">
+            <ul class="project-card__tags">@for (tag of project.tags; track tag) { <li class="tag">{{ tag }}</li> }</ul>
+            @if (project.repoUrl || project.liveUrl || project.appStoreUrl) {
+              <div class="project-card__links">
+                @if (project.repoUrl) { <a [href]="project.repoUrl" target="_blank" rel="noopener noreferrer" class="link">{{ 'projects.source' | translate }}</a> }
+                @if (project.liveUrl) { <a [href]="project.liveUrl" target="_blank" rel="noopener noreferrer" class="link link--accent">{{ 'projects.demo' | translate }}</a> }
+                @if (project.appStoreUrl) { <a [href]="project.appStoreUrl" target="_blank" rel="noopener noreferrer" class="link link--accent" [attr.aria-label]="project.title + ' — ' + ('projects.app_store' | translate)">{{ 'projects.app_store' | translate }}</a> }
+              </div>
+            }
+          </div>
+        </article>
+      }
+      </div>
+    </section>
   </div>
 </section>

@@ -1,49 +1,102 @@
 {
   "nav": {
+    "home": "Ana Sayfa",
     "about": "Hakkımda",
     "projects": "Projeler",
     "skills": "Beceriler",
     "contact": "İletişim"
   },
-  "a11y": { "primary_nav": "Ana navigasyon", "light_theme": "Açık temaya geç", "dark_theme": "Koyu temaya geç", "open_menu": "Menüyü aç", "close_menu": "Menüyü kapat" },
+  "a11y": {
+    "primary_nav": "Ana navigasyon",
+    "light_theme": "Açık temaya geç",
+    "dark_theme": "Koyu temaya geç",
+    "open_menu": "Menüyü aç",
+    "close_menu": "Menüyü kapat"
+  },
   "seo": {
-    "home": { "title": "İlker Kaya | Yazılım Mühendisi", "description": "iOS, backend, yapay zekâ ve güvenli yazılım sistemleri geliştiren İlker Kaya'nın portfolyosu." },
-    "about": { "title": "Hakkımda | İlker Kaya", "description": "İlker Kaya'nın yazılım geliştirme deneyimi, eğitimi ve uzmanlık alanları." },
-    "projects": { "title": "Projeler | İlker Kaya", "description": "iOS, backend, yapay zekâ, güvenlik ve full-stack alanlarında geliştirilen projeler." },
-    "aichat": { "title": "AIChat | Native macOS AI Uygulaması", "description": "Çoklu AI sağlayıcısı, ses, multimodal dosyalar, Git Code Mode ve yeniden kullanılabilir Swift SDK sunan AIChat." },
-    "skills": { "title": "Beceriler | İlker Kaya", "description": "Swift, SwiftUI, Java, Spring Boot, Angular, güvenlik, veritabanı ve DevOps becerileri." },
-    "contact": { "title": "İletişim | İlker Kaya", "description": "Proje, iş birliği ve yazılım geliştirme fırsatları için İlker Kaya ile iletişime geçin." },
-    "not_found": { "title": "Sayfa Bulunamadı | İlker Kaya", "description": "Aradığınız sayfa bulunamadı." }
+    "home": {
+      "title": "İlker Kaya | iOS Mühendisi",
+      "description": "Üretime hazır Swift uygulamaları, ölçeklenebilir backend sistemleri ve güvenli yazılımlar geliştiren iOS mühendisi İlker Kaya'nın portfolyosu."
+    },
+    "about": {
+      "title": "Hakkımda | İlker Kaya",
+      "description": "İlker Kaya'nın yazılım geliştirme deneyimi, eğitimi ve uzmanlık alanları."
+    },
+    "projects": {
+      "title": "Projeler | İlker Kaya",
+      "description": "iOS, backend, yapay zekâ, güvenlik ve full-stack alanlarında geliştirilen projeler."
+    },
+    "aichat": {
+      "title": "AIChat | Native macOS AI Uygulaması",
+      "description": "Çoklu AI sağlayıcısı, ses, multimodal dosyalar, Git Code Mode ve yeniden kullanılabilir Swift SDK sunan AIChat."
+    },
+    "notiva": {
+      "title": "Notiva | iOS Projesi",
+      "description": "Backend, bulut senkronizasyonu ve şifrelenmiş veri saklama desteğine sahip iOS organizasyon uygulaması."
+    },
+    "tripmate": {
+      "title": "TripMate | iOS Projesi",
+      "description": "SwiftUI, MapKit, CoreLocation ve REST API ile geliştirilen iOS seyahat planlama uygulaması."
+    },
+    "chat": {
+      "title": "Gerçek Zamanlı Chat | Backend & Güvenlik",
+      "description": "Socket.IO, çoklu cihaz desteği ve uçtan uca şifreleme sunan gerçek zamanlı mesajlaşma sistemi."
+    },
+    "skills": {
+      "title": "Beceriler | İlker Kaya",
+      "description": "Swift, SwiftUI, Java, Spring Boot, Angular, güvenlik, veritabanı ve DevOps becerileri."
+    },
+    "contact": {
+      "title": "İletişim | İlker Kaya",
+      "description": "Proje, iş birliği ve yazılım geliştirme fırsatları için İlker Kaya ile iletişime geçin."
+    },
+    "not_found": {
+      "title": "Sayfa Bulunamadı | İlker Kaya",
+      "description": "Aradığınız sayfa bulunamadı."
+    }
   },
   "home": {
     "greeting": "Merhaba, ben",
-    "role": "Mobile & Backend Engineer · DevOps Enthusiast",
-    "bio": "iOS ve backend geliştirme konusunda uzmanlaşmış bir yazılım mühendisiyim. SwiftUI ile kullanıcı deneyimini ön planda tutan mobil uygulamalar, Spring Boot ve Node.js ile ölçeklenebilir, güvenli backend servisleri geliştiriyorum. JWT kimlik doğrulama, uçtan uca şifreleme ve gerçek zamanlı iletişim gibi ileri güvenlik konularında da aktif olarak çalışıyorum. Docker ve containerization dahil DevOps süreçlerine hâkimim; temiz mimari ve sürdürülebilir kod yazmanın her projenin temel taşı olduğuna inanıyorum.",
+    "role": "iOS Mühendisi · Backend & Güvenlik",
+    "bio": "Swift ve SwiftUI ile kullanıcı odaklı, üretime hazır iOS uygulamaları geliştiriyorum. Backend ve güvenlik deneyimimle kimlik doğrulama, gerçek zamanlı iletişim ve ölçeklenebilir servisleri ürünün bütününü gözeterek tasarlıyorum.",
     "cta_projects": "Projelerimi Gör",
     "cta_contact": "İletişime Geç",
     "cta_cv": "CV İndir"
   },
   "about": {
     "title": "Hakkımda",
-    "bio": "iOS ve backend geliştirme konusunda uzmanlaşmış yazılım mühendisiyim. SwiftUI, Spring Boot ve Node.js ile üretim ortamına hazır, ölçeklenebilir uygulamalar tasarlıyor ve geliştiriyorum. Containerization ve deployment dahil DevOps iş akışlarında pratik bilgiye sahibim. Temiz mimari, sistem tasarımı ve güvenli, sürdürülebilir yazılım sistemleri oluşturmaya odaklanıyorum.",
+    "bio": "Swift, SwiftUI ve UIKit ile üretim ortamına çıkan Apple platformu uygulamaları geliştirme deneyimine sahip bir iOS ve macOS mühendisiyim. Spring Boot ve Node.js ile backend sistemleri geliştiriyor; kimlik doğrulama, gerçek zamanlı iletişim, şifreli veri, konteyner tabanlı dağıtım ve CI/CD süreçleri üzerinde çalışıyorum. Mühendislik yaklaşımımın merkezinde temiz mimari, güvenlik ve sürdürülebilir yazılım yer alıyor.",
     "experience_title": "İş Deneyimi",
     "education_title": "Eğitim",
     "languages_title": "Diller",
     "present": "Devam ediyor",
     "jobs": {
+      "enqura_mac": {
+        "role": "macOS Developer Intern",
+        "company": "Enqura — İstanbul, TR",
+        "date": "Tem 2026 – Ağu 2026",
+        "bullets": [
+          "SwiftUI, gerçek zamanlı akış, multimodal dosya ekleri ve kalıcı sohbet yönetimi sunan native macOS istemcisi AIChat'i geliştirdi.",
+          "Sağlayıcıdan bağımsız, protokol odaklı bir mimari tasarladı ve yeniden kullanılabilir yetenekleri AIChatSDK içinde modülerleştirdi.",
+          "SSE üzerinden OpenAI uyumlu servisleri entegre etti ve Core Data veri katmanını geliştirdi.",
+          "PKCE kullanan Google OAuth 2.0 akışını uyguladı; token ve API anahtarlarını Keychain ile güvence altına aldı.",
+          "Hassas veri maskeleme ve kullanıcı onaylı düzenlemeler içeren sandbox uyumlu Git Code Mode geliştirdi.",
+          "Speech ve AVFoundation kullanarak cihaz üzerinde konuşmayı metne ve metni konuşmaya dönüştürme özellikleri ekledi."
+        ]
+      },
       "aselsan": {
-        "role": "FullStack Developer Intern",
+        "role": "Full-Stack Developer Intern",
         "company": "Aselsan — Sivas, TR",
         "date": "Şub 2026 – May 2026",
         "bullets": [
-          "Angular (frontend) ve Node.js (backend) ile full-stack uygulama geliştirdi",
-          "WebSocket (Socket.IO) tabanlı gerçek zamanlı iletişim implementasyonu",
-          "Elasticsearch ile PDF dosyaları üzerinde full-text arama sistemi tasarladı",
-          "AES-GCM ve ECDH key exchange ile uçtan uca şifreleme (E2EE) uyguladı",
-          "Docker ile servisleri containerize etti, geliştirme ortamlarını yapılandırdı"
+          "Angular frontend ve Node.js backend kullanarak full-stack bir uygulama geliştirdi.",
+          "WebSocket ve Socket.IO ile gerçek zamanlı iletişim altyapısı geliştirdi.",
+          "Elasticsearch kullanarak PDF dosyalarında tam metin araması yapan bir doküman arama sistemi tasarladı.",
+          "AES-GCM ve ECDH anahtar değişimiyle uçtan uca şifreleme (E2EE) uyguladı.",
+          "Servisleri Docker ile konteynerleştirdi ve geliştirme ortamlarını yapılandırdı."
         ]
       },
-      "enqura": {
+      "enqura_ios": {
         "role": "iOS Developer Intern",
         "company": "Enqura — İstanbul, TR",
         "date": "Oca 2025 – Şub 2025",
@@ -66,10 +119,14 @@
       }
     },
     "education": {
+      "ms": {
+        "degree": "Bilgisayar Mühendisliği — Yüksek Lisans",
+        "date": "Devam ediyor"
+      },
       "cs": {
-        "degree": "Bilgisayar Mühendisliği — Lisans",
+        "degree": "Bilgisayar Mühendisliği — Lisans · GPA: 3.36/4.00",
         "school": "Sivas Cumhuriyet Üniversitesi",
-        "date": "Sep 2022 – Tem 2026"
+        "date": "Temmuz 2026 mezunu"
       },
       "ee": {
         "degree": "Elektrik-Elektronik Mühendisliği — Çift Anadal",
@@ -83,36 +140,48 @@
   "skills": {
     "title": "Beceriler",
     "eyebrow": "Teknoloji yığını",
-    "description": "Native uygulamalardan güvenli backend sistemlerine ve yapay zekâ entegrasyonlarına uzanan teknik araç setim.",
+    "description": "Öncelikle iOS mühendisliği; bunu destekleyen güvenli backend sistemleri, uygulama güvenliği ve yapay zekâ entegrasyonları.",
     "technologies": "teknoloji ve araç",
     "items": "beceri",
     "categories": {
-      "languages": "Diller",
-      "mobile": "Mobil",
-      "ai_native": "Yapay Zekâ & Native macOS",
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "database_devops": "Veritabanı & DevOps",
+      "core": "Temel Teknolojiler",
+      "mobile": "iOS & Mobil",
+      "backend_systems": "Backend & Sistemler",
+      "ai_multimodal": "Yapay Zekâ & Multimodal",
+      "additional": "Ek / Aşina Olunan Teknolojiler",
       "security": "Güvenlik",
       "tools": "Araçlar"
-    }
+    },
+    "view_more": "Diğer teknolojileri göster"
   },
   "projects": {
     "title": "Projeler",
+    "featured_title": "Öne Çıkan Projeler",
+    "other_title": "Diğer Projeler",
     "featured": "Öne Çıkan Proje",
     "details": "Projeyi İncele",
+    "case_study": "Proje Çalışmasını İncele",
+    "role_label": "Rol",
     "live": "Canlı",
-    "dev": "Geliştirildi",
+    "dev": "Geliştiriliyor",
     "source": "Kaynak Kod",
     "demo": "Canlı Demo",
+    "app_store": "App Store",
     "items": {
       "aichat": {
         "subtitle": "Native macOS · Yapay Zekâ · Swift SDK",
+        "role": "Uçtan uca ürün geliştirme",
         "description": "SwiftUI ile geliştirilen; çoklu AI sağlayıcısı, streaming sohbet, multimodal dosyalar, sesli görüşme ve Git tabanlı Code Mode sunan native macOS uygulaması ve yeniden kullanılabilir Swift SDK.",
-        "features": ["Gemini, OpenAI, Ollama ve LM Studio desteği", "Gerçek zamanlı streaming ve multimodal sohbet", "Güvenli Git deposu inceleme ve kullanıcı onaylı düzenleme", "Modüler AIChatSDK ve 124 başarılı birim testi"]
+        "features": [
+          "Gemini, OpenAI, Ollama ve LM Studio desteği",
+          "Gerçek zamanlı streaming ve multimodal sohbet",
+          "Güvenli Git deposu inceleme ve kullanıcı onaylı düzenleme",
+          "Modüler AIChatSDK ve 124 başarılı birim testi"
+        ]
       },
       "notiva": {
         "subtitle": "iOS · Backend · DevOps",
+        "role": "iOS ve backend geliştirme",
         "description": "Not alma, görev yönetimi, planlama ve kişisel organizasyon süreçlerini tek uygulama altında toplayan kapsamlı bir mobil uygulamadır. Uçtan uca şifrelenmiş veri saklama ve bulut senkronizasyon altyapısıyla kişisel veriler güvenle korunur.",
         "features": [
           "Not oluşturma ve düzenleme",
@@ -125,6 +194,7 @@
       },
       "tripmate": {
         "subtitle": "iOS · Backend · DevOps",
+        "role": "iOS uygulama geliştirme",
         "description": "Kullanıcıların seyahat planlarını oluşturabilmesi ve gezilerini organize edebilmesi için geliştirilmiş seyahat planlama uygulamasıdır. Gün bazlı gezi planlama, şehir ve rota oluşturma, gezilecek yer önerileri ve lokasyon tabanlı planlama özellikleriyle seyahat deneyimini kolaylaştırır.",
         "features": [
           "Gün bazlı gezi planlama",
@@ -136,6 +206,7 @@
       },
       "eczanem": {
         "subtitle": "iOS",
+        "role": "iOS uygulama geliştirme",
         "description": "Kullanıcıların bulundukları konuma göre nöbetçi eczaneleri gerçek zamanlı olarak görüntüleyebilmesini sağlayan mobil uygulamadır. Harita üzerinden görselleştirme, konuma göre filtreleme ve eczane iletişim bilgilerine hızlı erişim sunar.",
         "features": [
           "Nöbetçi eczane listeleme",
@@ -144,8 +215,21 @@
           "Telefon ve adres bilgilerine erişim"
         ]
       },
+      "grammivo": {
+        "subtitle": "iOS · Dil Öğrenme · Yapay Zekâ",
+        "role": "iOS uygulama geliştirme",
+        "description": "Metin analizi, kelime öğrenme, çeviri çalışması ve kaydedilen kelimeleri tekrar etme özellikleri sunan bir dil öğrenme uygulaması.",
+        "features": [
+          "Metin analizi ve çeviri çalışması",
+          "Kelime öğrenme ve kaydedilen kelimeleri tekrar etme",
+          "Apple Vision ile cihaz üzerinde görselden metin tanıma",
+          "SwiftData ve Keychain ile yerel veri saklama"
+        ]
+      },
       "chat": {
+        "title": "Gerçek Zamanlı Chat Sistemi",
         "subtitle": "Backend · Güvenlik",
+        "role": "Backend ve güvenlik mühendisliği",
         "description": "Gerçek zamanlı mesajlaşma ve güvenli iletişim altyapısının geliştirilmesi amacıyla tasarlanmış sistemdir. AES-GCM, ECDH ve ECDSA kriptografi protokolleriyle uçtan uca şifreleme (E2EE) sağlar; anlık mesajlaşma, DM sistemi ve çoklu cihaz desteği sunar.",
         "features": [
           "Anlık mesajlaşma ve DM sistemi",
@@ -158,6 +242,7 @@
       },
       "restlocations": {
         "subtitle": "iOS · Backend",
+        "role": "iOS ve backend geliştirme",
         "description": "Seyahat eden kullanıcıların otel, kamp alanı ve karavan konaklama noktalarını keşfetmesini sağlayan mobil platformdur. Harita entegrasyonu, konum bazlı arama ve seyahat rotası oluşturma özellikleriyle kapsamlı bir konaklama çözümü sunar.",
         "features": [
           "Otel, kamp alanı ve karavan noktaları listeleme",
@@ -168,6 +253,7 @@
       },
       "auth": {
         "subtitle": "Backend · DevOps",
+        "role": "Backend geliştirme",
         "description": "Birden fazla uygulama tarafından kullanılabilecek merkezi kullanıcı yönetimi ve kimlik doğrulama servisidir. E-posta doğrulama, JWT/refresh token yönetimi, Redis tabanlı token blacklist ve Thymeleaf HTML e-posta şablonları içeren üretime hazır bir kimlik doğrulama altyapısı sunar.",
         "features": [
           "Kullanıcı kayıt ve e-posta doğrulama",
@@ -179,7 +265,8 @@
         ]
       },
       "kroki": {
-        "subtitle": "Frontend · FullStack",
+        "subtitle": "Frontend · Full-Stack",
+        "role": "Full-stack geliştirme",
         "description": "Konum ve alan bilgilerinin kroki üzerinde yönetilebilmesini sağlayan web tabanlı sistemdir. Dinamik veri gösterimi, alan ve nokta yönetimi, konum işaretleme ve yönetim paneli entegrasyonu ile kurumsal kullanıma uygun bir platform sunar.",
         "features": [
           "Kroki görüntüleme ve yönetimi",
@@ -191,8 +278,152 @@
       }
     }
   },
+  "case_studies": {
+    "aichat": {
+      "title": "AIChat",
+      "eyebrow": "Native macOS uygulaması · Swift SDK",
+      "lead": "Native macOS deneyimini, sağlayıcıdan bağımsız yapay zekâ sohbetini ve güvenli Git proje analizini bir araya getiren geliştirici odaklı uygulama.",
+      "overview_title": "Tek uygulamada sohbet, ses ve kod",
+      "overview": "AIChat, OpenAI uyumlu yapay zekâ servisleriyle gerçek zamanlı iletişim sağlayan native bir macOS uygulamasıdır. Sohbet yönetimi, kalıcı geçmiş, Markdown ve kod blokları, dosya ekleri, sesli görüşme ve yerel Git deposu inceleme özelliklerini içerir. Temel yetenekleri diğer macOS uygulamalarında kullanılmak üzere AIChatSDK içerisinde modülerleştirilmiştir.",
+      "role": "Gereksinim analizi, mimari tasarım, SwiftUI arayüzü, kimlik doğrulama, AI sağlayıcı entegrasyonları, veri saklama, multimodal dosya desteği, sesli görüşme, Git tabanlı Code Mode, SDK modülerleştirmesi, testler ve teknik dokümantasyonu geliştirdim.",
+      "groups": {
+        "chat": {
+          "title": "Sohbet",
+          "items": [
+            "SSE ile gerçek zamanlı yanıtlar",
+            "Sohbet yönetimi ve kalıcı geçmiş",
+            "Gemini, OpenAI, Ollama, LM Studio ve özel servisler"
+          ]
+        },
+        "multimodal": {
+          "title": "Multimodal",
+          "items": [
+            "Görsel, PDF, JSON, CSV ve metin dosyaları",
+            "Kalıcı dosya saklama ve uygulama içi önizleme"
+          ]
+        },
+        "voice": {
+          "title": "Ses",
+          "items": [
+            "Cihaz üzerinde konuşmayı metne çevirme",
+            "AVSpeechSynthesizer ile yanıt seslendirme",
+            "Bas-konuş deneyimi"
+          ]
+        },
+        "security": {
+          "title": "Güvenlik",
+          "items": [
+            "Google OAuth 2.0 Authorization Code + PKCE",
+            "Keychain içinde token ve API anahtarı saklama",
+            "Hassas verileri AI isteklerinden maskeleme"
+          ]
+        },
+        "code": {
+          "title": "Code Mode",
+          "items": [
+            "Git değişikliklerini ve seçili diff'leri inceleme",
+            "Depo sınırı, binary ve sembolik bağlantı kontrolleri",
+            "Yalnızca kullanıcı onayıyla dosya düzenleme"
+          ]
+        },
+        "sdk": {
+          "title": "SDK",
+          "items": [
+            "Yeniden kullanılabilir AIChatSDK",
+            "MVVM, Repository, DI ve protokol odaklı tasarım",
+            "Mock servislerle test edilebilirlik"
+          ]
+        }
+      }
+    },
+    "notiva": {
+      "title": "Notiva",
+      "eyebrow": "iOS · Backend · DevOps",
+      "lead": "Notları, görevleri ve planlamayı güvenli saklama ve bulut senkronizasyonuyla birleştiren mobil uygulama.",
+      "overview_title": "Kişisel düzen tek yerde",
+      "overview": "Notiva; not alma, görev yönetimi, günlük planlama ve hatırlatıcıları tek bir mobil uygulamada birleştirir. Kimlik doğrulama, bulut senkronizasyon altyapısı ve uçtan uca şifrelenmiş veri saklama özelliklerine sahiptir.",
+      "role": "iOS uygulaması ve destekleyen backend sistemi üzerinde çalıştım.",
+      "groups": {
+        "organization": {
+          "title": "Organizasyon",
+          "items": [
+            "Not oluşturma ve düzenleme",
+            "Yapılacaklar listeleri ve görev yönetimi",
+            "Günlük planlama ve hatırlatıcılar"
+          ]
+        },
+        "sync": {
+          "title": "Senkronizasyon",
+          "items": ["Kimlik doğrulama entegrasyonu", "Bulut senkronizasyon altyapısı"]
+        },
+        "security": {
+          "title": "Güvenlik",
+          "items": ["Uçtan uca şifrelenmiş veri saklama", "JWT tabanlı kimlik doğrulama"]
+        }
+      }
+    },
+    "tripmate": {
+      "title": "TripMate",
+      "eyebrow": "iOS · Harita · Seyahat",
+      "lead": "Rotaları, gezi planlarını ve mekânları düzenlemek için geliştirilen iOS seyahat uygulaması.",
+      "overview_title": "Gün gün seyahat planlama",
+      "overview": "TripMate; gün bazlı gezi programları, şehir ve rota oluşturma, mekân önerileri, seyahat takvimi ve konum bazlı planlama ile kullanıcıların seyahatlerini düzenlemesine yardımcı olur.",
+      "role": "iOS uygulamasını geliştirdim ve harita ile konum tabanlı yeteneklerini entegre ettim.",
+      "groups": {
+        "planning": {
+          "title": "Planlama",
+          "items": [
+            "Gün bazlı gezi planlama",
+            "Şehir ve rota oluşturma",
+            "Seyahat takvimi yönetimi"
+          ]
+        },
+        "location": {
+          "title": "Konum",
+          "items": [
+            "Mekân önerileri",
+            "Konum bazlı planlama",
+            "MapKit ve CoreLocation entegrasyonu"
+          ]
+        }
+      }
+    },
+    "chat": {
+      "title": "Gerçek Zamanlı Chat Sistemi",
+      "eyebrow": "Backend · Gerçek zamanlı · Güvenlik",
+      "lead": "Güvenli iletişim ve çoklu cihaz kullanımına odaklanan gerçek zamanlı mesajlaşma sistemi.",
+      "overview_title": "Güvenli gerçek zamanlı iletişim",
+      "overview": "Sistem; anlık mesajlaşma, doğrudan mesajlar, çevrimiçi kullanıcı takibi, okundu bilgisi, yazıyor göstergesi ve çoklu cihaz desteği sunar. Uçtan uca şifrelemede AES-GCM, ECDH, ECDSA ve HKDF kullanır.",
+      "role": "Gerçek zamanlı backend ve güvenli iletişim altyapısını geliştirdim.",
+      "groups": {
+        "realtime": {
+          "title": "Gerçek zamanlı",
+          "items": [
+            "Anlık mesajlaşma ve doğrudan mesajlar",
+            "Çevrimiçi kullanıcı takibi",
+            "Okundu bilgisi ve yazıyor göstergesi"
+          ]
+        },
+        "security": {
+          "title": "Güvenlik",
+          "items": [
+            "Uçtan uca şifreleme",
+            "AES-GCM, ECDH, ECDSA ve HKDF zinciri",
+            "JWT tabanlı kimlik doğrulama"
+          ]
+        },
+        "devices": {
+          "title": "Cihaz desteği",
+          "items": ["Çoklu cihaz desteği", "Socket.IO iletişim altyapısı"]
+        }
+      }
+    }
+  },
   "project_detail": {
     "back": "Tüm projelere dön",
+    "screenshots_title": "Ürün ekran görüntüleri",
+    "enlarge": "Ekran görüntüsünü büyüt",
+    "close": "Galeriyi kapat",
     "eyebrow": "Native macOS uygulaması · Swift SDK",
     "lead": "Native macOS deneyimini, sağlayıcıdan bağımsız yapay zekâ sohbetini ve güvenli Git proje analizini tek bir modüler Swift SDK'da birleştiren geliştirici odaklı AI uygulaması.",
     "overview_label": "Proje hakkında",
@@ -201,17 +432,69 @@
     "features_label": "Yetenekler",
     "features_title": "Altı temel özellik alanı",
     "groups": {
-      "chat": { "title": "Sohbet", "items": ["SSE ile gerçek zamanlı streaming yanıtlar", "Çoklu konuşma oluşturma, arama, yeniden adlandırma ve silme", "Markdown, kod bloğu gösterimi ve panoya kopyalama", "Gemini, OpenAI, Ollama, LM Studio ve özel servisler"] },
-      "multimodal": { "title": "Multimodal", "items": ["Görsel, PDF, JSON, CSV ve metin dosyaları", "Multimodal görsel mesajları", "Kalıcı dosya saklama ve uygulama içi önizleme", "Core Data ile konuşma, proje ve ek ilişkileri"] },
-      "voice": { "title": "Ses", "items": ["Cihaz üzerinde konuşmayı metne çevirme", "AVSpeechSynthesizer ile yanıt seslendirme", "Bas-konuş deneyimi", "Konuşmayı keserek yeni soru sorma"] },
-      "security": { "title": "Güvenlik", "items": ["Google OAuth 2.0 Authorization Code + PKCE", "Keychain içerisinde token ve API anahtarı saklama", "Security-scoped bookmark ile klasör erişimi", "Hassas verileri AI bağlamından maskeleme"] },
-      "code": { "title": "Code Mode", "items": ["Branch, staged, unstaged ve untracked değişiklik inceleme", "Seçilen dosya ve diff içeriklerini bağlama ekleme", "Depo dışı yol, binary ve sembolik bağlantı kontrolleri", "Yalnızca kullanıcı onayıyla dosya düzenleme"] },
-      "sdk": { "title": "SDK", "items": ["Yeniden kullanılabilir ve özelleştirilebilir AIChatSDK", "Presentation → Domain ← Data / Infrastructure mimarisi", "MVVM, Repository, DI ve protocol-oriented yaklaşım", "Mock servisler ve bellek içi repository'lerle test edilebilirlik"] }
+      "chat": {
+        "title": "Sohbet",
+        "items": [
+          "SSE ile gerçek zamanlı streaming yanıtlar",
+          "Çoklu konuşma oluşturma, arama, yeniden adlandırma ve silme",
+          "Markdown, kod bloğu gösterimi ve panoya kopyalama",
+          "Gemini, OpenAI, Ollama, LM Studio ve özel servisler"
+        ]
+      },
+      "multimodal": {
+        "title": "Multimodal",
+        "items": [
+          "Görsel, PDF, JSON, CSV ve metin dosyaları",
+          "Multimodal görsel mesajları",
+          "Kalıcı dosya saklama ve uygulama içi önizleme",
+          "Core Data ile konuşma, proje ve ek ilişkileri"
+        ]
+      },
+      "voice": {
+        "title": "Ses",
+        "items": [
+          "Cihaz üzerinde konuşmayı metne çevirme",
+          "AVSpeechSynthesizer ile yanıt seslendirme",
+          "Bas-konuş deneyimi",
+          "Konuşmayı keserek yeni soru sorma"
+        ]
+      },
+      "security": {
+        "title": "Güvenlik",
+        "items": [
+          "Google OAuth 2.0 Authorization Code + PKCE",
+          "Keychain içerisinde token ve API anahtarı saklama",
+          "Security-scoped bookmark ile klasör erişimi",
+          "Hassas verileri AI bağlamından maskeleme"
+        ]
+      },
+      "code": {
+        "title": "Code Mode",
+        "items": [
+          "Branch, staged, unstaged ve untracked değişiklik inceleme",
+          "Seçilen dosya ve diff içeriklerini bağlama ekleme",
+          "Depo dışı yol, binary ve sembolik bağlantı kontrolleri",
+          "Yalnızca kullanıcı onayıyla dosya düzenleme"
+        ]
+      },
+      "sdk": {
+        "title": "SDK",
+        "items": [
+          "Yeniden kullanılabilir ve özelleştirilebilir AIChatSDK",
+          "Presentation → Domain ← Data / Infrastructure mimarisi",
+          "MVVM, Repository, DI ve protocol-oriented yaklaşım",
+          "Mock servisler ve bellek içi repository'lerle test edilebilirlik"
+        ]
+      }
     },
     "architecture_label": "Mimari",
     "architecture_title": "Altyapıdan bağımsız tasarım",
     "architecture": "Tek yönlü bağımlılığa sahip katmanlı mimari sayesinde kullanıcı arayüzü URLSession, Core Data, Keychain ve Git altyapısına doğrudan erişmez. Sağlayıcıdan bağımsız entegrasyonlar ve protokol tabanlı sınırlar SDK'nın genişletilebilir ve test edilebilir kalmasını sağlar.",
-    "metrics": { "tests": "başarılı birim testi", "providers": "desteklenen sağlayıcı türü", "modes": "sohbet ve kod modu" },
+    "metrics": {
+      "tests": "başarılı birim testi",
+      "providers": "desteklenen sağlayıcı türü",
+      "modes": "sohbet ve kod modu"
+    },
     "role_label": "Rolüm",
     "role_title": "Uçtan uca ürün geliştirme",
     "role": "Gereksinim analizi, mimari tasarım, SwiftUI arayüzü, kimlik doğrulama, AI sağlayıcı entegrasyonları, veri saklama, multimodal dosya desteği, sesli görüşme, Git tabanlı Code Mode, SDK modülerleştirmesi, testler ve teknik dokümantasyon tarafımdan geliştirildi."
@@ -220,6 +503,12 @@
     "title": "İletişim",
     "intro": "Herhangi bir proje, iş birliği veya soru için aşağıdaki kanallardan bana ulaşabilirsin. En hızlı yanıt için e-posta tercih edilir.",
     "or": "veya",
+    "channels": {
+      "email": "E-posta",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram"
+    },
     "form": {
       "name": "Ad Soyad",
       "name_placeholder": "Adın ve soyadın",

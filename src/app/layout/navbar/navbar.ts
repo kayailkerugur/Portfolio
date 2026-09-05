@@ -14,6 +14,7 @@ export class Navbar {
   readonly themeService = inject(ThemeService);
 
   readonly links = [
+    { key: 'nav.home',     path: '/' },
     { key: 'nav.about',    path: '/about' },
     { key: 'nav.projects', path: '/projects' },
     { key: 'nav.skills',   path: '/skills' },
@@ -35,4 +36,6 @@ export class Navbar {
     localStorage.setItem('lang', lang);
     document.documentElement.lang = lang;
   }
+
+  closeMenu(): void { this.menuOpen = false; }
 }

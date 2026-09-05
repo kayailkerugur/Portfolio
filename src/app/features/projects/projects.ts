@@ -11,6 +11,7 @@ export interface Project {
   tags: string[];
   repoUrl?: string;
   liveUrl?: string;
+  appStoreUrl?: string;
   detailUrl?: string;
   featured?: boolean;
 }
@@ -38,6 +39,9 @@ export class Projects {
       emoji: '📒',
       title: 'Notiva',
       status: 'live',
+      featured: true,
+      detailUrl: '/projects/notiva',
+      appStoreUrl: 'https://apps.apple.com/tr/app/notiva-notes-tasks-focus/id6450840399',
       tags: ['SwiftUI', 'Spring Boot', 'PostgreSQL', 'JWT', 'Docker', 'Redis', 'Liquibase'],
     },
     {
@@ -45,20 +49,34 @@ export class Projects {
       emoji: '✈️',
       title: 'TripMate',
       status: 'live',
+      featured: true,
+      detailUrl: '/projects/tripmate',
+      appStoreUrl: 'https://apps.apple.com/tr/app/tripmate/id6761005038',
       tags: ['SwiftUI', 'MapKit', 'CoreLocation', 'REST API'],
     },
     {
       key: 'eczanem',
       emoji: '💊',
-      title: 'EczanemNöbetçi',
+      title: 'Eczanem Nöbetçi',
       status: 'live',
+      appStoreUrl: 'https://apps.apple.com/tr/app/eczanem-n%C3%B6bet%C3%A7i/id1673717286',
       tags: ['SwiftUI', 'MapKit', 'REST API', 'CoreLocation'],
+    },
+    {
+      key: 'grammivo',
+      emoji: '📚',
+      title: 'Grammivo',
+      status: 'live',
+      appStoreUrl: 'https://apps.apple.com/tr/app/grammivo/id6790207589',
+      tags: ['SwiftData', 'Apple Vision', 'Keychain', 'Gemini'],
     },
     {
       key: 'chat',
       emoji: '💬',
       title: 'Gerçek Zamanlı Chat Sistemi',
       status: 'dev',
+      featured: true,
+      detailUrl: '/projects/chat',
       tags: ['Node.js', 'Express.js', 'Socket.IO', 'PostgreSQL', 'JWT', 'AES-GCM', 'ECDH', 'ECDSA', 'HKDF'],
     },
     {
@@ -83,4 +101,7 @@ export class Projects {
       tags: ['Angular', 'TypeScript', 'SCSS', 'REST API', 'PostgreSQL'],
     },
   ];
+
+  readonly featuredProjects = this.projects.filter(project => project.featured);
+  readonly otherProjects = this.projects.filter(project => !project.featured);
 }

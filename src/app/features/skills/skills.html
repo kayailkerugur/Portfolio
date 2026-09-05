@@ -3,15 +3,14 @@
   <div class="container">
     <header appFadeIn class="skills__intro">
       <div><p class="skills__eyebrow">{{ 'skills.eyebrow' | translate }}</p><h1 class="section-title">{{ 'skills.title' | translate }}</h1><p class="skills__description">{{ 'skills.description' | translate }}</p></div>
-      <div class="skills__summary"><strong>{{ totalSkills }}</strong><span>{{ 'skills.technologies' | translate }}</span></div>
     </header>
     <div class="skills__grid">
       @for (group of groups; track group.category; let i = $index) {
-        <div appFadeIn [appFadeIn]="i * 60 + 'ms'" class="skill-group">
-          <div class="skill-group__header">
+        <details appFadeIn [appFadeIn]="i * 60 + 'ms'" class="skill-group" [open]="group.essential">
+          <summary class="skill-group__header">
             <span class="skill-group__emoji" aria-hidden="true">{{ group.emoji }}</span>
-            <div class="skill-group__heading"><h2 class="skill-group__category">{{ group.category | translate }}</h2><span>{{ group.skills.length }} {{ 'skills.items' | translate }}</span></div>
-          </div>
+            <div class="skill-group__heading"><h2 class="skill-group__category">{{ group.category | translate }}</h2><span>{{ group.skills.length }} {{ 'skills.items' | translate }}</span></div><span class="skill-group__toggle">{{ 'skills.view_more' | translate }}</span>
+          </summary>
           <div class="skill-group__items">
             @for (skill of group.skills; track skill.name; let j = $index) {
               <div class="skill-chip skill-chip--primary" [style.--chip-delay]="j * 35 + 'ms'">
@@ -27,7 +26,7 @@
               </div>
             }
           </div>
-        </div>
+        </details>
       }
     </div>
   </div>

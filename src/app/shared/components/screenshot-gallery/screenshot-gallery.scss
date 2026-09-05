@@ -1,0 +1,10 @@
+@use '../../../../styles/variables' as *;
+.gallery { margin-bottom: $spacing-3xl; h2 { margin-bottom: $spacing-xl; font-size: clamp(1.5rem, 3vw, 2.25rem); } }
+.gallery__track { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(220px, 320px); gap: $spacing-lg; overflow-x: auto; padding-bottom: $spacing-md; scroll-snap-type: x mandatory; }
+figure { scroll-snap-align: start; }
+figure button { width: 100%; overflow: hidden; border: 1px solid var(--color-border); border-radius: $radius-lg; background: var(--color-surface); cursor: zoom-in; }
+figure img { display: block; width: 100%; height: auto; }
+figcaption { margin-top: $spacing-sm; color: var(--color-text-muted); font-size: .8rem; }
+.lightbox { position: fixed; inset: 0; z-index: 1000; display: grid; place-items: center; padding: $spacing-xl; background: rgba(0, 0, 0, .88); }
+.lightbox img { max-width: min(100%, 1100px); max-height: 88dvh; border-radius: $radius-lg; }
+.lightbox__close { position: fixed; top: $spacing-lg; right: $spacing-lg; width: 44px; height: 44px; border-radius: $radius-full; background: var(--color-surface); color: var(--color-text); font-size: 1.6rem; }

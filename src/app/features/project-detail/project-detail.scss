@@ -7,6 +7,7 @@
 .detail__eyebrow, .detail__label { color: $color-accent; text-transform: uppercase; letter-spacing: .12em; font-size: .72rem; font-weight: 700; }
 .detail__lead { max-width: 760px; color: var(--color-text-muted); font-size: clamp(1rem, 2vw, 1.25rem); line-height: 1.75; }
 .detail__repo { display: inline-flex; gap: $spacing-sm; align-items: center; margin-top: $spacing-lg; padding: .65rem 1rem; border-radius: $radius-md; background: $color-accent; color: #fff; font-size: .875rem; font-weight: 600; transition: background $transition-fast, transform $transition-fast; &:hover { background: $color-accent-hover; transform: translateY(-1px); } }
+.detail__repo--secondary { margin-left: $spacing-sm; background: var(--color-surface); border: 1px solid var(--color-border); color: var(--color-text); &:hover { border-color: $color-accent; background: var(--color-surface); } }
 .detail__tags { display: flex; flex-wrap: wrap; gap: $spacing-sm; margin-top: $spacing-xl; }
 .tag { font-size: .75rem; padding: .3rem .7rem; border-radius: $radius-full; background: var(--color-surface); border: 1px solid var(--color-border); color: var(--color-text-muted); }
 .detail__body { padding-top: $spacing-3xl; }
@@ -20,4 +21,4 @@
 .metrics { display: grid; grid-template-columns: repeat(3, 1fr); border-block: 1px solid var(--color-border); padding: $spacing-xl 0; div { display: flex; flex-direction: column; align-items: center; text-align: center; gap: $spacing-xs; } strong { color: $color-accent; font-size: clamp(2rem, 5vw, 3.5rem); } span { color: var(--color-text-muted); font-size: .8rem; } }
 .role { max-width: 800px; }
 @media (max-width: $bp-md) { .detail__overview, .feature-grid { grid-template-columns: 1fr; } .detail__overview { gap: $spacing-lg; } }
-@media (max-width: $bp-sm) { .detail__container { padding-inline: $spacing-md; } .metrics { grid-template-columns: 1fr; gap: $spacing-xl; } .architecture { padding: $spacing-lg; } }
+@media (max-width: $bp-sm) { .detail__container { padding-inline: $spacing-md; } .detail__repo--secondary { margin-left: 0; } .metrics { grid-template-columns: 1fr; gap: $spacing-xl; } .architecture { padding: $spacing-lg; } }

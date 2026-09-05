@@ -25,9 +25,9 @@ export class Contact {
   }
 
   readonly socials = [
-    { label: 'E-posta',   handle: 'kayailkercontact@gmail.com',          href: 'mailto:kayailkercontact@gmail.com', icon: 'email' },
-    { label: 'GitHub',    handle: 'kayailkerugur',                        href: 'https://github.com/kayailkerugur', icon: 'github' },
-    { label: 'LinkedIn',  handle: 'ilker-ugur-kaya',                      href: 'https://www.linkedin.com/in/ilker-ugur-kaya/', icon: 'linkedin' },
-    { label: 'Instagram', handle: 'kaya.dev_',                            href: 'https://instagram.com/kaya.dev_',  icon: 'instagram' },
+    { labelKey: 'contact.channels.email', handle: 'kayailkercontact@gmail.com', href: 'mailto:kayailkercontact@gmail.com', icon: 'email', secondary: false },
+    { labelKey: 'contact.channels.github', handle: 'kayailkerugur', href: 'https://github.com/kayailkerugur', icon: 'github', secondary: false },
+    { labelKey: 'contact.channels.linkedin', handle: 'ilker-ugur-kaya', href: 'https://www.linkedin.com/in/ilker-ugur-kaya/', icon: 'linkedin', secondary: false },
+    { labelKey: 'contact.channels.instagram', handle: 'kaya.dev_', href: 'https://instagram.com/kaya.dev_', icon: 'instagram', secondary: true },
   ];
 }

@@ -25,7 +25,11 @@ export class SeoService {
   private update(): void {
     let route = this.router.routerState.snapshot.root;
     while (route.firstChild) route = route.firstChild;
-    const key = route.data['seoKey'] as string | undefined;
+    let key = route.data['seoKey'] as string | undefined;
+    if (key === 'project') {
+      const slug = route.paramMap.get('slug');
+      key = ['aichat', 'notiva', 'tripmate', 'chat'].includes(slug ?? '') ? slug ?? 'projects' : 'projects';
+    }
     if (!key) return;
 
     const title = this.translate.instant(`seo.${key}.title`);
@@ -38,9 +42,12 @@ export class SeoService {
     this.meta.updateTag({ property: 'og:title', content: title });
     this.meta.updateTag({ property: 'og:description', content: description });
     this.meta.updateTag({ property: 'og:url', content: canonical });
+    this.meta.updateTag({ property: 'og:type', content: 'website' });
+    this.meta.updateTag({ property: 'og:site_name', content: 'İlker Kaya' });
     this.meta.updateTag({ property: 'og:locale', content: language === 'tr' ? 'tr_TR' : 'en_US' });
     this.meta.updateTag({ name: 'twitter:title', content: title });
     this.meta.updateTag({ name: 'twitter:description', content: description });
+    this.meta.updateTag({ name: 'twitter:card', content: 'summary' });
     this.document.documentElement.lang = language;
 
     const link = this.document.querySelector<HTMLLinkElement>('link[rel="canonical"]');

@@ -60,12 +60,14 @@
     </div>
 
     <div class="contact__cards">
-      @for (social of socials; track social.label) {
+      @for (social of socials; track social.labelKey) {
         <a
           [href]="social.href"
           class="contact-card"
+          [class.contact-card--secondary]="social.secondary"
+          [attr.aria-label]="(social.labelKey | translate) + ': ' + social.handle"
           target="{{ social.icon === 'email' ? '_self' : '_blank' }}"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           <span class="contact-card__icon">
             @switch (social.icon) {
@@ -95,7 +97,7 @@
             }
           </span>
           <div class="contact-card__info">
-            <span class="contact-card__label">{{ social.label }}</span>
+            <span class="contact-card__label">{{ social.labelKey | translate }}</span>
             <span class="contact-card__handle">{{ social.handle }}</span>
           </div>
           <span class="contact-card__arrow">

@@ -1,6 +1,9 @@
 @use '../../../styles/variables' as *;
 
 .projects {
+  &__group { margin-top: $spacing-3xl; }
+  &__group:first-of-type { margin-top: $spacing-2xl; }
+  &__group-title { margin-bottom: $spacing-lg; color: var(--color-text-muted); font-size: .75rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
   &__grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
@@ -10,6 +13,8 @@
       grid-template-columns: 1fr;
     }
   }
+
+  &__grid--featured { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 .project-card {
@@ -36,10 +41,11 @@
   }
 
   &--featured {
-    grid-column: 1 / -1;
     border-color: rgba($color-accent, 0.5);
     background: linear-gradient(135deg, rgba($color-accent, 0.1), var(--color-surface) 45%);
   }
+
+  &--featured &__title { font-size: 1.35rem; }
 
   &__header {
     display: flex;
@@ -67,6 +73,7 @@
       color: #22c55e;
     }
   }
+  &__badges { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: $spacing-xs; }
 
   &__top {
     display: flex;
@@ -92,6 +99,8 @@
     line-height: 1.7;
     color: var(--color-text-muted);
   }
+
+  &__role { color: var(--color-text-muted); font-size: .8rem; line-height: 1.55; strong { color: var(--color-text); font-weight: 600; } }
 
   &__features {
     display: flex;
@@ -141,6 +150,8 @@
     font-weight: 600;
   }
 }
+
+@media (max-width: $bp-md) { .projects__grid--featured { grid-template-columns: 1fr; } }
 
 .tag {
   font-size: 0.725rem;

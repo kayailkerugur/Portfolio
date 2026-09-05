@@ -1,55 +1,108 @@
 {
   "nav": {
+    "home": "Home",
     "about": "About",
     "projects": "Projects",
     "skills": "Skills",
     "contact": "Contact"
   },
-  "a11y": { "primary_nav": "Primary navigation", "light_theme": "Switch to light theme", "dark_theme": "Switch to dark theme", "open_menu": "Open menu", "close_menu": "Close menu" },
+  "a11y": {
+    "primary_nav": "Primary navigation",
+    "light_theme": "Switch to light theme",
+    "dark_theme": "Switch to dark theme",
+    "open_menu": "Open menu",
+    "close_menu": "Close menu"
+  },
   "seo": {
-    "home": { "title": "İlker Kaya | Software Engineer", "description": "Portfolio of İlker Kaya, building iOS, backend, AI, and secure software systems." },
-    "about": { "title": "About | İlker Kaya", "description": "İlker Kaya's software engineering experience, education, and areas of expertise." },
-    "projects": { "title": "Projects | İlker Kaya", "description": "Projects across iOS, backend, artificial intelligence, security, and full-stack engineering." },
-    "aichat": { "title": "AIChat | Native macOS AI App", "description": "AIChat offers multiple AI providers, voice, multimodal files, Git Code Mode, and a reusable Swift SDK." },
-    "skills": { "title": "Skills | İlker Kaya", "description": "Swift, SwiftUI, Java, Spring Boot, Angular, security, database, and DevOps skills." },
-    "contact": { "title": "Contact | İlker Kaya", "description": "Contact İlker Kaya for projects, collaborations, and software engineering opportunities." },
-    "not_found": { "title": "Page Not Found | İlker Kaya", "description": "The page you requested could not be found." }
+    "home": {
+      "title": "İlker Kaya | iOS Engineer",
+      "description": "Portfolio of İlker Kaya, an iOS engineer building production-ready Swift applications, scalable backend systems, and secure software."
+    },
+    "about": {
+      "title": "About | İlker Kaya",
+      "description": "İlker Kaya's software engineering experience, education, and areas of expertise."
+    },
+    "projects": {
+      "title": "Projects | İlker Kaya",
+      "description": "Projects across iOS, backend, artificial intelligence, security, and full-stack engineering."
+    },
+    "aichat": {
+      "title": "AIChat | Native macOS AI App",
+      "description": "AIChat offers multiple AI providers, voice, multimodal files, Git Code Mode, and a reusable Swift SDK."
+    },
+    "notiva": {
+      "title": "Notiva | iOS Project",
+      "description": "An iOS organization app with a supporting backend, cloud synchronization, and encrypted data storage."
+    },
+    "tripmate": {
+      "title": "TripMate | iOS Project",
+      "description": "An iOS travel planning app built with SwiftUI, MapKit, CoreLocation, and REST APIs."
+    },
+    "chat": {
+      "title": "Real-Time Chat | Backend & Security",
+      "description": "A real-time messaging system with Socket.IO, multi-device support, and end-to-end encryption."
+    },
+    "skills": {
+      "title": "Skills | İlker Kaya",
+      "description": "Swift, SwiftUI, Java, Spring Boot, Angular, security, database, and DevOps skills."
+    },
+    "contact": {
+      "title": "Contact | İlker Kaya",
+      "description": "Contact İlker Kaya for projects, collaborations, and software engineering opportunities."
+    },
+    "not_found": {
+      "title": "Page Not Found | İlker Kaya",
+      "description": "The page you requested could not be found."
+    }
   },
   "home": {
     "greeting": "Hi, I'm",
-    "role": "Mobile & Backend Engineer · DevOps Enthusiast",
-    "bio": "I'm a software engineer specializing in iOS and backend development. I build user-focused mobile apps with SwiftUI and scalable, secure backend services with Spring Boot and Node.js. I actively work on advanced security topics like JWT authentication, end-to-end encryption, and real-time communication. I'm proficient in DevOps workflows including Docker and containerization — I believe clean architecture and maintainable code are the foundation of every great project.",
+    "role": "iOS Engineer · Backend & Security",
+    "bio": "I build user-focused, production-ready iOS applications with Swift and SwiftUI. My backend and security experience helps me design authentication, real-time communication, and scalable services with the complete product in mind.",
     "cta_projects": "View My Projects",
     "cta_contact": "Get In Touch",
     "cta_cv": "Download CV"
   },
   "about": {
     "title": "About Me",
-    "bio": "I'm a software engineer specializing in iOS and backend development. I design and build production-ready, scalable applications using SwiftUI, Spring Boot, and Node.js. I have hands-on experience with DevOps workflows including containerization and deployment. I focus on clean architecture, system design, and building secure, maintainable software systems.",
+    "bio": "I'm an iOS and macOS engineer with experience shipping production Apple-platform applications using Swift, SwiftUI, and UIKit. I also build backend systems with Spring Boot and Node.js, working across authentication, real-time communication, encrypted data, containerized deployments, and CI/CD. My engineering approach centers on clean architecture, security, and maintainable software.",
     "experience_title": "Work Experience",
     "education_title": "Education",
     "languages_title": "Languages",
     "present": "Present",
     "jobs": {
+      "enqura_mac": {
+        "role": "macOS Developer Intern",
+        "company": "Enqura — Istanbul, TR",
+        "date": "Jul 2026 – Aug 2026",
+        "bullets": [
+          "Built AIChat, a native macOS client with SwiftUI, real-time streaming, multimodal attachments, and persistent conversation management.",
+          "Architected a provider-independent, protocol-oriented design and extracted reusable capabilities into AIChatSDK.",
+          "Integrated OpenAI-compatible services using SSE and implemented Core Data persistence.",
+          "Implemented Google OAuth 2.0 with PKCE and secured tokens and API keys in Keychain.",
+          "Developed a sandbox-compliant Git Code Mode with sensitive-data masking and user-approved edits.",
+          "Added on-device speech-to-text and text-to-speech using Speech and AVFoundation."
+        ]
+      },
       "aselsan": {
-        "role": "FullStack Developer Intern",
+        "role": "Full-Stack Developer Intern",
         "company": "Aselsan — Sivas, TR",
         "date": "Feb 2026 – May 2026",
         "bullets": [
-          "Developed a full-stack application using Angular (frontend) and Node.js (backend)",
-          "Implemented WebSocket (Socket.IO) based real-time communication",
-          "Designed a document search system using Elasticsearch with full-text search over PDF files",
-          "Implemented end-to-end encryption (E2EE) using AES-GCM and ECDH key exchange",
-          "Containerized services using Docker and configured development environments"
+          "Developed a full-stack application using Angular for the frontend and Node.js for the backend.",
+          "Built real-time communication infrastructure using WebSocket and Socket.IO.",
+          "Designed a document search system using Elasticsearch for full-text search across PDF files.",
+          "Implemented end-to-end encryption (E2EE) using AES-GCM and ECDH key exchange.",
+          "Containerized services with Docker and configured development environments."
         ]
       },
-      "enqura": {
+      "enqura_ios": {
         "role": "iOS Developer Intern",
         "company": "Enqura — Istanbul, TR",
         "date": "Jan 2025 – Feb 2025",
         "bullets": [
-          "Conducted practical implementations in network security and secure communication protocols",
-          "Implemented SSL control mechanisms to ensure secure communications"
+          "Implemented practical exercises in network security and secure communication protocols.",
+          "Developed SSL control mechanisms for secure communication."
         ]
       },
       "detaysoft": {
@@ -57,19 +110,23 @@
         "company": "Detaysoft — Sivas, TR",
         "date": "Dec 2022 – Jun 2024",
         "bullets": [
-          "Developed high-performance, scalable mobile applications using Swift",
-          "Designed user-friendly interfaces using SwiftUI and UIKit",
-          "Built applications following MVVM and MVC architectural patterns",
-          "Implemented data management and performance optimizations using CoreData and Realm",
-          "Participated in the full lifecycle of App Store deployment and release processes"
+          "Developed high-performance, scalable mobile applications using Swift.",
+          "Designed user-focused interfaces using SwiftUI and UIKit.",
+          "Built applications with MVVM and MVC architectural patterns.",
+          "Implemented data management and performance optimizations using CoreData and Realm.",
+          "Contributed to the full App Store deployment and release lifecycle."
         ]
       }
     },
     "education": {
+      "ms": {
+        "degree": "M.S. in Computer Engineering",
+        "date": "In progress"
+      },
       "cs": {
-        "degree": "B.S. in Computer Engineering",
+        "degree": "B.S. in Computer Engineering — GPA: 3.36/4.00",
         "school": "Sivas Cumhuriyet University",
-        "date": "Sep 2022 – Jul 2026"
+        "date": "Graduated Jul 2026"
       },
       "ee": {
         "degree": "Double Major in Electrical & Electronics Engineering",
@@ -83,36 +140,48 @@
   "skills": {
     "title": "Skills",
     "eyebrow": "Technology stack",
-    "description": "My technical toolkit spanning native applications, secure backend systems, and artificial intelligence integrations.",
+    "description": "iOS engineering first, supported by secure backend systems, application security, and AI integrations.",
     "technologies": "technologies and tools",
     "items": "skills",
     "categories": {
-      "languages": "Languages",
-      "mobile": "Mobile",
-      "ai_native": "Artificial Intelligence & Native macOS",
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "database_devops": "Database & DevOps",
+      "core": "Core Technologies",
+      "mobile": "iOS & Mobile",
+      "backend_systems": "Backend & Systems",
+      "ai_multimodal": "AI & Multimodal",
+      "additional": "Additional / Familiar Technologies",
       "security": "Security",
       "tools": "Tools"
-    }
+    },
+    "view_more": "View more technologies"
   },
   "projects": {
     "title": "Projects",
+    "featured_title": "Featured Projects",
+    "other_title": "Other Projects",
     "featured": "Featured Project",
     "details": "View Project",
+    "case_study": "View Case Study",
+    "role_label": "Role",
     "live": "Live",
-    "dev": "Built",
+    "dev": "In Development",
     "source": "Source Code",
     "demo": "Live Demo",
+    "app_store": "App Store",
     "items": {
       "aichat": {
         "subtitle": "Native macOS · Artificial Intelligence · Swift SDK",
+        "role": "End-to-end product development",
         "description": "A native macOS app and reusable Swift SDK built with SwiftUI, featuring multiple AI providers, streaming chat, multimodal files, voice conversations, and a Git-based Code Mode.",
-        "features": ["Gemini, OpenAI, Ollama, and LM Studio support", "Real-time streaming and multimodal chat", "Secure Git repository inspection and user-approved edits", "Modular AIChatSDK with 124 passing unit tests"]
+        "features": [
+          "Gemini, OpenAI, Ollama, and LM Studio support",
+          "Real-time streaming and multimodal chat",
+          "Secure Git repository inspection and user-approved edits",
+          "Modular AIChatSDK with 124 passing unit tests"
+        ]
       },
       "notiva": {
         "subtitle": "iOS · Backend · DevOps",
+        "role": "iOS and backend development",
         "description": "A comprehensive mobile application that consolidates note-taking, task management, planning, and personal organization in one place. Personal data is securely protected with end-to-end encrypted storage and a cloud synchronization infrastructure.",
         "features": [
           "Create and edit notes",
@@ -125,6 +194,7 @@
       },
       "tripmate": {
         "subtitle": "iOS · Backend · DevOps",
+        "role": "iOS application development",
         "description": "A travel planning application designed for users to create travel plans and organize their trips. It simplifies the travel experience with day-based itinerary planning, city and route creation, place recommendations, and location-based planning.",
         "features": [
           "Day-based itinerary planning",
@@ -136,6 +206,7 @@
       },
       "eczanem": {
         "subtitle": "iOS",
+        "role": "iOS application development",
         "description": "A mobile application that allows users to view on-duty pharmacies in real time based on their location. Provides map visualization, location-based filtering, and quick access to pharmacy contact information.",
         "features": [
           "On-duty pharmacy listing",
@@ -144,8 +215,21 @@
           "Phone and address information access"
         ]
       },
+      "grammivo": {
+        "subtitle": "iOS · Language Learning · Artificial Intelligence",
+        "role": "iOS application development",
+        "description": "A language-learning application for analyzing text, learning vocabulary, practicing translations, and reviewing saved words.",
+        "features": [
+          "Text analysis and translation practice",
+          "Vocabulary learning and saved-word review",
+          "On-device image text recognition with Apple Vision",
+          "Local data storage with SwiftData and Keychain"
+        ]
+      },
       "chat": {
+        "title": "Real-Time Chat",
         "subtitle": "Backend · Security",
+        "role": "Backend and security engineering",
         "description": "A system designed to develop real-time messaging and secure communication infrastructure. Provides end-to-end encryption (E2EE) with AES-GCM, ECDH, and ECDSA cryptographic protocols; supports instant messaging, DM system, and multi-device usage.",
         "features": [
           "Instant messaging and DM system",
@@ -158,6 +242,7 @@
       },
       "restlocations": {
         "subtitle": "iOS · Backend",
+        "role": "iOS and backend development",
         "description": "A mobile platform for travelers to discover hotels, campsites, and caravan accommodation spots. Offers a comprehensive accommodation solution with map integration, location-based search, and travel route creation.",
         "features": [
           "Hotels, campsites and caravan spots listing",
@@ -168,6 +253,7 @@
       },
       "auth": {
         "subtitle": "Backend · DevOps",
+        "role": "Backend development",
         "description": "A centralized user management and authentication service usable by multiple applications. Provides a production-ready authentication infrastructure with email verification, JWT/refresh token management, Redis-based token blacklist, and Thymeleaf HTML email templates.",
         "features": [
           "User registration and email verification",
@@ -179,7 +265,8 @@
         ]
       },
       "kroki": {
-        "subtitle": "Frontend · FullStack",
+        "subtitle": "Frontend · Full-Stack",
+        "role": "Full-stack development",
         "description": "A web-based system that enables location and area data to be managed on a schematic map. Offers an enterprise-ready platform with dynamic data visualization, area and point management, location marking, and admin panel integration.",
         "features": [
           "Schematic map viewing and management",
@@ -191,8 +278,152 @@
       }
     }
   },
+  "case_studies": {
+    "aichat": {
+      "title": "AIChat",
+      "eyebrow": "Native macOS app · Swift SDK",
+      "lead": "A developer-focused AI application combining a native macOS experience, provider-independent AI chat, and secure Git project analysis.",
+      "overview_title": "Chat, voice, and code in one app",
+      "overview": "AIChat is a native macOS application for real-time communication with OpenAI-compatible AI services. It includes conversation management, persistent history, Markdown and code blocks, file attachments, voice conversations, and local Git repository inspection. Its core capabilities are modularized in AIChatSDK for reuse by other macOS applications.",
+      "role": "I developed the requirements, architecture, SwiftUI interface, authentication, AI provider integrations, persistence layer, multimodal file support, voice experience, Git-based Code Mode, SDK modularization, tests, and technical documentation.",
+      "groups": {
+        "chat": {
+          "title": "Chat",
+          "items": [
+            "Real-time streaming responses over SSE",
+            "Conversation management and persistent history",
+            "Gemini, OpenAI, Ollama, LM Studio, and custom services"
+          ]
+        },
+        "multimodal": {
+          "title": "Multimodal",
+          "items": [
+            "Image, PDF, JSON, CSV, and text file support",
+            "Persistent file storage and in-app previews"
+          ]
+        },
+        "voice": {
+          "title": "Voice",
+          "items": [
+            "On-device speech-to-text",
+            "Response playback with AVSpeechSynthesizer",
+            "Push-to-talk experience"
+          ]
+        },
+        "security": {
+          "title": "Security",
+          "items": [
+            "Google OAuth 2.0 Authorization Code + PKCE",
+            "Tokens and API keys stored in Keychain",
+            "Sensitive data masking before AI requests"
+          ]
+        },
+        "code": {
+          "title": "Code Mode",
+          "items": [
+            "Inspect Git changes and selected diffs",
+            "Repository boundary, binary, and symlink safeguards",
+            "Apply file edits only after user approval"
+          ]
+        },
+        "sdk": {
+          "title": "SDK",
+          "items": [
+            "Reusable and customizable AIChatSDK",
+            "MVVM, Repository, DI, and protocol-oriented design",
+            "Testability with mocks and in-memory repositories"
+          ]
+        }
+      }
+    },
+    "notiva": {
+      "title": "Notiva",
+      "eyebrow": "iOS · Backend · DevOps",
+      "lead": "A mobile application for notes, tasks, planning, and personal organization with secure storage and cloud synchronization.",
+      "overview_title": "Personal organization in one place",
+      "overview": "Notiva consolidates note-taking, task management, daily planning, and reminders in a single mobile application. It includes authentication, cloud synchronization infrastructure, and end-to-end encrypted data storage.",
+      "role": "I worked on the iOS application and its supporting backend system.",
+      "groups": {
+        "organization": {
+          "title": "Organization",
+          "items": [
+            "Create and edit notes",
+            "To-do lists and task management",
+            "Daily planning and reminders"
+          ]
+        },
+        "sync": {
+          "title": "Synchronization",
+          "items": ["Authentication system integration", "Cloud synchronization infrastructure"]
+        },
+        "security": {
+          "title": "Security",
+          "items": ["End-to-end encrypted data storage", "JWT-based authentication"]
+        }
+      }
+    },
+    "tripmate": {
+      "title": "TripMate",
+      "eyebrow": "iOS · Maps · Travel",
+      "lead": "An iOS travel planning application for organizing itineraries, routes, and places.",
+      "overview_title": "Day-by-day travel planning",
+      "overview": "TripMate helps users create travel plans through day-based itineraries, city and route creation, place recommendations, travel calendar management, and location-based planning.",
+      "role": "I developed the iOS application and integrated its mapping and location-based capabilities.",
+      "groups": {
+        "planning": {
+          "title": "Planning",
+          "items": [
+            "Day-based itinerary planning",
+            "City and route creation",
+            "Travel calendar management"
+          ]
+        },
+        "location": {
+          "title": "Location",
+          "items": [
+            "Place recommendations",
+            "Location-based planning",
+            "MapKit and CoreLocation integration"
+          ]
+        }
+      }
+    },
+    "chat": {
+      "title": "Real-Time Chat",
+      "eyebrow": "Backend · Real-time · Security",
+      "lead": "A real-time messaging system focused on secure communication and multi-device use.",
+      "overview_title": "Secure real-time communication",
+      "overview": "This system provides instant messaging, direct messages, presence tracking, read receipts, typing indicators, and multi-device support. Its end-to-end encryption uses AES-GCM, ECDH, ECDSA, and HKDF.",
+      "role": "I developed the real-time backend and secure communication infrastructure.",
+      "groups": {
+        "realtime": {
+          "title": "Real-time",
+          "items": [
+            "Instant messaging and direct messages",
+            "Online user tracking",
+            "Read receipts and typing indicators"
+          ]
+        },
+        "security": {
+          "title": "Security",
+          "items": [
+            "End-to-end encryption",
+            "AES-GCM, ECDH, ECDSA, and HKDF cryptographic chain",
+            "JWT-based authentication"
+          ]
+        },
+        "devices": {
+          "title": "Device support",
+          "items": ["Multi-device support", "Socket.IO communication infrastructure"]
+        }
+      }
+    }
+  },
   "project_detail": {
     "back": "Back to all projects",
+    "screenshots_title": "Product screenshots",
+    "enlarge": "Enlarge screenshot",
+    "close": "Close gallery",
     "eyebrow": "Native macOS app · Swift SDK",
     "lead": "A developer-focused AI application that combines a native macOS experience, provider-independent AI chat, and secure Git project analysis in one modular Swift SDK.",
     "overview_label": "About the project",
@@ -201,17 +432,69 @@
     "features_label": "Capabilities",
     "features_title": "Six core feature areas",
     "groups": {
-      "chat": { "title": "Chat", "items": ["Real-time streaming responses over SSE", "Create, search, rename, and delete conversations", "Markdown, code block rendering, and clipboard copy", "Gemini, OpenAI, Ollama, LM Studio, and custom services"] },
-      "multimodal": { "title": "Multimodal", "items": ["Image, PDF, JSON, CSV, and text file support", "Multimodal image messages", "Persistent file storage and in-app previews", "Core Data relationships for chats, projects, and attachments"] },
-      "voice": { "title": "Voice", "items": ["On-device speech-to-text", "Response playback with AVSpeechSynthesizer", "Push-to-talk experience", "Interrupt speech to ask a new question"] },
-      "security": { "title": "Security", "items": ["Google OAuth 2.0 Authorization Code + PKCE", "Tokens and API keys stored in Keychain", "Folder access with security-scoped bookmarks", "Sensitive data masking before AI requests"] },
-      "code": { "title": "Code Mode", "items": ["Inspect branch, staged, unstaged, and untracked changes", "Add selected files and diffs to context", "Repository boundary, binary, and symlink safeguards", "Apply file edits only after user approval"] },
-      "sdk": { "title": "SDK", "items": ["Reusable and customizable AIChatSDK", "Presentation → Domain ← Data / Infrastructure architecture", "MVVM, Repository, DI, and protocol-oriented design", "Testability with mocks and in-memory repositories"] }
+      "chat": {
+        "title": "Chat",
+        "items": [
+          "Real-time streaming responses over SSE",
+          "Create, search, rename, and delete conversations",
+          "Markdown, code block rendering, and clipboard copy",
+          "Gemini, OpenAI, Ollama, LM Studio, and custom services"
+        ]
+      },
+      "multimodal": {
+        "title": "Multimodal",
+        "items": [
+          "Image, PDF, JSON, CSV, and text file support",
+          "Multimodal image messages",
+          "Persistent file storage and in-app previews",
+          "Core Data relationships for chats, projects, and attachments"
+        ]
+      },
+      "voice": {
+        "title": "Voice",
+        "items": [
+          "On-device speech-to-text",
+          "Response playback with AVSpeechSynthesizer",
+          "Push-to-talk experience",
+          "Interrupt speech to ask a new question"
+        ]
+      },
+      "security": {
+        "title": "Security",
+        "items": [
+          "Google OAuth 2.0 Authorization Code + PKCE",
+          "Tokens and API keys stored in Keychain",
+          "Folder access with security-scoped bookmarks",
+          "Sensitive data masking before AI requests"
+        ]
+      },
+      "code": {
+        "title": "Code Mode",
+        "items": [
+          "Inspect branch, staged, unstaged, and untracked changes",
+          "Add selected files and diffs to context",
+          "Repository boundary, binary, and symlink safeguards",
+          "Apply file edits only after user approval"
+        ]
+      },
+      "sdk": {
+        "title": "SDK",
+        "items": [
+          "Reusable and customizable AIChatSDK",
+          "Presentation → Domain ← Data / Infrastructure architecture",
+          "MVVM, Repository, DI, and protocol-oriented design",
+          "Testability with mocks and in-memory repositories"
+        ]
+      }
     },
     "architecture_label": "Architecture",
     "architecture_title": "Infrastructure-independent by design",
     "architecture": "A layered architecture with one-way dependencies keeps the UI from directly accessing URLSession, Core Data, Keychain, or Git infrastructure. Provider-independent integrations and protocol-based boundaries keep the SDK extensible and testable.",
-    "metrics": { "tests": "passing unit tests", "providers": "supported provider types", "modes": "chat and code modes" },
+    "metrics": {
+      "tests": "passing unit tests",
+      "providers": "supported provider types",
+      "modes": "chat and code modes"
+    },
     "role_label": "My role",
     "role_title": "End-to-end product development",
     "role": "I developed the requirements, architecture, SwiftUI interface, authentication, AI provider integrations, persistence layer, multimodal file support, voice experience, Git-based Code Mode, SDK modularization, tests, and technical documentation."
@@ -220,6 +503,12 @@
     "title": "Contact",
     "intro": "Feel free to reach out for any project, collaboration, or question through the channels below. Email is preferred for the fastest response.",
     "or": "or",
+    "channels": {
+      "email": "Email",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram"
+    },
     "form": {
       "name": "Full Name",
       "name_placeholder": "Your name",

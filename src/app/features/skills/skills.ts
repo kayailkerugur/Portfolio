@@ -2,128 +2,29 @@ import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { FadeInDirective } from '../../shared/directives/fade-in.directive';
 
-export interface Skill {
-  name: string;
-  icon?: string;
-  customIcon?: string;
-  level?: 'primary' | 'secondary'; // Kept for data compatibility; all skills are displayed equally.
-}
+export interface Skill { name: string; icon?: string; customIcon?: string; }
+export interface SkillGroup { category: string; emoji: string; essential: boolean; skills: Skill[]; }
 
-export interface SkillGroup {
-  category: string;
-  emoji: string;
-  skills: Skill[];
-}
-
-@Component({
-  selector: 'app-skills',
-  imports: [TranslateModule, FadeInDirective],
-  templateUrl: './skills.html',
-  styleUrl: './skills.scss',
-})
+@Component({ selector: 'app-skills', imports: [TranslateModule, FadeInDirective], templateUrl: './skills.html', styleUrl: './skills.scss' })
 export class Skills {
   readonly groups: SkillGroup[] = [
-    {
-      category: 'skills.categories.languages',
-      emoji: '💻',
-      skills: [
-        { name: 'Swift',      icon: 'devicon-swift-plain',            level: 'primary' },
-        { name: 'Java',       icon: 'devicon-java-plain',             level: 'primary' },
-        { name: 'TypeScript', icon: 'devicon-typescript-plain',       level: 'primary' },
-        { name: 'JavaScript', icon: 'devicon-javascript-plain',       level: 'primary' },
-        { name: 'SQL',        icon: 'devicon-azuresqldatabase-plain', level: 'secondary' },
-      ],
-    },
-    {
-      category: 'skills.categories.mobile',
-      emoji: '📱',
-      skills: [
-        { name: 'SwiftUI',    icon: 'devicon-swift-plain',    level: 'primary' },
-        { name: 'UIKit',      icon: 'devicon-apple-original', level: 'primary' },
-        { name: 'CoreData',   icon: 'devicon-apple-original', level: 'secondary' },
-        { name: 'macOS',      icon: 'devicon-apple-original', level: 'primary' },
-        { name: 'AppKit',     icon: 'devicon-apple-original', level: 'secondary' },
-        { name: 'Realm',      icon: 'devicon-realm-original', level: 'secondary' },
-        { name: 'MapKit',     customIcon: '🗺️',               level: 'secondary' },
-        { name: 'MVVM / MVC', customIcon: '🏗️',              level: 'secondary' },
-      ],
-    },
-    {
-      category: 'skills.categories.ai_native',
-      emoji: '🤖',
-      skills: [
-        { name: 'OpenAI-compatible APIs', customIcon: '✨', level: 'primary' },
-        { name: 'Gemini',                  customIcon: '💫', level: 'primary' },
-        { name: 'Ollama',                  customIcon: '🦙', level: 'secondary' },
-        { name: 'Server-Sent Events',      customIcon: '⚡', level: 'primary' },
-        { name: 'Multimodal AI',           customIcon: '🖼️', level: 'primary' },
-        { name: 'Speech Framework',        customIcon: '🎙️', level: 'secondary' },
-        { name: 'AVFoundation',             customIcon: '🔊', level: 'secondary' },
-        { name: 'PDFKit',                   customIcon: '📄', level: 'secondary' },
-      ],
-    },
-    {
-      category: 'skills.categories.frontend',
-      emoji: '🎨',
-      skills: [
-        { name: 'Angular', icon: 'devicon-angular-plain', level: 'primary' },
-        { name: 'HTML5',   icon: 'devicon-html5-plain',   level: 'primary' },
-        { name: 'SCSS',    icon: 'devicon-sass-plain',    level: 'primary' },
-        { name: 'RxJS',    icon: 'devicon-rxjs-plain',    level: 'secondary' },
-      ],
-    },
-    {
-      category: 'skills.categories.backend',
-      emoji: '⚙️',
-      skills: [
-        { name: 'Spring Boot', icon: 'devicon-spring-plain',      level: 'primary' },
-        { name: 'Node.js',     icon: 'devicon-nodejs-plain',      level: 'primary' },
-        { name: 'Express.js',  icon: 'devicon-express-original',  level: 'primary' },
-        { name: 'Socket.IO',   icon: 'devicon-socketio-original', level: 'secondary' },
-        { name: 'REST API',    customIcon: '🔗',                  level: 'secondary' },
-      ],
-    },
-    {
-      category: 'skills.categories.database_devops',
-      emoji: '🗄️',
-      skills: [
-        { name: 'PostgreSQL',    icon: 'devicon-postgresql-plain',    level: 'primary' },
-        { name: 'Redis',         icon: 'devicon-redis-plain',         level: 'primary' },
-        { name: 'Docker',        icon: 'devicon-docker-plain',        level: 'primary' },
-        { name: 'Elasticsearch', icon: 'devicon-elasticsearch-plain', level: 'secondary' },
-        { name: 'Liquibase',     customIcon: '🔄',                    level: 'secondary' },
-      ],
-    },
-    {
-      category: 'skills.categories.security',
-      emoji: '🔐',
-      skills: [
-        { name: 'JWT',             customIcon: '🛡️', level: 'primary' },
-        { name: 'AES-GCM',         customIcon: '🔒', level: 'primary' },
-        { name: 'ECDH',            customIcon: '🔑', level: 'secondary' },
-        { name: 'TLS/HTTPS',       customIcon: '🌐', level: 'secondary' },
-        { name: 'Spring Security', icon: 'devicon-spring-plain', level: 'secondary' },
-        { name: 'OAuth 2.0 / PKCE', customIcon: '🔐', level: 'primary' },
-        { name: 'Keychain Services', customIcon: '🗝️', level: 'primary' },
-        { name: 'CryptoKit',         customIcon: '🧪', level: 'secondary' },
-      ],
-    },
-    {
-      category: 'skills.categories.tools',
-      emoji: '🛠️',
-      skills: [
-        { name: 'Git',       icon: 'devicon-git-plain',    level: 'primary' },
-        { name: 'Xcode',     icon: 'devicon-xcode-plain',  level: 'primary' },
-        { name: 'Figma',     icon: 'devicon-figma-plain',  level: 'secondary' },
-        { name: 'MapStruct', customIcon: '🗺️',             level: 'secondary' },
-        { name: 'Lombok',    customIcon: '☕',             level: 'secondary' },
-        { name: 'Thymeleaf', customIcon: '🌿',             level: 'secondary' },
-        { name: 'Swift Package Manager', customIcon: '📦', level: 'primary' },
-        { name: 'XCTest',                customIcon: '✅', level: 'primary' },
-        { name: 'swift-cgit2',           customIcon: '🔀', level: 'secondary' },
-      ],
-    },
+    { category: 'skills.categories.core', emoji: '⭐', essential: true, skills: [
+      { name: 'Swift', icon: 'devicon-swift-plain' }, { name: 'SwiftUI', icon: 'devicon-swift-plain' }, { name: 'UIKit', icon: 'devicon-apple-original' }, { name: 'Java', icon: 'devicon-java-plain' }, { name: 'Spring Boot', icon: 'devicon-spring-plain' }, { name: 'Node.js', icon: 'devicon-nodejs-plain' }, { name: 'PostgreSQL', icon: 'devicon-postgresql-plain' },
+    ] },
+    { category: 'skills.categories.mobile', emoji: '📱', essential: true, skills: [
+      { name: 'CoreData', icon: 'devicon-apple-original' }, { name: 'Realm', icon: 'devicon-realm-original' }, { name: 'MapKit', customIcon: '🗺️' }, { name: 'MVVM / MVC', customIcon: '🏗️' }, { name: 'macOS', icon: 'devicon-apple-original' }, { name: 'AppKit', icon: 'devicon-apple-original' }, { name: 'XCTest', customIcon: '✅' }, { name: 'Swift Package Manager', customIcon: '📦' },
+    ] },
+    { category: 'skills.categories.backend_systems', emoji: '⚙️', essential: true, skills: [
+      { name: 'Express.js', icon: 'devicon-express-original' }, { name: 'REST API', customIcon: '🔗' }, { name: 'Socket.IO', icon: 'devicon-socketio-original' }, { name: 'Redis', icon: 'devicon-redis-plain' }, { name: 'Elasticsearch', icon: 'devicon-elasticsearch-plain' }, { name: 'Docker', icon: 'devicon-docker-plain' }, { name: 'Liquibase', customIcon: '🔄' }, { name: 'SQL', icon: 'devicon-azuresqldatabase-plain' },
+    ] },
+    { category: 'skills.categories.security', emoji: '🔐', essential: true, skills: [
+      { name: 'JWT', customIcon: '🛡️' }, { name: 'OAuth 2.0 / PKCE', customIcon: '🔐' }, { name: 'AES-GCM', customIcon: '🔒' }, { name: 'ECDH', customIcon: '🔑' }, { name: 'TLS / HTTPS', customIcon: '🌐' }, { name: 'Spring Security', icon: 'devicon-spring-plain' }, { name: 'Keychain Services', customIcon: '🗝️' }, { name: 'CryptoKit', customIcon: '🧪' },
+    ] },
+    { category: 'skills.categories.ai_multimodal', emoji: '🤖', essential: false, skills: [
+      { name: 'OpenAI-compatible APIs', customIcon: '✨' }, { name: 'Gemini', customIcon: '💫' }, { name: 'Ollama', customIcon: '🦙' }, { name: 'Server-Sent Events', customIcon: '⚡' }, { name: 'Multimodal AI', customIcon: '🖼️' }, { name: 'Speech Framework', customIcon: '🎙️' }, { name: 'AVFoundation', customIcon: '🔊' }, { name: 'PDFKit', customIcon: '📄' },
+    ] },
+    { category: 'skills.categories.additional', emoji: '🛠️', essential: false, skills: [
+      { name: 'Angular', icon: 'devicon-angular-plain' }, { name: 'TypeScript', icon: 'devicon-typescript-plain' }, { name: 'JavaScript', icon: 'devicon-javascript-plain' }, { name: 'HTML5', icon: 'devicon-html5-plain' }, { name: 'SCSS', icon: 'devicon-sass-plain' }, { name: 'RxJS', icon: 'devicon-rxjs-plain' }, { name: 'Git', icon: 'devicon-git-plain' }, { name: 'Xcode', icon: 'devicon-xcode-plain' }, { name: 'Figma', icon: 'devicon-figma-plain' }, { name: 'MapStruct', customIcon: '🗺️' }, { name: 'Lombok', customIcon: '☕' }, { name: 'Thymeleaf', customIcon: '🌿' }, { name: 'swift-cgit2', customIcon: '🔀' },
+    ] },
   ];
-
-  readonly totalSkills = this.groups.reduce((total, group) => total + group.skills.length, 0);
 }

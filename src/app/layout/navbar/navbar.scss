@@ -70,6 +70,9 @@
 
     &--active {
       font-weight: 500;
+      color: $color-accent-hover;
+      position: relative;
+      &::after { content: ''; position: absolute; left: 0; right: 0; bottom: -.5rem; height: 2px; border-radius: $radius-full; background: $color-accent; }
     }
 
     @media (max-width: $bp-md) {

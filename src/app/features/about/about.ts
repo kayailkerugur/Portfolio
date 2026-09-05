@@ -9,6 +9,10 @@ import { FadeInDirective } from '../../shared/directives/fade-in.directive';
   styleUrl: './about.scss',
 })
 export class About {
-  readonly jobs = ['aselsan', 'enqura', 'detaysoft'] as const;
-  readonly eduKeys = ['cs', 'ee'] as const;
+  readonly jobs = ['enqura_mac', 'aselsan', 'enqura_ios', 'detaysoft'] as const;
+  readonly education = [
+    { key: 'ms', showSchool: false },
+    { key: 'cs', showSchool: true },
+    { key: 'ee', showSchool: true },
+  ] as const;
 }

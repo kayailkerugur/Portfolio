@@ -2,33 +2,37 @@
   <header class="detail__hero"><div class="detail__container">
     <a routerLink="/projects" class="detail__back">← {{ 'project_detail.back' | translate }}</a>
     <div appFadeIn class="detail__heading">
-      <span class="detail__eyebrow">{{ 'project_detail.eyebrow' | translate }}</span>
-      <h1>AIChat</h1><p class="detail__lead">{{ 'project_detail.lead' | translate }}</p>
-      <a href="https://github.com/kayailkerugur/AIChat" target="_blank" rel="noopener noreferrer" class="detail__repo">
+      <span class="detail__eyebrow">{{ 'case_studies.' + project.key + '.eyebrow' | translate }}</span>
+      <h1><span aria-hidden="true">{{ project.emoji }}</span> {{ 'case_studies.' + project.key + '.title' | translate }}</h1><p class="detail__lead">{{ 'case_studies.' + project.key + '.lead' | translate }}</p>
+      @if (project.repoUrl) { <a [href]="project.repoUrl" target="_blank" rel="noopener noreferrer" class="detail__repo">
         {{ 'projects.source' | translate }} <span aria-hidden="true">↗</span>
-      </a>
-      <div class="detail__tags">@for (tag of tags; track tag) { <span class="tag">{{ tag }}</span> }</div>
+      </a> }
+      @if (project.appStoreUrl) { <a [href]="project.appStoreUrl" target="_blank" rel="noopener noreferrer" class="detail__repo detail__repo--secondary">
+        {{ 'projects.app_store' | translate }} <span aria-hidden="true">↗</span>
+      </a> }
+      <div class="detail__tags">@for (tag of project.tags; track tag) { <span class="tag">{{ tag }}</span> }</div>
     </div>
   </div></header>
   <div class="detail__container detail__body">
     <section appFadeIn class="detail__section detail__overview">
-      <div><span class="detail__label">{{ 'project_detail.overview_label' | translate }}</span><h2>{{ 'project_detail.overview_title' | translate }}</h2></div>
-      <p>{{ 'project_detail.overview' | translate }}</p>
+      <div><span class="detail__label">{{ 'project_detail.overview_label' | translate }}</span><h2>{{ 'case_studies.' + project.key + '.overview_title' | translate }}</h2></div>
+      <p>{{ 'case_studies.' + project.key + '.overview' | translate }}</p>
     </section>
+    <app-screenshot-gallery [screenshots]="project.screenshots" />
     <section class="detail__section">
       <span class="detail__label">{{ 'project_detail.features_label' | translate }}</span><h2>{{ 'project_detail.features_title' | translate }}</h2>
-      <div class="feature-grid">@for (group of groups; track group.key; let i = $index) {
+      <div class="feature-grid">@for (group of project.groups; track group.key; let i = $index) {
         <section appFadeIn [appFadeIn]="i * 60 + 'ms'" class="feature-card">
-          <span class="feature-card__icon" aria-hidden="true">{{ group.icon }}</span><h3>{{ 'project_detail.groups.' + group.key + '.title' | translate }}</h3>
-          <ul>@for (item of ('project_detail.groups.' + group.key + '.items' | translate); track $index) { <li>{{ item }}</li> }</ul>
+          <span class="feature-card__icon" aria-hidden="true">{{ group.icon }}</span><h3>{{ 'case_studies.' + project.key + '.groups.' + group.key + '.title' | translate }}</h3>
+          <ul>@for (item of ('case_studies.' + project.key + '.groups.' + group.key + '.items' | translate); track $index) { <li>{{ item }}</li> }</ul>
         </section>
       }</div>
     </section>
-    <section appFadeIn class="detail__section architecture">
+    @if (project.architecture) { <section appFadeIn class="detail__section architecture">
       <div><span class="detail__label">{{ 'project_detail.architecture_label' | translate }}</span><h2>{{ 'project_detail.architecture_title' | translate }}</h2><p>{{ 'project_detail.architecture' | translate }}</p></div>
       <div class="architecture__flow" aria-label="Presentation to Domain, Data and Infrastructure architecture"><span>Presentation</span><b>→</b><span>Domain</span><b>←</b><span>Data / Infrastructure</span></div>
-    </section>
-    <section appFadeIn class="detail__section metrics"><div><strong>124</strong><span>{{ 'project_detail.metrics.tests' | translate }}</span></div><div><strong>5+</strong><span>{{ 'project_detail.metrics.providers' | translate }}</span></div><div><strong>2</strong><span>{{ 'project_detail.metrics.modes' | translate }}</span></div></section>
-    <section appFadeIn class="detail__section role"><span class="detail__label">{{ 'project_detail.role_label' | translate }}</span><h2>{{ 'project_detail.role_title' | translate }}</h2><p>{{ 'project_detail.role' | translate }}</p></section>
+    </section> }
+    @if (project.metrics) { <section appFadeIn class="detail__section metrics"><div><strong>124</strong><span>{{ 'project_detail.metrics.tests' | translate }}</span></div><div><strong>5+</strong><span>{{ 'project_detail.metrics.providers' | translate }}</span></div><div><strong>2</strong><span>{{ 'project_detail.metrics.modes' | translate }}</span></div></section> }
+    <section appFadeIn class="detail__section role"><span class="detail__label">{{ 'project_detail.role_label' | translate }}</span><h2>{{ 'project_detail.role_title' | translate }}</h2><p>{{ 'case_studies.' + project.key + '.role' | translate }}</p></section>
   </div>
 </article>

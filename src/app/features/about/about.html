@@ -32,14 +32,14 @@
       <div class="about__section">
         <h2 class="about__section-title">{{ 'about.education_title' | translate }}</h2>
         <div class="experience-list">
-          @for (edu of eduKeys; track edu) {
+          @for (edu of education; track edu.key) {
             <div class="experience-item">
               <div class="experience-item__header">
                 <div>
-                  <h3 class="experience-item__role">{{ 'about.education.' + edu + '.degree' | translate }}</h3>
-                  <span class="experience-item__company">{{ 'about.education.' + edu + '.school' | translate }}</span>
+                  <h3 class="experience-item__role">{{ 'about.education.' + edu.key + '.degree' | translate }}</h3>
+                  @if (edu.showSchool) { <span class="experience-item__company">{{ 'about.education.' + edu.key + '.school' | translate }}</span> }
                 </div>
-                <span class="experience-item__date">{{ 'about.education.' + edu + '.date' | translate }}</span>
+                <span class="experience-item__date">{{ 'about.education.' + edu.key + '.date' | translate }}</span>
               </div>
             </div>
           }

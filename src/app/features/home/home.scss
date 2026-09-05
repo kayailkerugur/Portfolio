@@ -122,6 +122,23 @@
   }
 }
 
+@media (max-width: $bp-sm) {
+  .hero {
+    min-height: auto;
+    padding-block: calc($nav-height + $spacing-2xl) $spacing-2xl;
+
+    &__container { padding: 0 $spacing-md; }
+    &__name { font-size: clamp(2.75rem, 15vw, 4rem); }
+    &__role { margin-bottom: $spacing-lg; }
+    &__bio { font-size: .95rem; line-height: 1.65; }
+    &__actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: $spacing-sm; }
+  }
+
+  .btn { padding: .72rem .9rem; text-align: center; }
+  .btn--primary { grid-column: 1 / -1; }
+  .btn--icon { justify-content: center; }
+}
+
 .btn {
   display: inline-block;
   padding: 0.75rem 1.75rem;

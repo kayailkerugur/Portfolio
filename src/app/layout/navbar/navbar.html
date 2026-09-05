@@ -7,8 +7,9 @@
         <a
           [routerLink]="link.path"
           routerLinkActive="navbar__link--active"
+          [routerLinkActiveOptions]="{ exact: link.path === '/' }"
           class="navbar__link"
-          (click)="menuOpen = false"
+          (click)="closeMenu()"
         >
           {{ link.key | translate }}
         </a>
