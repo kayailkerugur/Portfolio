@@ -35,8 +35,8 @@
       "description": "Backend, bulut senkronizasyonu ve şifrelenmiş veri saklama desteğine sahip iOS organizasyon uygulaması."
     },
     "tripmate": {
-      "title": "TripMate | iOS Projesi",
-      "description": "SwiftUI, MapKit, CoreLocation ve REST API ile geliştirilen iOS seyahat planlama uygulaması."
+      "title": "TripMate | Akıllı Seyahat Planlayıcı — iOS",
+      "description": "TripMate v2.0: Dakikalar içinde gün gün gezi planı, harita, ortak planlama, bütçe ve rezervasyon araçları. SwiftUI ile geliştirilen ve App Store'da yayında olan iOS seyahat uygulaması."
     },
     "chat": {
       "title": "Gerçek Zamanlı Chat | Backend & Güvenlik",
@@ -61,7 +61,13 @@
     "bio": "Swift ve SwiftUI ile kullanıcı odaklı, üretime hazır iOS uygulamaları geliştiriyorum. Backend ve güvenlik deneyimimle kimlik doğrulama, gerçek zamanlı iletişim ve ölçeklenebilir servisleri ürünün bütününü gözeterek tasarlıyorum.",
     "cta_projects": "Projelerimi Gör",
     "cta_contact": "İletişime Geç",
-    "cta_cv": "CV İndir"
+    "cta_cv": "CV İndir",
+    "featured": {
+      "label": "Öne çıkan proje",
+      "badge": "App Store'da yayında · v2.0",
+      "tagline": "Planla. Keşfet. Daha çok yaşa.",
+      "text": "Rotadan rezervasyona, bütçeden anılara kadar tüm seyahati tek bir yerde toplayan iOS seyahat uygulaması. Ürün tasarımından App Store yayınına kadar uçtan uca geliştirdim."
+    }
   },
   "about": {
     "title": "Hakkımda",
@@ -134,7 +140,12 @@
         "date": "Sep 2023 – Tem 2027"
       }
     },
-    "lang_items": ["Türkçe — Ana Dil", "İngilizce — B2/C1", "Rusça — A1", "Almanca — A1"],
+    "lang_items": [
+      "Türkçe — Ana Dil",
+      "İngilizce — B2/C1",
+      "Rusça — A1",
+      "Almanca — A1"
+    ],
     "download_cv": "CV İndir"
   },
   "skills": {
@@ -193,16 +204,17 @@
         ]
       },
       "tripmate": {
-        "subtitle": "iOS · Backend · DevOps",
-        "role": "iOS uygulama geliştirme",
-        "description": "Kullanıcıların seyahat planlarını oluşturabilmesi ve gezilerini organize edebilmesi için geliştirilmiş seyahat planlama uygulamasıdır. Gün bazlı gezi planlama, şehir ve rota oluşturma, gezilecek yer önerileri ve lokasyon tabanlı planlama özellikleriyle seyahat deneyimini kolaylaştırır.",
+        "subtitle": "iOS · SwiftUI · App Store'da yayında",
+        "role": "Uçtan uca iOS ürün geliştirme",
+        "description": "Rotadan rezervasyona, bütçeden anılara kadar tüm seyahati tek bir yerde toplayan iOS seyahat uygulaması. Dakikalar içinde gün gün akıllı planlar, ortak planlama, topluluk rotaları, çevrimdışı erişim ve widget desteğiyle v2.0 olarak App Store'da.",
         "features": [
-          "Gün bazlı gezi planlama",
-          "Şehir ve rota oluşturma",
-          "Gezilecek yer önerileri",
-          "Seyahat takvimi yönetimi",
-          "Lokasyon tabanlı planlama"
-        ]
+          "Dakikalar içinde gün gün akıllı gezi planı",
+          "Harita, rota ve sıradaki durak takibi",
+          "Arkadaşlarla ortak planlama ve topluluk rotaları",
+          "Bütçe, kontrol listesi ve rezervasyon araçları",
+          "Widget, çevrimdışı erişim, PDF ve takvime aktarma"
+        ],
+        "cover_alt": "TripMate v2.0 iPhone ve iPad ekranları"
       },
       "eczanem": {
         "subtitle": "iOS",
@@ -354,36 +366,135 @@
         },
         "sync": {
           "title": "Senkronizasyon",
-          "items": ["Kimlik doğrulama entegrasyonu", "Bulut senkronizasyon altyapısı"]
+          "items": [
+            "Kimlik doğrulama entegrasyonu",
+            "Bulut senkronizasyon altyapısı"
+          ]
         },
         "security": {
           "title": "Güvenlik",
-          "items": ["Uçtan uca şifrelenmiş veri saklama", "JWT tabanlı kimlik doğrulama"]
+          "items": [
+            "Uçtan uca şifrelenmiş veri saklama",
+            "JWT tabanlı kimlik doğrulama"
+          ]
         }
       }
     },
     "tripmate": {
       "title": "TripMate",
-      "eyebrow": "iOS · Harita · Seyahat",
-      "lead": "Rotaları, gezi planlarını ve mekânları düzenlemek için geliştirilen iOS seyahat uygulaması.",
-      "overview_title": "Gün gün seyahat planlama",
-      "overview": "TripMate; gün bazlı gezi programları, şehir ve rota oluşturma, mekân önerileri, seyahat takvimi ve konum bazlı planlama ile kullanıcıların seyahatlerini düzenlemesine yardımcı olur.",
-      "role": "iOS uygulamasını geliştirdim ve harita ile konum tabanlı yeteneklerini entegre ettim.",
+      "eyebrow": "iOS · SwiftUI · App Store'da yayında · v2.0",
+      "lead": "Planla. Keşfet. Daha çok yaşa. TripMate; rotadan rezervasyona, bütçeden anılara kadar tüm seyahatini tek bir yerde toplayan iOS seyahat arkadaşın.",
+      "highlights": [
+        "Birkaç dakikada gün gün akıllı gezi planı",
+        "Arkadaşlarınla ortak planlama ve topluluk rotaları",
+        "Çevrimdışı erişim, widget, takvim ve PDF dışa aktarma"
+      ],
+      "hero_alt": "TripMate v2.0 iPhone ve iPad ekranları: Bugün paneli ve Keşfet sayfası",
+      "overview_title": "Dağınık notlardan tek bir plana",
+      "overview": "Seyahat planlamak çoğu zaman sekmeler, ekran görüntüleri ve not uygulamaları arasında kaybolmak demek. TripMate bu dağınıklığı tek bir akışa dönüştürür: Gideceğin yeri, tarihleri ve ilgi alanlarını seç; uygulama senin için gün gün bir rota oluştursun. Seyahat yaklaştığında Bugün paneli sıradaki durağını, hazırlıklarını ve bütçeni gösterir; yolculuk bittiğinde ise günlük ve fotoğraflarla anılarını saklar. v2.0 ile tamamen yeniden tasarlanan arayüz, açık/koyu tema, uygulama içi dil seçimi ve iPad desteğiyle App Store'da yayında.",
+      "screens_intro": "v2.0 tasarımından gerçek simülatör görüntüleri. Büyütmek için bir ekrana dokun; ok tuşlarıyla gezin.",
+      "features_title": "Seyahatin her anı için bir araç",
+      "promos_title": "Lansman kampanyası",
+      "promos_intro": "TripMate v2.0 lansmanı için tasarladığım Instagram carousel serisi; her kare uygulamanın bir vaadini anlatıyor.",
+      "screens": {
+        "today": {
+          "alt": "TripMate Bugün paneli: yaklaşan Roma seyahatine geri sayım, hazırlıklar ve sıradaki durak",
+          "caption": "Bugün — geri sayım, hazırlıklar ve sıradaki durak tek bakışta"
+        },
+        "trips": {
+          "alt": "Gezilerim ekranı: yaklaşan, geçmiş ve paylaşılan seyahatler",
+          "caption": "Gezilerim — tüm planlar, filtreler ve paylaşılan geziler"
+        },
+        "explore": {
+          "alt": "Keşfet ekranı: akıllı planlayıcı, topluluk ve ruh haline göre keşif",
+          "caption": "Keşfet — dakikalar içinde yeni plan, topluluktan ilham"
+        },
+        "trip-detail": {
+          "alt": "Gezi detayı: gün, mekân ve harcama özeti ile günlük plan kartları",
+          "caption": "Gezi detayı — günler, mekânlar, harita ve hazırlık araçları"
+        },
+        "day-plan": {
+          "alt": "Günlük plan: saat saat zaman çizelgesi ve mekân detayları",
+          "caption": "Gün planı — saat saat zaman çizelgesi ve adresler"
+        }
+      },
+      "promos": {
+        "meet-tripmate": "TripMate v2.0 ile tanışın — seyahat, yeniden tasarlandı",
+        "every-trip-one-place": "Her gezi, tek bir yerde",
+        "next-trip-in-minutes": "Sıradaki gezin dakikalar içinde hazır",
+        "every-detail": "Tek plan, her detay",
+        "your-day": "Günün bir bakışta",
+        "real-travelers": "Gerçek gezginlerden ilham",
+        "plan-together": "Birlikte planla, daha uzağa git",
+        "ready-before-you-go": "Yola çıkmadan hazır ol",
+        "whole-journey": "Tüm yolculuğu bağlantılı gör",
+        "next-story": "Sıradaki hikâyen burada başlıyor"
+      },
+      "metrics": {
+        "version": "tamamen yenilenen sürüm",
+        "languages": "dil desteği (TR, EN, DE, RU)",
+        "tools": "yerleşik seyahat aracı",
+        "lines": "satır Swift kodu"
+      },
+      "role": "TripMate'i uçtan uca tek başıma geliştirdim: ürün kurgusu, v2.0 tasarım sistemi, SwiftUI + MVVM mimarisi, SwiftData ile çevrimdışı depolama, MapKit ve CoreLocation entegrasyonu, Sign in with Apple ve Google kimlik doğrulaması, bildirimler, widget, takvim ve PDF dışa aktarma, dört dilli yerelleştirme, Spring Boot tabanlı REST servisleri ile entegrasyon, App Store yayın süreci ve lansman görselleri.",
+      "cta": {
+        "label": "Ücretsiz deneyin",
+        "title": "Sıradaki hikâyen burada başlıyor.",
+        "text": "TripMate App Store'da. Bir sonraki seyahatini dakikalar içinde planla, arkadaşlarınla paylaş ve hiçbir detayı kaçırma."
+      },
       "groups": {
         "planning": {
-          "title": "Planlama",
+          "title": "Akıllı planlama",
           "items": [
-            "Gün bazlı gezi planlama",
-            "Şehir ve rota oluşturma",
-            "Seyahat takvimi yönetimi"
+            "Yer, tarih ve ilgi alanlarına göre dakikalar içinde gezi planı",
+            "Gün gün rota, saat saat zaman çizelgesi",
+            "Kategori bazlı mekân önerileri (kültür, sanat, eğlence…)",
+            "Planı ve günleri istediğin zaman düzenleme"
           ]
         },
         "location": {
-          "title": "Konum",
+          "title": "Harita ve konum",
           "items": [
-            "Mekân önerileri",
-            "Konum bazlı planlama",
-            "MapKit ve CoreLocation entegrasyonu"
+            "MapKit ile tüm durakları harita üzerinde görme",
+            "Bugünün planı ve sıradaki durak takibi",
+            "Manuel konum ekleme ve rota ayarları",
+            "Mekân detayları ve değerlendirmeler"
+          ]
+        },
+        "together": {
+          "title": "Birlikte seyahat",
+          "items": [
+            "Arkadaş ekleme ve gezilere kişi davet etme",
+            "Ortak planlarla herkes aynı sayfada",
+            "Topluluk rotaları, gönderiler ve yorumlar",
+            "Başkasının rotasını kendi planına uyarlama"
+          ]
+        },
+        "tools": {
+          "title": "Seyahat araçları",
+          "items": [
+            "Hazırlık kontrol listesi ve akıllı hatırlatıcılar",
+            "Harcama ve bütçe takibi",
+            "Rezervasyon merkezi: uçuş, otel ve belgeler",
+            "Gezi notları ve acil durum kartı"
+          ]
+        },
+        "memories": {
+          "title": "Anılar ve paylaşım",
+          "items": [
+            "Fotoğraf ve videolu seyahat günlüğü",
+            "Gezi planını PDF olarak dışa aktarma",
+            "Herkese açık paylaşım bağlantısı",
+            "Takvime aktarma (EventKit)"
+          ]
+        },
+        "platform": {
+          "title": "Native iOS deneyimi",
+          "items": [
+            "Yaklaşan gezi için ana ekran widget'ı",
+            "SwiftData ile çevrimdışı erişim",
+            "Açık/koyu tema, uygulama içi dil seçimi, iPad desteği",
+            "Sign in with Apple ve Google ile güvenli giriş"
           ]
         }
       }
@@ -414,7 +525,10 @@
         },
         "devices": {
           "title": "Cihaz desteği",
-          "items": ["Çoklu cihaz desteği", "Socket.IO iletişim altyapısı"]
+          "items": [
+            "Çoklu cihaz desteği",
+            "Socket.IO iletişim altyapısı"
+          ]
         }
       }
     }
@@ -497,7 +611,13 @@
     },
     "role_label": "Rolüm",
     "role_title": "Uçtan uca ürün geliştirme",
-    "role": "Gereksinim analizi, mimari tasarım, SwiftUI arayüzü, kimlik doğrulama, AI sağlayıcı entegrasyonları, veri saklama, multimodal dosya desteği, sesli görüşme, Git tabanlı Code Mode, SDK modülerleştirmesi, testler ve teknik dokümantasyon tarafımdan geliştirildi."
+    "role": "Gereksinim analizi, mimari tasarım, SwiftUI arayüzü, kimlik doğrulama, AI sağlayıcı entegrasyonları, veri saklama, multimodal dosya desteği, sesli görüşme, Git tabanlı Code Mode, SDK modülerleştirmesi, testler ve teknik dokümantasyon tarafımdan geliştirildi.",
+    "images": "görsel",
+    "previous": "Önceki",
+    "next": "Sonraki",
+    "download": "App Store'dan indir",
+    "app_label": "Uygulama içi",
+    "campaign_label": "Kampanya"
   },
   "contact": {
     "title": "İletişim",

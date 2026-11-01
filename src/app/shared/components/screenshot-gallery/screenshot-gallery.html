@@ -1,13 +1,43 @@
 @if (screenshots.length) {
-  <section class="gallery" aria-labelledby="screenshots-title">
-    <h2 id="screenshots-title">{{ 'project_detail.screenshots_title' | translate }}</h2>
-    <div class="gallery__track">
-      @for (screenshot of screenshots; track screenshot.src) {
-        <figure><button type="button" (click)="selected = screenshot" [attr.aria-label]="('project_detail.enlarge' | translate) + ': ' + screenshot.alt"><img [src]="screenshot.src" [alt]="screenshot.alt" loading="lazy" decoding="async" /></button>@if (screenshot.caption) { <figcaption>{{ screenshot.caption }}</figcaption> }</figure>
+  <section class="gallery" [class.gallery--poster]="variant === 'poster'" [attr.aria-labelledby]="galleryId + '-title'">
+    <div class="gallery__head">
+      <div>
+        @if (label) { <span class="gallery__label">{{ label | translate }}</span> }
+        <h2 [id]="galleryId + '-title'">{{ heading | translate }}</h2>
+        @if (intro) { <p class="gallery__intro">{{ intro | translate }}</p> }
+      </div>
+      <div class="gallery__nav">
+        <span class="gallery__count">{{ screenshots.length }} {{ 'project_detail.images' | translate }}</span>
+        <button type="button" (click)="scrollTrack(track, -1)" [attr.aria-label]="'project_detail.previous' | translate">←</button>
+        <button type="button" (click)="scrollTrack(track, 1)" [attr.aria-label]="'project_detail.next' | translate">→</button>
+      </div>
+    </div>
+    <div class="gallery__track" #track tabindex="0" [attr.aria-label]="heading | translate">
+      @for (screenshot of screenshots; track screenshot.src; let i = $index) {
+        <figure>
+          <button type="button" (click)="open(i)" [attr.aria-label]="('project_detail.enlarge' | translate) + ': ' + (screenshot.alt | translate)">
+            <img [src]="screenshot.src" [alt]="screenshot.alt | translate" loading="lazy" decoding="async" />
+          </button>
+          @if (screenshot.caption) { <figcaption><span>{{ (i + 1).toString().padStart(2, '0') }}</span>{{ screenshot.caption | translate }}</figcaption> }
+        </figure>
       }
     </div>
   </section>
 }
-@if (selected) {
-  <div class="lightbox" role="dialog" aria-modal="true" [attr.aria-label]="selected.alt"><button type="button" class="lightbox__close" (click)="selected = null" [attr.aria-label]="'project_detail.close' | translate">×</button><img [src]="selected.src" [alt]="selected.alt" /></div>
+@if (selected; as current) {
+  <div class="lightbox" role="dialog" aria-modal="true" [attr.aria-label]="current.alt | translate">
+    <button type="button" class="lightbox__backdrop" tabindex="-1" aria-hidden="true" (click)="close()"></button>
+    <button type="button" class="lightbox__close" (click)="close()" [attr.aria-label]="'project_detail.close' | translate">×</button>
+    @if (screenshots.length > 1) {
+      <button type="button" class="lightbox__arrow lightbox__arrow--prev" (click)="step(-1)" [attr.aria-label]="'project_detail.previous' | translate">‹</button>
+      <button type="button" class="lightbox__arrow lightbox__arrow--next" (click)="step(1)" [attr.aria-label]="'project_detail.next' | translate">›</button>
+    }
+    <figure class="lightbox__figure">
+      <img [src]="current.src" [alt]="current.alt | translate" />
+      <figcaption>
+        <span>{{ (selectedIndex ?? 0) + 1 }} / {{ screenshots.length }}</span>
+        @if (current.caption) { {{ current.caption | translate }} }
+      </figcaption>
+    </figure>
+  </div>
 }

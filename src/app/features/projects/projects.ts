@@ -14,6 +14,7 @@ export interface Project {
   appStoreUrl?: string;
   detailUrl?: string;
   featured?: boolean;
+  cover?: string;
 }
 
 @Component({
@@ -51,8 +52,9 @@ export class Projects {
       status: 'live',
       featured: true,
       detailUrl: '/projects/tripmate',
+      cover: '/projects/tripmate/cover.webp',
       appStoreUrl: 'https://apps.apple.com/tr/app/tripmate/id6761005038',
-      tags: ['SwiftUI', 'MapKit', 'CoreLocation', 'REST API'],
+      tags: ['SwiftUI', 'SwiftData', 'MapKit', 'WidgetKit', 'Spring Boot', 'REST API'],
     },
     {
       key: 'eczanem',

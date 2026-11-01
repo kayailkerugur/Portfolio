@@ -6,6 +6,9 @@
       <div class="projects__grid projects__grid--featured">
       @for (project of featuredProjects; track project.title; let i = $index) {
         <article appFadeIn [appFadeIn]="i * 80 + 'ms'" class="project-card" [class.project-card--live]="project.status === 'live'" [class.project-card--featured]="project.featured">
+          @if (project.cover) {
+            <a [routerLink]="project.detailUrl" class="project-card__cover" tabindex="-1" aria-hidden="true"><img [src]="project.cover" [alt]="'projects.items.' + project.key + '.cover_alt' | translate" loading="lazy" decoding="async" /></a>
+          }
           <div class="project-card__header">
             <span class="project-card__emoji">{{ project.emoji }}</span>
             <span class="project-card__badges"><span class="project-card__badge">{{ 'projects.featured' | translate }}</span><span class="project-card__badge" [class.project-card__badge--live]="project.status === 'live'">{{ (project.status === 'live' ? 'projects.live' : 'projects.dev') | translate }}</span></span>

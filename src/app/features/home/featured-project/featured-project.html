@@ -1,0 +1,24 @@
+<section class="featured" aria-labelledby="featured-title">
+  <div class="featured__container">
+    <span appFadeIn class="featured__label">{{ 'home.featured.label' | translate }}</span>
+    <article appFadeIn class="featured__card">
+      <div class="featured__content">
+        <span class="featured__badge"><span aria-hidden="true"></span>{{ 'home.featured.badge' | translate }}</span>
+        <h2 id="featured-title"><span aria-hidden="true">✈️</span> TripMate</h2>
+        <p class="featured__tagline">{{ 'home.featured.tagline' | translate }}</p>
+        <p class="featured__text">{{ 'home.featured.text' | translate }}</p>
+        <ul class="featured__list">@for (item of highlights; track item) { <li>{{ item | translate }}</li> }</ul>
+        <div class="featured__tags">@for (tag of ['SwiftUI', 'SwiftData', 'MapKit', 'WidgetKit', 'Spring Boot']; track tag) { <span>{{ tag }}</span> }</div>
+        <div class="featured__actions">
+          <a routerLink="/projects/tripmate" class="featured__btn featured__btn--primary">{{ 'projects.case_study' | translate }} <span aria-hidden="true">→</span></a>
+          <a [href]="appStoreUrl" target="_blank" rel="noopener noreferrer" class="featured__btn">{{ 'project_detail.download' | translate }} <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <a routerLink="/projects/tripmate" class="featured__visual" tabindex="-1" aria-hidden="true">
+        @for (screen of screens; track screen; let i = $index) {
+          <img [src]="'/projects/tripmate/screen-' + screen + '.webp'" [class]="'featured__phone featured__phone--' + i" alt="" loading="lazy" decoding="async" />
+        }
+      </a>
+    </article>
+  </div>
+</section>

@@ -35,8 +35,8 @@
       "description": "An iOS organization app with a supporting backend, cloud synchronization, and encrypted data storage."
     },
     "tripmate": {
-      "title": "TripMate | iOS Project",
-      "description": "An iOS travel planning app built with SwiftUI, MapKit, CoreLocation, and REST APIs."
+      "title": "TripMate | Smart Travel Planner — iOS",
+      "description": "TripMate v2.0: day-by-day itineraries in minutes, maps, shared planning, budget and reservation tools. An iOS travel app built with SwiftUI, live on the App Store."
     },
     "chat": {
       "title": "Real-Time Chat | Backend & Security",
@@ -61,7 +61,13 @@
     "bio": "I build user-focused, production-ready iOS applications with Swift and SwiftUI. My backend and security experience helps me design authentication, real-time communication, and scalable services with the complete product in mind.",
     "cta_projects": "View My Projects",
     "cta_contact": "Get In Touch",
-    "cta_cv": "Download CV"
+    "cta_cv": "Download CV",
+    "featured": {
+      "label": "Featured project",
+      "badge": "Live on the App Store · v2.0",
+      "tagline": "Plan. Explore. Live more.",
+      "text": "An iOS travel app that brings the whole trip — routes, reservations, budget and memories — into one place. I built it end to end, from product design to the App Store release."
+    }
   },
   "about": {
     "title": "About Me",
@@ -134,7 +140,12 @@
         "date": "Sep 2023 – Jul 2027"
       }
     },
-    "lang_items": ["Turkish — Native", "English — B2/C1", "Russian — A1", "German — A1"],
+    "lang_items": [
+      "Turkish — Native",
+      "English — B2/C1",
+      "Russian — A1",
+      "German — A1"
+    ],
     "download_cv": "Download CV"
   },
   "skills": {
@@ -193,16 +204,17 @@
         ]
       },
       "tripmate": {
-        "subtitle": "iOS · Backend · DevOps",
-        "role": "iOS application development",
-        "description": "A travel planning application designed for users to create travel plans and organize their trips. It simplifies the travel experience with day-based itinerary planning, city and route creation, place recommendations, and location-based planning.",
+        "subtitle": "iOS · SwiftUI · Live on the App Store",
+        "role": "End-to-end iOS product development",
+        "description": "An iOS travel app that brings the whole trip — routes, reservations, budget and memories — into one place. Live on the App Store as v2.0 with smart day-by-day plans in minutes, shared planning, community routes, offline access and a widget.",
         "features": [
-          "Day-based itinerary planning",
-          "City and route creation",
-          "Place recommendations",
-          "Travel calendar management",
-          "Location-based planning"
-        ]
+          "Smart day-by-day itineraries in minutes",
+          "Maps, routes and next-stop tracking",
+          "Shared planning with friends and community routes",
+          "Budget, checklist and reservation tools",
+          "Widget, offline access, PDF and calendar export"
+        ],
+        "cover_alt": "TripMate v2.0 on iPhone and iPad"
       },
       "eczanem": {
         "subtitle": "iOS",
@@ -354,36 +366,135 @@
         },
         "sync": {
           "title": "Synchronization",
-          "items": ["Authentication system integration", "Cloud synchronization infrastructure"]
+          "items": [
+            "Authentication system integration",
+            "Cloud synchronization infrastructure"
+          ]
         },
         "security": {
           "title": "Security",
-          "items": ["End-to-end encrypted data storage", "JWT-based authentication"]
+          "items": [
+            "End-to-end encrypted data storage",
+            "JWT-based authentication"
+          ]
         }
       }
     },
     "tripmate": {
       "title": "TripMate",
-      "eyebrow": "iOS · Maps · Travel",
-      "lead": "An iOS travel planning application for organizing itineraries, routes, and places.",
-      "overview_title": "Day-by-day travel planning",
-      "overview": "TripMate helps users create travel plans through day-based itineraries, city and route creation, place recommendations, travel calendar management, and location-based planning.",
-      "role": "I developed the iOS application and integrated its mapping and location-based capabilities.",
+      "eyebrow": "iOS · SwiftUI · Live on the App Store · v2.0",
+      "lead": "Plan. Explore. Live more. TripMate is your iOS travel companion that brings everything — routes, reservations, budget and memories — into one place.",
+      "highlights": [
+        "A smart day-by-day itinerary in minutes",
+        "Plan together with friends and borrow community routes",
+        "Offline access, widget, calendar and PDF export"
+      ],
+      "hero_alt": "TripMate v2.0 on iPhone and iPad: the Today dashboard and Explore page",
+      "overview_title": "From scattered notes to one plan",
+      "overview": "Planning a trip usually means getting lost between tabs, screenshots and note apps. TripMate turns that chaos into a single flow: pick a destination, dates and interests, and the app builds a day-by-day route for you. As the trip gets closer, the Today dashboard shows your next stop, preparations and budget; once you're back, a journal with photos keeps your memories. Version 2.0 ships a completely redesigned interface with light/dark themes, in-app language switching and iPad support — live on the App Store.",
+      "screens_intro": "Real simulator captures of the v2.0 design. Tap a screen to enlarge it and use the arrow keys to browse.",
+      "features_title": "A tool for every moment of the trip",
+      "promos_title": "Launch campaign",
+      "promos_intro": "The Instagram carousel series I designed for the TripMate v2.0 launch — each frame tells one promise of the app.",
+      "screens": {
+        "today": {
+          "alt": "TripMate Today dashboard: countdown to an upcoming Rome trip, preparations and next stop",
+          "caption": "Today — countdown, preparations and next stop at a glance"
+        },
+        "trips": {
+          "alt": "My trips screen: upcoming, past and shared trips",
+          "caption": "My trips — every plan, filters and shared trips"
+        },
+        "explore": {
+          "alt": "Explore screen: smart planner, community and explore by mood",
+          "caption": "Explore — a new plan in minutes, inspiration from the community"
+        },
+        "trip-detail": {
+          "alt": "Trip detail: days, places and expenses summary with daily plan cards",
+          "caption": "Trip detail — days, places, map and preparation tools"
+        },
+        "day-plan": {
+          "alt": "Day plan: hour-by-hour timeline and place details",
+          "caption": "Day plan — an hour-by-hour timeline with addresses"
+        }
+      },
+      "promos": {
+        "meet-tripmate": "Meet TripMate v2.0 — travel, reimagined",
+        "every-trip-one-place": "Every trip, one place",
+        "next-trip-in-minutes": "Your next trip, ready in minutes",
+        "every-detail": "One plan, every detail",
+        "your-day": "Your day at a glance",
+        "real-travelers": "Inspired by real travelers",
+        "plan-together": "Plan together, go further",
+        "ready-before-you-go": "Ready before you go",
+        "whole-journey": "See the whole journey, connected",
+        "next-story": "Your next story starts here"
+      },
+      "metrics": {
+        "version": "fully redesigned release",
+        "languages": "languages (TR, EN, DE, RU)",
+        "tools": "built-in travel tools",
+        "lines": "lines of Swift"
+      },
+      "role": "I built TripMate end to end on my own: product concept, the v2.0 design system, SwiftUI + MVVM architecture, offline storage with SwiftData, MapKit and CoreLocation integration, Sign in with Apple and Google authentication, notifications, the widget, calendar and PDF export, localization in four languages, integration with Spring Boot REST services, the App Store release process and the launch visuals.",
+      "cta": {
+        "label": "Try it free",
+        "title": "Your next story starts here.",
+        "text": "TripMate is on the App Store. Plan your next trip in minutes, share it with friends and never miss a detail."
+      },
       "groups": {
         "planning": {
-          "title": "Planning",
+          "title": "Smart planning",
           "items": [
-            "Day-based itinerary planning",
-            "City and route creation",
-            "Travel calendar management"
+            "A trip plan in minutes from place, dates and interests",
+            "Day-by-day routes with an hour-by-hour timeline",
+            "Category-based place suggestions (culture, art, entertainment…)",
+            "Edit the plan and its days anytime"
           ]
         },
         "location": {
-          "title": "Location",
+          "title": "Maps & location",
           "items": [
-            "Place recommendations",
-            "Location-based planning",
-            "MapKit and CoreLocation integration"
+            "Every stop on the map with MapKit",
+            "Today's plan and next-stop tracking",
+            "Manual locations and route settings",
+            "Place details and reviews"
+          ]
+        },
+        "together": {
+          "title": "Travel together",
+          "items": [
+            "Add friends and invite people to trips",
+            "Shared plans keep everyone on the same page",
+            "Community routes, posts and comments",
+            "Adapt someone else's route into your own plan"
+          ]
+        },
+        "tools": {
+          "title": "Travel tools",
+          "items": [
+            "Preparation checklist and smart reminders",
+            "Expense and budget tracking",
+            "Reservation center: flights, hotels and documents",
+            "Trip notes and an emergency card"
+          ]
+        },
+        "memories": {
+          "title": "Memories & sharing",
+          "items": [
+            "Travel journal with photos and videos",
+            "Export the itinerary as a PDF",
+            "Public share links",
+            "Add to calendar (EventKit)"
+          ]
+        },
+        "platform": {
+          "title": "Native iOS experience",
+          "items": [
+            "Home screen widget for the upcoming trip",
+            "Offline access with SwiftData",
+            "Light/dark themes, in-app language, iPad support",
+            "Secure sign-in with Apple and Google"
           ]
         }
       }
@@ -414,7 +525,10 @@
         },
         "devices": {
           "title": "Device support",
-          "items": ["Multi-device support", "Socket.IO communication infrastructure"]
+          "items": [
+            "Multi-device support",
+            "Socket.IO communication infrastructure"
+          ]
         }
       }
     }
@@ -497,7 +611,13 @@
     },
     "role_label": "My role",
     "role_title": "End-to-end product development",
-    "role": "I developed the requirements, architecture, SwiftUI interface, authentication, AI provider integrations, persistence layer, multimodal file support, voice experience, Git-based Code Mode, SDK modularization, tests, and technical documentation."
+    "role": "I developed the requirements, architecture, SwiftUI interface, authentication, AI provider integrations, persistence layer, multimodal file support, voice experience, Git-based Code Mode, SDK modularization, tests, and technical documentation.",
+    "images": "images",
+    "previous": "Previous",
+    "next": "Next",
+    "download": "Download on the App Store",
+    "app_label": "Inside the app",
+    "campaign_label": "Campaign"
   },
   "contact": {
     "title": "Contact",
